@@ -1,0 +1,146 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-11-02",
+  "domain": "https://inchtomilez.com",
+  "totalPages": 262,
+  "crawlPriority": {
+    "critical": {
+      "description": "Highest priority pages - crawl immediately",
+      "pages": [
+        {
+          "url": "https://inchtomilez.com/",
+          "priority": 1.0,
+          "changefreq": "daily",
+          "importance": "Homepage - Main entry point"
+        },
+        {
+          "url": "https://inchtomilez.com/services",
+          "priority": 0.9,
+          "changefreq": "weekly",
+          "importance": "Main services overview"
+        },
+        {
+          "url": "https://inchtomilez.com/contact",
+          "priority": 0.9,
+          "changefreq": "monthly",
+          "importance": "Contact & conversion page"
+        },
+        {
+          "url": "https://inchtomilez.com/about",
+          "priority": 0.9,
+          "changefreq": "monthly",
+          "importance": "Company information"
+        },
+        {
+          "url": "https://inchtomilez.com/industries",
+          "priority": 0.9,
+          "changefreq": "weekly",
+          "importance": "Industries overview"
+        },
+        {
+          "url": "https://inchtomilez.com/blogs",
+          "priority": 0.9,
+          "changefreq": "daily",
+          "importance": "Blog hub - fresh content"
+        }
+      ]
+    },
+    "high": {
+      "description": "High priority - individual service pages",
+      "count": 12,
+      "pattern": "https://inchtomilez.com/services/*",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "services": [
+        "digital-marketing",
+        "advertising",
+        "branding",
+        "website-development",
+        "software-development",
+        "graphic-design",
+        "media-production",
+        "public-relations",
+        "political-campaigns",
+        "ooh-advertising",
+        "radio-newspapers",
+        "product-marketing"
+      ]
+    },
+    "medium": {
+      "description": "Medium priority - industry pages",
+      "count": 18,
+      "pattern": "https://inchtomilez.com/industries/*",
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "industries": [
+        "healthcare",
+        "education",
+        "real-estate",
+        "ecommerce",
+        "technology",
+        "finance",
+        "hospitality",
+        "automotive",
+        "fashion",
+        "legal",
+        "manufacturing",
+        "agriculture",
+        "logistics",
+        "construction",
+        "retail",
+        "energy",
+        "non-profit",
+        "sports-fitness"
+      ]
+    },
+    "standard": {
+      "description": "Standard priority - blog articles",
+      "count": 224,
+      "pattern": "https://inchtomilez.com/blogs/*",
+      "priority": 0.7,
+      "changefreq": "weekly",
+      "notes": "Blog posts updated regularly with fresh content"
+    },
+    "utility": {
+      "description": "Utility pages - FAQs, legal, etc.",
+      "pages": [
+        {
+          "url": "https://inchtomilez.com/faqs",
+          "priority": 0.8,
+          "changefreq": "monthly"
+        }
+      ]
+    }
+  },
+  "crawlHints": {
+    "bestCrawlTime": "00:00-06:00 UTC",
+    "serverLocation": "India (UTC+5:30)",
+    "mobileOptimized": true,
+    "https": true,
+    "xmlSitemaps": [
+      "https://inchtomilez.com/sitemap.xml",
+      "https://inchtomilez.com/sitemap-index.xml",
+      "https://inchtomilez.com/sitemap-pages.xml",
+      "https://inchtomilez.com/sitemap-services.xml",
+      "https://inchtomilez.com/sitemap-industries.xml",
+      "https://inchtomilez.com/sitemap-blogs.xml"
+    ],
+    "structuredData": [
+      "/ai/knowledge-base.json",
+      "/ai/faq.json"
+    ]
+  },
+  "contentUpdates": {
+    "homepage": "Daily updates with latest projects",
+    "blogs": "2-3 new articles weekly",
+    "services": "Monthly updates with new case studies",
+    "industries": "Monthly updates with industry insights"
+  },
+  "indexingStrategy": {
+    "approach": "Index all pages immediately",
+    "contentQuality": "High-quality, original content on all pages",
+    "duplicateContent": "None - all pages unique",
+    "canonicalization": "Proper canonical tags on all pages",
+    "mobileFriendly": "100% responsive design"
+  }
+}

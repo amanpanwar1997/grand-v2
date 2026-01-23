@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Black background -->
+  <rect width="512" height="512" fill="#000000"/>
+  
+  <!-- Yellow "I" letter - Inchtomilez brand -->
+  <text 
+    x="256" 
+    y="330" 
+    text-anchor="middle" 
+    font-family="Raleway, Arial, sans-serif" 
+    font-size="420" 
+    font-weight="700" 
+    fill="#eab308"
+  >
+    I
+  </text>
+</svg>
