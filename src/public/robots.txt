@@ -1,0 +1,51 @@
+# robots.txt for Inchtomilez Digital Marketing Website
+# https://www.inchtomilez.com/robots.txt
+# Last Updated: November 21, 2025
+
+# Allow all search engines to crawl everything except admin
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin/*
+
+# Sitemap location
+Sitemap: https://www.inchtomilez.com/sitemap.xml
+
+# Google-specific directives
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /admin/*
+
+# Bing-specific directives
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /admin/*
+
+# Yandex-specific directives  
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /admin/*
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# No crawl-delay - Let search engines crawl freely for faster indexing
+# Removed "Crawl-delay: 1" to speed up indexing of all 274 pages
+
+# Additional sitemaps (if you create them)
+# Sitemap: https://www.inchtomilez.com/sitemap-blog.xml
+# Sitemap: https://www.inchtomilez.com/sitemap-services.xml
+# Sitemap: https://www.inchtomilez.com/sitemap-industries.xml
