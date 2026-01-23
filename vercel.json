@@ -4,7 +4,7 @@
   "name": "inchtomilez-digital-marketing",
   "framework": null,
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "outputDirectory": "build",
   "installCommand": "npm install --no-package-lock --legacy-peer-deps",
   "regions": ["iad1"],
   "trailingSlash": false,
