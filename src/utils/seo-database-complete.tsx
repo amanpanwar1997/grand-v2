@@ -1,591 +1,1711 @@
 /**
- * 🎯 COMPLETE SEO DATABASE - ALL 313 PAGES
- * 
- * This file contains SEO data for ALL pages:
- * - Main pages (12)
- * - Company pages (11)
- * - Service pages (26)
- * - Industry pages (19)
- * - Blog categories (10)
- * - Blog posts (224)
- * - Legal pages (5)
- * - Resource pages (6)
- * 
- * Import this into seo-master.tsx
+ * ============================================================================
+ * INCHTOMILEZ - ADVANCED SEO DATABASE
+ * ============================================================================
+ *
+ * Version: 5.0
+ *
+ * PURPOSE
+ * -------
+ * Central SEO metadata database for all important indexable static routes.
+ *
+ * PRIMARY SEO OBJECTIVE
+ * ---------------------
+ * Establish Inchtomilez as a highly relevant entity for:
+ *
+ * - Digital Marketing Agency in Indore
+ * - Advertising Agency in Indore
+ * - SEO Company in Indore
+ * - Google Ads Agency in Indore
+ * - Social Media Marketing Agency in Indore
+ * - Website Development Company in Indore
+ * - Branding Agency in Indore
+ * - Local SEO Services in Indore
+ *
+ * IMPORTANT ARCHITECTURE
+ * ----------------------
+ *
+ * 1. Homepage owns:
+ *    "Digital Marketing Agency in Indore"
+ *
+ * 2. Service pages own individual service intent.
+ *
+ * 3. Sub-service pages own long-tail service intent.
+ *
+ * 4. Industry pages own industry-specific marketing intent.
+ *
+ * 5. Blog article SEO is generated dynamically by BlogDetailPage.
+ *    We DO NOT hardcode hundreds of article entries here.
+ *
+ * This reduces:
+ * - keyword cannibalization
+ * - outdated URLs
+ * - duplicate metadata
+ * - maintenance problems
+ *
+ * ============================================================================
  */
 
-import { SEOData } from './seo-master';
+import type { SEOData } from "./seo-master";
 
-// This will be merged with SEO_DATABASE in seo-master.tsx
+
+// ============================================================================
+// CONSTANTS
+// ============================================================================
+
+const BRAND = "Inchtomilez";
+
+const CITY = "Indore";
+
+
+// ============================================================================
+// SEO FACTORIES
+// ============================================================================
+
+/**
+ * Standard website / informational page.
+ */
+function websiteSEO(
+  title: string,
+  description: string,
+  keywords: string[],
+  h1: string
+): SEOData {
+  return {
+    title,
+    description,
+    keywords,
+    h1,
+    ogType: "website",
+    schemaType: "website",
+  };
+}
+
+
+/**
+ * Organization / company page.
+ */
+function organizationSEO(
+  title: string,
+  description: string,
+  keywords: string[],
+  h1: string
+): SEOData {
+  return {
+    title,
+    description,
+    keywords,
+    h1,
+    ogType: "website",
+    schemaType: "organization",
+  };
+}
+
+
+/**
+ * Commercial service page.
+ */
+function serviceSEO(
+  title: string,
+  description: string,
+  keywords: string[],
+  h1: string,
+  category: string
+): SEOData {
+  return {
+    title,
+    description,
+    keywords,
+    h1,
+    ogType: "service",
+    schemaType: "service",
+    category,
+  };
+}
+
+
+// ============================================================================
+// COMPLETE SEO DATA
+// ============================================================================
+
 export const COMPLETE_SEO_DATA: Record<string, SEOData> = {
-  
-  // ============================================================================
+
+  // ==========================================================================
+  // HOMEPAGE
+  // PRIMARY KEYWORD: DIGITAL MARKETING AGENCY IN INDORE
+  // ==========================================================================
+
+  "/": {
+    title:
+      "Digital Marketing & Advertising Agency in Indore | Inchtomilez",
+
+    description:
+      "Inchtomilez is a digital marketing and advertising agency in Indore offering SEO, Google Ads, social media marketing, branding and website development.",
+
+    keywords: [
+      "digital marketing agency in Indore",
+      "digital marketing company Indore",
+      "advertising agency in Indore",
+      "online marketing agency Indore",
+      "performance marketing agency Indore",
+      "SEO company Indore",
+      "Google Ads agency Indore",
+      "social media marketing agency Indore",
+      "website development company Indore",
+      "branding agency Indore",
+      "Inchtomilez",
+    ],
+
+    h1:
+      "Digital Marketing Agency in Indore for Measurable Business Growth",
+
+    ogType: "website",
+
+    schemaType: "organization",
+  },
+
+
+  // ==========================================================================
   // MAIN PAGES
-  // ============================================================================
-  '/': {
-    title: 'Inchtomilez - Digital Marketing Agency in Indore | SEO, PPC, Social Media',
-    description: 'Leading digital marketing agency in Indore offering SEO, PPC, social media marketing, content marketing, branding, and web design services. Drive growth with data-driven strategies.',
-    keywords: ['digital marketing agency Indore', 'SEO services Indore', 'PPC agency', 'social media marketing', 'content marketing', 'web design Indore'],
-    h1: 'Transform Your Business with Data-Driven Digital Marketing',
-    ogType: 'website',
-    schemaType: 'organization'
+  // ==========================================================================
+
+  "/about": organizationSEO(
+    "About Inchtomilez | Digital Marketing Agency in Indore",
+
+    "Learn about Inchtomilez, an Indore-based digital marketing and advertising agency focused on transparent strategy, measurable growth and long-term client partnerships.",
+
+    [
+      "about Inchtomilez",
+      "digital marketing agency Indore",
+      "advertising agency Indore",
+      "marketing company Indore",
+      "Inchtomilez team",
+      "Inchtomilez Indore",
+    ],
+
+    "About Inchtomilez"
+  ),
+
+
+  "/services": serviceSEO(
+    "Marketing & Advertising Services in Indore | Inchtomilez",
+
+    "Explore SEO, Google Ads, social media marketing, branding, web development, digital marketing, BTL and advertising services from Inchtomilez in Indore.",
+
+    [
+      "digital marketing services Indore",
+      "advertising services Indore",
+      "SEO services Indore",
+      "Google Ads services Indore",
+      "social media marketing Indore",
+      "website development Indore",
+      "branding services Indore",
+    ],
+
+    "Marketing & Advertising Services in Indore",
+
+    "Marketing and Advertising"
+  ),
+
+
+  "/industries": serviceSEO(
+    "Industry-Focused Digital Marketing Solutions | Inchtomilez",
+
+    "Digital marketing solutions for healthcare, real estate, education, ecommerce, automotive, manufacturing, hospitality and other growth-focused industries.",
+
+    [
+      "industry digital marketing",
+      "healthcare marketing Indore",
+      "real estate marketing Indore",
+      "education marketing Indore",
+      "ecommerce marketing",
+      "B2B marketing agency Indore",
+    ],
+
+    "Digital Marketing Solutions for Different Industries",
+
+    "Industry Marketing"
+  ),
+
+
+  "/blogs": websiteSEO(
+    "Digital Marketing Blog | SEO, Google Ads & Growth | Inchtomilez",
+
+    "Read practical guides on SEO, Google Ads, social media, content marketing, website development, branding and digital growth from the Inchtomilez team.",
+
+    [
+      "digital marketing blog",
+      "SEO blog India",
+      "Google Ads guides",
+      "social media marketing blog",
+      "digital marketing tips",
+      "marketing blog Indore",
+    ],
+
+    "Digital Marketing Insights, Guides & Strategies"
+  ),
+
+
+  "/faqs": {
+    title:
+      "Digital Marketing FAQs | SEO, Ads & Services | Inchtomilez",
+
+    description:
+      "Get answers to common questions about SEO, Google Ads, social media marketing, websites, digital marketing costs, timelines and working with Inchtomilez.",
+
+    keywords: [
+      "digital marketing FAQs",
+      "SEO FAQ",
+      "Google Ads questions",
+      "digital marketing pricing Indore",
+      "marketing agency questions",
+    ],
+
+    h1:
+      "Frequently Asked Questions",
+
+    ogType: "website",
+
+    schemaType: "faq",
   },
 
-  '/about': {
-    title: 'About Us - Inchtomilez Digital Marketing Agency | Our Story & Mission',
-    description: 'Learn about Inchtomilez, a leading digital marketing agency in Indore. Discover our team of experts, our mission to drive measurable results, and our client-first approach.',
-    keywords: ['about Inchtomilez', 'digital marketing team', 'marketing agency Indore', 'marketing experts', 'agency mission'],
-    h1: 'About Inchtomilez - Your Digital Marketing Partner',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
 
-  '/contact': {
-    title: 'Contact Us - Get in Touch with Inchtomilez | Free Consultation',
-    description: 'Contact Inchtomilez for digital marketing services. Call +91-9669988666, email us, or visit our office in Indore. Free consultation available.',
-    keywords: ['contact Inchtomilez', 'digital marketing inquiry', 'marketing consultation', 'Indore marketing agency', 'free consultation'],
-    h1: 'Get in Touch - Let\'s Grow Your Business Together',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
+  "/contact": organizationSEO(
+    "Contact Inchtomilez | Digital Marketing Agency in Indore",
 
-  '/services': {
-    title: 'Digital Marketing Services | SEO, PPC, Social Media & More',
-    description: 'Comprehensive digital marketing services including SEO, PPC, social media marketing, content creation, branding, web design, and analytics. Customized solutions for your business.',
-    keywords: ['digital marketing services', 'SEO services', 'PPC management', 'social media marketing', 'content marketing services'],
-    h1: 'Our Digital Marketing Services',
-    ogType: 'website',
-    schemaType: 'service'
-  },
+    "Contact Inchtomilez Digital Marketing And Advertising Agency in Vijay Nagar, Indore. Call +91-9009970709 to discuss SEO, Google Ads, social media and website growth.",
 
-  '/faqs': {
-    title: 'FAQs - Digital Marketing Questions Answered | Inchtomilez',
-    description: 'Frequently asked questions about digital marketing, SEO, PPC, social media, pricing, and our services. Get expert answers from marketing professionals.',
-    keywords: ['digital marketing FAQs', 'SEO questions', 'PPC FAQ', 'marketing services questions', 'pricing questions'],
-    h1: 'Frequently Asked Questions',
-    ogType: 'website',
-    schemaType: 'faq'
-  },
+    [
+      "contact Inchtomilez",
+      "digital marketing agency Vijay Nagar Indore",
+      "marketing agency near me",
+      "advertising agency Vijay Nagar",
+      "SEO company Indore contact",
+      "Inchtomilez phone",
+    ],
 
-  '/team': {
-    title: 'Our Team - Meet the Digital Marketing Experts | Inchtomilez',
-    description: 'Meet our team of certified digital marketing professionals. SEO specialists, PPC experts, content strategists, and creative designers driving client success.',
-    keywords: ['marketing team', 'digital marketing experts', 'SEO specialists', 'PPC experts', 'Indore team'],
-    h1: 'Meet Our Expert Team',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
+    "Contact Inchtomilez in Indore"
+  ),
 
-  '/careers': {
-    title: 'Careers - Join Our Digital Marketing Team | Inchtomilez Jobs',
-    description: 'Explore career opportunities at Inchtomilez. Join our team of digital marketing professionals in Indore. Open positions in SEO, PPC, content, and design.',
-    keywords: ['digital marketing careers', 'marketing jobs Indore', 'SEO jobs', 'PPC jobs', 'content writer jobs'],
-    h1: 'Join Our Growing Team',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
 
-  '/testimonials': {
-    title: 'Client Testimonials - Success Stories | Inchtomilez Reviews',
-    description: 'Read what our clients say about working with Inchtomilez. Real testimonials from businesses that achieved measurable growth through our digital marketing services.',
-    keywords: ['client testimonials', 'marketing reviews', 'client success stories', 'agency reviews', 'Inchtomilez reviews'],
-    h1: 'What Our Clients Say',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
+  // ==========================================================================
+  // CORE SERVICE PAGES
+  // ==========================================================================
 
-  '/case-studies': {
-    title: 'Case Studies - Digital Marketing Success Stories | Inchtomilez',
-    description: 'Explore our case studies showcasing real results: increased traffic, higher conversions, better ROI. See how we helped businesses grow with digital marketing.',
-    keywords: ['marketing case studies', 'SEO success stories', 'PPC results', 'marketing ROI', 'client results'],
-    h1: 'Our Success Stories',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
+  "/services/search-engine-optimization-seo": serviceSEO(
+    "SEO Company in Indore | Local & Technical SEO | Inchtomilez",
 
-  '/portfolio': {
-    title: 'Portfolio - Our Digital Marketing Projects | Inchtomilez Work',
-    description: 'Browse our portfolio of digital marketing projects. Website designs, branding campaigns, content marketing, and social media success stories.',
-    keywords: ['marketing portfolio', 'digital projects', 'website design portfolio', 'branding projects', 'creative work'],
-    h1: 'Our Portfolio',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
+    "SEO services in Indore focused on organic rankings, qualified traffic and leads. Get local SEO, technical SEO, on-page SEO and content optimization from Inchtomilez.",
 
-  '/press': {
-    title: 'Press & Media - Inchtomilez in the News | Media Coverage',
-    description: 'Press releases, media coverage, and news about Inchtomilez. Stay updated with our latest achievements, partnerships, and industry insights.',
-    keywords: ['press releases', 'media coverage', 'company news', 'industry news', 'Inchtomilez news'],
-    h1: 'Press & Media',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
+    [
+      "SEO company in Indore",
+      "SEO agency Indore",
+      "SEO services Indore",
+      "best SEO company Indore",
+      "local SEO Indore",
+      "technical SEO Indore",
+      "organic SEO services Indore",
+      "Google ranking company Indore",
+    ],
 
-  '/partners': {
-    title: 'Partners - Our Technology & Business Partners | Inchtomilez',
-    description: 'Meet our technology and business partners. Google Partner, Meta Business Partner, and leading SaaS platforms we work with.',
-    keywords: ['business partners', 'technology partners', 'Google Partner', 'Meta Partner', 'agency partnerships'],
-    h1: 'Our Partners',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
+    "SEO Company in Indore Focused on Rankings, Traffic & Leads",
 
-  '/awards': {
-    title: 'Awards & Recognition - Industry Achievements | Inchtomilez',
-    description: 'Our awards and industry recognition. Best Digital Marketing Agency, Top SEO Company, and client satisfaction awards.',
-    keywords: ['marketing awards', 'industry recognition', 'best agency', 'SEO awards', 'marketing excellence'],
-    h1: 'Awards & Recognition',
-    ogType: 'website',
-    schemaType: 'organization'
-  },
-  
-  // ============================================================================
-  // INDUSTRIES (19 pages)
-  // ============================================================================
-  '/industries': {
-    title: 'Industries We Serve - Specialized Digital Marketing Solutions',
-    description: 'Industry-specific digital marketing solutions for healthcare, education, real estate, ecommerce, hospitality, and more. Expertise across 18+ industries.',
-    keywords: ['industry marketing solutions', 'healthcare marketing', 'education marketing', 'real estate marketing', 'ecommerce marketing'],
-    h1: 'Industries We Serve',
-    ogType: 'website',
-    schemaType: 'service'
-  },
+    "Search Engine Optimization"
+  ),
 
-  '/industries/healthcare': {
-    title: 'Healthcare Digital Marketing | Medical Practice Marketing',
-    description: 'Digital marketing for healthcare providers. Patient acquisition, medical SEO, healthcare PPC, and reputation management for hospitals, clinics, and practitioners.',
-    keywords: ['healthcare marketing', 'medical practice marketing', 'healthcare SEO', 'medical PPC', 'patient acquisition'],
-    h1: 'Healthcare Digital Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Healthcare Marketing'
-  },
 
-  '/industries/education': {
-    title: 'Education Marketing | School & University Digital Marketing',
-    description: 'Digital marketing for educational institutions. Student recruitment, education SEO, social media for schools, and enrollment marketing.',
-    keywords: ['education marketing', 'school marketing', 'university marketing', 'student recruitment', 'education SEO'],
-    h1: 'Education Marketing Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Education Marketing'
-  },
+  "/services/ppc-google-ads": serviceSEO(
+    "Google Ads Agency in Indore | PPC Management | Inchtomilez",
 
-  '/industries/real-estate': {
-    title: 'Real Estate Marketing | Property Marketing & Lead Generation',
-    description: 'Real estate digital marketing services. Property listing ads, real estate SEO, virtual tours, and lead generation for agents and developers.',
-    keywords: ['real estate marketing', 'property marketing', 'real estate SEO', 'property ads', 'real estate leads'],
-    h1: 'Real Estate Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Real Estate Marketing'
-  },
+    "Google Ads and PPC management in Indore for businesses focused on qualified leads, measurable conversions, lower acquisition costs and transparent campaign reporting.",
 
-  '/industries/ecommerce': {
-    title: 'Ecommerce Marketing | Online Store Growth & Sales',
-    description: 'Ecommerce digital marketing. Product SEO, shopping ads, marketplace optimization, conversion rate optimization, and sales growth strategies.',
-    keywords: ['ecommerce marketing', 'online store marketing', 'product SEO', 'shopping ads', 'ecommerce growth'],
-    h1: 'Ecommerce Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Ecommerce Marketing'
-  },
+    [
+      "Google Ads agency Indore",
+      "PPC company Indore",
+      "Google Ads expert Indore",
+      "PPC management Indore",
+      "Google advertising agency Indore",
+      "paid search agency Indore",
+      "lead generation agency Indore",
+    ],
 
-  '/industries/hospitality': {
-    title: 'Hospitality Marketing | Hotel & Restaurant Marketing',
-    description: 'Digital marketing for hotels, restaurants, and hospitality businesses. Booking optimization, review management, and local SEO.',
-    keywords: ['hospitality marketing', 'hotel marketing', 'restaurant marketing', 'booking optimization', 'hospitality SEO'],
-    h1: 'Hospitality Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Hospitality Marketing'
-  },
+    "Google Ads Agency in Indore for Performance-Driven Campaigns",
 
-  '/industries/automotive': {
-    title: 'Automotive Marketing | Car Dealership Digital Marketing',
-    description: 'Digital marketing for automotive industry. Dealership marketing, vehicle ads, auto SEO, and lead generation for car dealers.',
-    keywords: ['automotive marketing', 'car dealership marketing', 'vehicle ads', 'auto SEO', 'dealership leads'],
-    h1: 'Automotive Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Automotive Marketing'
-  },
+    "Google Ads and PPC"
+  ),
 
-  '/industries/fashion': {
-    title: 'Fashion Marketing | Clothing Brand Digital Marketing',
-    description: 'Digital marketing for fashion brands. Fashion ecommerce, influencer marketing, brand awareness, and social commerce strategies.',
-    keywords: ['fashion marketing', 'clothing brand marketing', 'fashion ecommerce', 'fashion influencers', 'fashion SEO'],
-    h1: 'Fashion Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Fashion Marketing'
-  },
 
-  '/industries/legal': {
-    title: 'Legal Marketing | Law Firm Digital Marketing & SEO',
-    description: 'Digital marketing for law firms and attorneys. Legal SEO, lawyer PPC, content marketing, and client acquisition strategies.',
-    keywords: ['legal marketing', 'law firm marketing', 'lawyer SEO', 'attorney marketing', 'legal leads'],
-    h1: 'Legal Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Legal Marketing'
-  },
+  "/services/social-media-marketing": serviceSEO(
+    "Social Media Marketing Agency in Indore | Inchtomilez",
 
-  '/industries/manufacturing': {
-    title: 'Manufacturing Marketing | Industrial B2B Digital Marketing',
-    description: 'Digital marketing for manufacturers. B2B lead generation, industrial SEO, trade show marketing, and supply chain marketing.',
-    keywords: ['manufacturing marketing', 'industrial marketing', 'B2B manufacturing', 'industrial SEO', 'manufacturing leads'],
-    h1: 'Manufacturing Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Manufacturing Marketing'
-  },
+    "Social media marketing in Indore including strategy, creative content, reels, community management, Meta Ads and campaigns built to grow visibility and generate leads.",
 
-  '/industries/agriculture': {
-    title: 'Agriculture Marketing | Agribusiness Digital Marketing',
-    description: 'Digital marketing for agriculture and agribusiness. Farm marketing, agricultural products, agritech promotion, and rural marketing.',
-    keywords: ['agriculture marketing', 'agribusiness marketing', 'farm marketing', 'agritech marketing', 'agricultural SEO'],
-    h1: 'Agriculture Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Agriculture Marketing'
-  },
+    [
+      "social media marketing agency Indore",
+      "social media company Indore",
+      "Instagram marketing Indore",
+      "Facebook marketing Indore",
+      "Meta Ads agency Indore",
+      "social media management Indore",
+    ],
 
-  '/industries/logistics': {
-    title: 'Logistics Marketing | Supply Chain & Transportation Marketing',
-    description: 'Digital marketing for logistics and transportation. Supply chain marketing, freight marketing, logistics SEO, and B2B lead generation.',
-    keywords: ['logistics marketing', 'supply chain marketing', 'transportation marketing', 'freight marketing', 'logistics SEO'],
-    h1: 'Logistics Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Logistics Marketing'
-  },
+    "Social Media Marketing Agency in Indore",
 
-  '/industries/construction': {
-    title: 'Construction Marketing | Contractor Digital Marketing',
-    description: 'Digital marketing for construction companies and contractors. Project marketing, construction SEO, contractor leads, and B2B marketing.',
-    keywords: ['construction marketing', 'contractor marketing', 'construction SEO', 'contractor leads', 'construction company marketing'],
-    h1: 'Construction Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Construction Marketing'
-  },
+    "Social Media Marketing"
+  ),
 
-  '/industries/retail': {
-    title: 'Retail Marketing | Store Promotion & Customer Acquisition',
-    description: 'Digital marketing for retail businesses. Local retail marketing, omnichannel strategies, retail SEO, and foot traffic generation.',
-    keywords: ['retail marketing', 'store marketing', 'retail SEO', 'retail advertising', 'store promotion'],
-    h1: 'Retail Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Retail Marketing'
-  },
 
-  '/industries/technology': {
-    title: 'Technology Marketing | SaaS & IT Company Digital Marketing',
-    description: 'Digital marketing for technology companies. SaaS marketing, IT services promotion, tech SEO, and software lead generation.',
-    keywords: ['technology marketing', 'SaaS marketing', 'IT marketing', 'tech company marketing', 'software marketing'],
-    h1: 'Technology Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Technology Marketing'
-  },
+  "/services/content-marketing": serviceSEO(
+    "Content Marketing Agency in Indore | Inchtomilez",
 
-  '/industries/finance': {
-    title: 'Financial Services Marketing | Bank & Fintech Digital Marketing',
-    description: 'Digital marketing for financial services. Banking marketing, fintech promotion, investment marketing, and financial services SEO.',
-    keywords: ['financial services marketing', 'bank marketing', 'fintech marketing', 'investment marketing', 'finance SEO'],
-    h1: 'Financial Services Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Finance Marketing'
-  },
+    "Content marketing services in Indore covering strategy, SEO content, blogs, website copy and campaign content designed to build visibility, trust and conversions.",
 
-  '/industries/entertainment': {
-    title: 'Entertainment Marketing | Event & Media Digital Marketing',
-    description: 'Digital marketing for entertainment industry. Event promotion, media marketing, ticket sales, and audience engagement strategies.',
-    keywords: ['entertainment marketing', 'event marketing', 'media marketing', 'ticket sales', 'audience engagement'],
-    h1: 'Entertainment Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Entertainment Marketing'
-  },
+    [
+      "content marketing agency Indore",
+      "content writing services Indore",
+      "SEO content Indore",
+      "blog writing Indore",
+      "website content writing Indore",
+      "copywriting agency Indore",
+    ],
 
-  '/industries/non-profit': {
-    title: 'Non-Profit Marketing | Charity & NGO Digital Marketing',
-    description: 'Digital marketing for non-profits and NGOs. Fundraising campaigns, donor acquisition, cause marketing, and volunteer recruitment.',
-    keywords: ['non-profit marketing', 'charity marketing', 'NGO marketing', 'fundraising campaigns', 'donor acquisition'],
-    h1: 'Non-Profit Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Non-Profit Marketing'
-  },
+    "Content Marketing Services That Build Authority & Demand",
 
-  '/industries/sports': {
-    title: 'Sports Marketing | Athletic Club & Team Digital Marketing',
-    description: 'Digital marketing for sports organizations. Fan engagement, ticket sales, sponsorship marketing, and sports brand building.',
-    keywords: ['sports marketing', 'athletic marketing', 'fan engagement', 'sports branding', 'ticket marketing'],
-    h1: 'Sports Marketing',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Sports Marketing'
-  },
+    "Content Marketing"
+  ),
 
-  // ============================================================================
-  // SERVICE SUB-PAGES
-  // ============================================================================
-  '/services/seo/local-seo': {
-    title: 'Local SEO Services | Rank in Google Maps & Local Search',
-    description: 'Professional local SEO services. Google My Business optimization, local citations, map pack ranking, and location-based SEO.',
-    keywords: ['local SEO', 'Google My Business', 'local search optimization', 'map pack ranking', 'local citations'],
-    h1: 'Local SEO Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Local SEO'
-  },
 
-  '/services/seo/technical-seo': {
-    title: 'Technical SEO Services | Website Speed, Structure & Indexing',
-    description: 'Technical SEO services to improve website performance. Site speed optimization, crawlability, indexing, and technical audits.',
-    keywords: ['technical SEO', 'site speed optimization', 'SEO audit', 'website crawlability', 'indexing optimization'],
-    h1: 'Technical SEO Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Technical SEO'
-  },
+  "/services/branding-identity": serviceSEO(
+    "Branding Agency in Indore | Brand Identity | Inchtomilez",
 
-  '/services/ppc/google-shopping': {
-    title: 'Google Shopping Ads | Product Listing Ads Management',
-    description: 'Google Shopping Ads management. Product feed optimization, shopping campaign setup, bidding strategies, and ROI maximization.',
-    keywords: ['Google Shopping Ads', 'product listing ads', 'shopping campaigns', 'product feed optimization', 'ecommerce PPC'],
-    h1: 'Google Shopping Ads Management',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Shopping Ads'
-  },
+    "Branding services in Indore including brand strategy, identity design, visual systems, positioning and communication built for memorable and consistent brands.",
 
-  '/services/ppc/display-ads': {
-    title: 'Display Advertising | Banner Ads & Remarketing Campaigns',
-    description: 'Display advertising and remarketing services. Banner ads, responsive display ads, audience targeting, and brand awareness campaigns.',
-    keywords: ['display advertising', 'banner ads', 'remarketing', 'display campaigns', 'brand awareness ads'],
-    h1: 'Display Advertising Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Display Ads'
-  },
+    [
+      "branding agency Indore",
+      "brand identity Indore",
+      "branding company Indore",
+      "logo design Indore",
+      "brand strategy Indore",
+      "creative agency Indore",
+    ],
 
-  '/services/social-media/instagram': {
-    title: 'Instagram Marketing | Content, Ads & Influencer Marketing',
-    description: 'Instagram marketing services. Content creation, Instagram ads, influencer partnerships, stories, reels, and engagement strategies.',
-    keywords: ['Instagram marketing', 'Instagram ads', 'Instagram content', 'Instagram influencers', 'Instagram growth'],
-    h1: 'Instagram Marketing Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Instagram Marketing'
-  },
+    "Branding & Identity Agency in Indore",
 
-  '/services/social-media/facebook': {
-    title: 'Facebook Marketing | Ads, Content & Community Management',
-    description: 'Facebook marketing services. Facebook ads, content strategy, community management, page optimization, and engagement tactics.',
-    keywords: ['Facebook marketing', 'Facebook ads', 'Facebook content', 'community management', 'Facebook growth'],
-    h1: 'Facebook Marketing Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Facebook Marketing'
-  },
+    "Branding and Identity"
+  ),
 
-  '/services/content/copywriting': {
-    title: 'Copywriting Services | Website Copy, Sales Copy & More',
-    description: 'Professional copywriting services. Website copy, sales pages, email copy, ad copy, and persuasive content that converts.',
-    keywords: ['copywriting services', 'website copy', 'sales copy', 'email copy', 'ad copy'],
-    h1: 'Professional Copywriting Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Copywriting'
-  },
 
-  '/services/content/blog-writing': {
-    title: 'Blog Writing Services | SEO Blog Posts & Articles',
-    description: 'SEO blog writing services. Engaging blog posts, articles, thought leadership content, and regular content creation.',
-    keywords: ['blog writing', 'SEO blog posts', 'article writing', 'content writing', 'blog content'],
-    h1: 'Blog Writing Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Blog Writing'
-  },
+  "/services/web-design-development": serviceSEO(
+    "Website Development Company in Indore | Inchtomilez",
 
-  '/services/web-design/ecommerce': {
-    title: 'Ecommerce Website Development | Online Store Design',
-    description: 'Custom ecommerce website development. Shopify, WooCommerce, Magento development. Secure, scalable online stores.',
-    keywords: ['ecommerce development', 'online store development', 'Shopify development', 'WooCommerce', 'ecommerce website'],
-    h1: 'Ecommerce Website Development',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Ecommerce Development'
-  },
+    "Website design and development in Indore for fast, responsive and conversion-focused business websites, ecommerce stores, WordPress sites and custom web experiences.",
 
-  '/services/web-design/wordpress': {
-    title: 'WordPress Development | Custom WordPress Websites',
-    description: 'Professional WordPress development. Custom themes, plugin development, WordPress optimization, and maintenance services.',
-    keywords: ['WordPress development', 'WordPress website', 'custom WordPress', 'WordPress themes', 'WordPress plugins'],
-    h1: 'WordPress Development Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'WordPress Development'
-  },
+    [
+      "website development company Indore",
+      "web development company Indore",
+      "website designer Indore",
+      "web design agency Indore",
+      "React development Indore",
+      "WordPress development Indore",
+      "ecommerce website development Indore",
+    ],
 
-  // ============================================================================
-  // LEGAL PAGES
-  // ============================================================================
-  '/privacy-policy': {
-    title: 'Privacy Policy | Inchtomilez Data Protection & Privacy',
-    description: 'Privacy policy for Inchtomilez. Learn how we collect, use, and protect your personal information and data.',
-    keywords: ['privacy policy', 'data protection', 'GDPR', 'data privacy', 'personal information'],
-    h1: 'Privacy Policy',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+    "Website Development Company in Indore",
 
-  '/terms-of-service': {
-    title: 'Terms of Service | Inchtomilez Terms & Conditions',
-    description: 'Terms of service for using Inchtomilez website and services. User agreement, service terms, and legal conditions.',
-    keywords: ['terms of service', 'terms and conditions', 'user agreement', 'service terms', 'legal terms'],
-    h1: 'Terms of Service',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+    "Web Design and Development"
+  ),
 
-  '/cookie-policy': {
-    title: 'Cookie Policy | How We Use Cookies | Inchtomilez',
-    description: 'Cookie policy explaining how Inchtomilez uses cookies and tracking technologies on our website.',
-    keywords: ['cookie policy', 'cookies', 'tracking', 'website cookies', 'privacy'],
-    h1: 'Cookie Policy',
-    ogType: 'website',
-    schemaType: 'website'
-  },
 
-  '/disclaimer': {
-    title: 'Disclaimer | Legal Disclaimer | Inchtomilez',
-    description: 'Legal disclaimer for Inchtomilez website and services. Limitations of liability and legal notices.',
-    keywords: ['disclaimer', 'legal disclaimer', 'liability', 'legal notice', 'terms'],
-    h1: 'Disclaimer',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+  "/services/video-media-production": serviceSEO(
+    "Video Production Company in Indore | Inchtomilez",
 
-  '/refund-policy': {
-    title: 'Refund Policy | Cancellation & Refund Terms | Inchtomilez',
-    description: 'Refund and cancellation policy for Inchtomilez services. Learn about our refund process and terms.',
-    keywords: ['refund policy', 'cancellation policy', 'refunds', 'money back', 'service cancellation'],
-    h1: 'Refund Policy',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+    "Professional video and media production in Indore for advertisements, social media content, corporate films, product videos, reels and digital campaigns.",
 
-  // ============================================================================
+    [
+      "video production company Indore",
+      "video agency Indore",
+      "corporate video Indore",
+      "advertising video Indore",
+      "social media video production Indore",
+      "media production Indore",
+    ],
+
+    "Video & Media Production in Indore",
+
+    "Video and Media Production"
+  ),
+
+
+  "/services/email-marketing": serviceSEO(
+    "Email Marketing Services in Indore | Inchtomilez",
+
+    "Email marketing strategy, campaigns, automation, segmentation and performance optimization designed to nurture leads, retain customers and increase revenue.",
+
+    [
+      "email marketing services Indore",
+      "email marketing agency Indore",
+      "email automation services",
+      "email campaign management",
+      "lead nurturing services",
+    ],
+
+    "Email Marketing & Automation Services",
+
+    "Email Marketing"
+  ),
+
+
+  "/services/ecommerce-marketing": serviceSEO(
+    "Ecommerce Marketing Agency in Indore | Inchtomilez",
+
+    "Ecommerce marketing services for online brands including paid ads, product marketing, SEO, marketplace optimization, conversion strategy and customer acquisition.",
+
+    [
+      "ecommerce marketing agency Indore",
+      "ecommerce SEO Indore",
+      "online store marketing",
+      "Shopify marketing Indore",
+      "ecommerce advertising",
+      "marketplace marketing",
+    ],
+
+    "Ecommerce Marketing for Sustainable Online Growth",
+
+    "Ecommerce Marketing"
+  ),
+
+
+  "/services/analytics-reporting": serviceSEO(
+    "Marketing Analytics & Reporting Services | Inchtomilez Indore",
+
+    "Marketing analytics and reporting services with campaign tracking, performance dashboards, conversion analysis and actionable insights for better business decisions.",
+
+    [
+      "marketing analytics Indore",
+      "digital marketing reporting",
+      "campaign analytics",
+      "Google Analytics services Indore",
+      "marketing dashboard",
+      "ROI reporting",
+    ],
+
+    "Marketing Analytics & Transparent Reporting",
+
+    "Analytics and Reporting"
+  ),
+
+
+  "/services/btl-activations": serviceSEO(
+    "BTL Activation Agency in Indore | Inchtomilez",
+
+    "BTL activation and experiential marketing in Indore including brand activations, product launches, events, on-ground promotions and direct consumer engagement.",
+
+    [
+      "BTL activation agency Indore",
+      "BTL marketing Indore",
+      "brand activation Indore",
+      "event marketing Indore",
+      "experiential marketing Indore",
+      "on ground promotion Indore",
+    ],
+
+    "BTL Activations & Experiential Marketing in Indore",
+
+    "BTL Marketing"
+  ),
+
+
+  "/services/ooh-advertising": serviceSEO(
+    "Outdoor Advertising Agency in Indore | OOH | Inchtomilez",
+
+    "OOH and outdoor advertising services in Indore including billboards, hoardings, transit advertising, media planning and high-visibility outdoor campaigns.",
+
+    [
+      "outdoor advertising agency Indore",
+      "OOH advertising Indore",
+      "hoarding advertising Indore",
+      "billboard advertising Indore",
+      "outdoor media agency Indore",
+      "transit advertising Indore",
+    ],
+
+    "OOH & Outdoor Advertising in Indore",
+
+    "OOH Advertising"
+  ),
+
+
+  "/services/influencer-marketing": serviceSEO(
+    "Influencer Marketing Agency in Indore | Inchtomilez",
+
+    "Influencer marketing campaigns for brands including creator discovery, outreach, campaign strategy, content coordination and performance measurement.",
+
+    [
+      "influencer marketing agency Indore",
+      "influencer agency Indore",
+      "creator marketing Indore",
+      "Instagram influencer marketing",
+      "brand collaboration agency",
+    ],
+
+    "Influencer Marketing Campaigns for Brands",
+
+    "Influencer Marketing"
+  ),
+
+
+  "/services/digital-marketing": serviceSEO(
+    "Digital Marketing Services in Indore | Inchtomilez",
+
+    "Integrated digital marketing services in Indore combining SEO, Google Ads, social media, content, websites and analytics into one measurable growth strategy.",
+
+    [
+      "digital marketing services Indore",
+      "online marketing services Indore",
+      "internet marketing Indore",
+      "performance marketing Indore",
+      "digital marketing solutions Indore",
+    ],
+
+    "Integrated Digital Marketing Services in Indore",
+
+    "Digital Marketing"
+  ),
+
+
+  // ==========================================================================
+  // SEO SUB-SERVICES
+  // ==========================================================================
+
+  "/services/search-engine-optimization-seo/local-seo": serviceSEO(
+    "Local SEO Services in Indore | Google Maps Ranking | Inchtomilez",
+
+    "Local SEO services in Indore focused on Google Business Profile optimization, local rankings, Maps visibility, citations and location-based customer acquisition.",
+
+    [
+      "local SEO services Indore",
+      "Google Maps ranking Indore",
+      "Google Business Profile optimization Indore",
+      "GMB SEO Indore",
+      "local search company Indore",
+      "map pack ranking Indore",
+    ],
+
+    "Local SEO Services in Indore for Google Maps Visibility",
+
+    "Local SEO"
+  ),
+
+
+  "/services/search-engine-optimization-seo/technical-seo": serviceSEO(
+    "Technical SEO Services in Indore | Inchtomilez",
+
+    "Technical SEO services covering crawlability, indexing, site architecture, Core Web Vitals, structured data, internal linking and technical search performance.",
+
+    [
+      "technical SEO services Indore",
+      "technical SEO audit Indore",
+      "Core Web Vitals optimization",
+      "website indexing SEO",
+      "crawlability optimization",
+      "schema markup services",
+    ],
+
+    "Technical SEO Services for Stronger Search Performance",
+
+    "Technical SEO"
+  ),
+
+
+  // ==========================================================================
+  // PPC SUB-SERVICES
+  // ==========================================================================
+
+  "/services/ppc-google-ads/google-shopping": serviceSEO(
+    "Google Shopping Ads Agency in Indore | Inchtomilez",
+
+    "Google Shopping Ads management for ecommerce brands including Merchant Center setup, product feed optimization, campaign structure, bidding and ROAS improvement.",
+
+    [
+      "Google Shopping Ads Indore",
+      "Google Merchant Center Indore",
+      "shopping ads agency",
+      "product listing ads",
+      "ecommerce Google Ads Indore",
+    ],
+
+    "Google Shopping Ads Management",
+
+    "Google Shopping Ads"
+  ),
+
+
+  "/services/ppc-google-ads/display-ads": serviceSEO(
+    "Display Advertising Agency in Indore | Inchtomilez",
+
+    "Display advertising and remarketing campaigns using audience targeting, responsive display ads, visual creatives and performance optimization.",
+
+    [
+      "display advertising Indore",
+      "Google Display Ads Indore",
+      "remarketing agency Indore",
+      "banner advertising Indore",
+      "retargeting campaigns",
+    ],
+
+    "Display Advertising & Remarketing Services",
+
+    "Display Advertising"
+  ),
+
+
+  // ==========================================================================
+  // SOCIAL MEDIA SUB-SERVICES
+  // ==========================================================================
+
+  "/services/social-media-marketing/instagram": serviceSEO(
+    "Instagram Marketing Agency in Indore | Inchtomilez",
+
+    "Instagram marketing in Indore with reels, content strategy, creatives, community management, influencer collaboration and Instagram advertising.",
+
+    [
+      "Instagram marketing agency Indore",
+      "Instagram management Indore",
+      "Instagram Ads Indore",
+      "reels marketing Indore",
+      "Instagram content agency Indore",
+    ],
+
+    "Instagram Marketing Services in Indore",
+
+    "Instagram Marketing"
+  ),
+
+
+  "/services/social-media-marketing/facebook": serviceSEO(
+    "Facebook Marketing Agency in Indore | Inchtomilez",
+
+    "Facebook marketing services in Indore including Meta Ads, page management, creative campaigns, audience targeting, lead generation and remarketing.",
+
+    [
+      "Facebook marketing agency Indore",
+      "Facebook Ads Indore",
+      "Meta Ads agency Indore",
+      "Facebook lead generation Indore",
+      "Facebook page management Indore",
+    ],
+
+    "Facebook Marketing & Meta Ads in Indore",
+
+    "Facebook Marketing"
+  ),
+
+
+  "/services/social-media-marketing/influencer-marketing": serviceSEO(
+    "Social Media Influencer Marketing | Inchtomilez Indore",
+
+    "Influencer campaign strategy, creator identification, outreach, collaboration management and performance tracking for social media campaigns.",
+
+    [
+      "influencer marketing Indore",
+      "social media influencer agency",
+      "creator collaborations",
+      "Instagram influencer campaign",
+      "brand influencer marketing",
+    ],
+
+    "Social Media Influencer Marketing",
+
+    "Influencer Marketing"
+  ),
+
+
+  // ==========================================================================
+  // CONTENT SUB-SERVICES
+  // ==========================================================================
+
+  "/services/content-marketing/copywriting": serviceSEO(
+    "Copywriting Services in Indore | Website & Ad Copy | Inchtomilez",
+
+    "Professional copywriting for websites, advertisements, landing pages, campaigns, social media and sales content designed to communicate clearly and convert.",
+
+    [
+      "copywriting services Indore",
+      "website copywriting Indore",
+      "ad copywriter Indore",
+      "sales copywriting",
+      "landing page copywriting",
+    ],
+
+    "Professional Copywriting Services",
+
+    "Copywriting"
+  ),
+
+
+  "/services/content-marketing/blog-writing": serviceSEO(
+    "SEO Blog Writing Services in Indore | Inchtomilez",
+
+    "SEO-focused blog writing services including keyword-led articles, informative content, topical authority development and ongoing content creation.",
+
+    [
+      "blog writing services Indore",
+      "SEO content writing Indore",
+      "article writing Indore",
+      "SEO blogs",
+      "content writer Indore",
+    ],
+
+    "SEO Blog Writing & Content Services",
+
+    "Blog Writing"
+  ),
+
+
+  // ==========================================================================
+  // WEB DEVELOPMENT SUB-SERVICES
+  // ==========================================================================
+
+  "/services/web-design-development/ecommerce": serviceSEO(
+    "Ecommerce Website Development in Indore | Inchtomilez",
+
+    "Ecommerce website development in Indore for responsive, secure and conversion-focused online stores across Shopify, WooCommerce and custom platforms.",
+
+    [
+      "ecommerce website development Indore",
+      "Shopify developer Indore",
+      "WooCommerce development Indore",
+      "online store development Indore",
+      "ecommerce web design Indore",
+    ],
+
+    "Ecommerce Website Development in Indore",
+
+    "Ecommerce Development"
+  ),
+
+
+  "/services/web-design-development/wordpress": serviceSEO(
+    "WordPress Development Company in Indore | Inchtomilez",
+
+    "WordPress development in Indore including custom business websites, responsive design, performance optimization, theme customization and maintenance.",
+
+    [
+      "WordPress development Indore",
+      "WordPress developer Indore",
+      "WordPress company Indore",
+      "WordPress website design Indore",
+      "WordPress maintenance Indore",
+    ],
+
+    "WordPress Development Services in Indore",
+
+    "WordPress Development"
+  ),
+
+
+  // ==========================================================================
+  // INDUSTRIES
+  // ==========================================================================
+
+  "/industries/healthcare": serviceSEO(
+    "Healthcare Digital Marketing Agency | Inchtomilez Indore",
+
+    "Healthcare marketing for hospitals, clinics and doctors with patient lead generation, healthcare SEO, Google Ads, social media and reputation-focused strategies.",
+
+    [
+      "healthcare digital marketing Indore",
+      "hospital marketing agency Indore",
+      "doctor marketing Indore",
+      "patient lead generation",
+      "medical SEO Indore",
+    ],
+
+    "Healthcare Digital Marketing for Hospitals, Clinics & Doctors",
+
+    "Healthcare Marketing"
+  ),
+
+
+  "/industries/education": serviceSEO(
+    "Education Digital Marketing Agency | Inchtomilez Indore",
+
+    "Digital marketing for schools, colleges, institutes and education brands focused on student enquiries, admissions, visibility and long-term brand growth.",
+
+    [
+      "education marketing agency Indore",
+      "school marketing Indore",
+      "college marketing Indore",
+      "student lead generation",
+      "education SEO",
+    ],
+
+    "Digital Marketing for Education & Admissions",
+
+    "Education Marketing"
+  ),
+
+
+  "/industries/real-estate": serviceSEO(
+    "Real Estate Digital Marketing Agency | Inchtomilez Indore",
+
+    "Real estate marketing for developers, projects, agents and property businesses using lead generation, Meta Ads, Google Ads, creatives and digital strategy.",
+
+    [
+      "real estate marketing agency Indore",
+      "property lead generation Indore",
+      "real estate Google Ads Indore",
+      "real estate Meta Ads",
+      "property marketing agency",
+    ],
+
+    "Real Estate Marketing & Property Lead Generation",
+
+    "Real Estate Marketing"
+  ),
+
+
+  "/industries/ecommerce": serviceSEO(
+    "Ecommerce Digital Marketing Agency | Inchtomilez",
+
+    "Growth marketing for ecommerce businesses with Google Ads, Meta Ads, SEO, marketplace optimization, content and conversion-focused acquisition strategies.",
+
+    [
+      "ecommerce digital marketing",
+      "ecommerce marketing agency Indore",
+      "online store marketing",
+      "ecommerce SEO",
+      "ecommerce advertising",
+    ],
+
+    "Ecommerce Digital Marketing & Sales Growth",
+
+    "Ecommerce Marketing"
+  ),
+
+
+  "/industries/hospitality": serviceSEO(
+    "Hotel & Hospitality Marketing Agency | Inchtomilez Indore",
+
+    "Digital marketing for hotels, restaurants and hospitality businesses focused on bookings, local visibility, reviews, social media and customer acquisition.",
+
+    [
+      "hotel marketing Indore",
+      "restaurant marketing Indore",
+      "hospitality marketing agency",
+      "hotel SEO",
+      "restaurant social media marketing",
+    ],
+
+    "Digital Marketing for Hotels & Hospitality Brands",
+
+    "Hospitality Marketing"
+  ),
+
+
+  "/industries/automotive": serviceSEO(
+    "Automotive Digital Marketing Agency | Inchtomilez Indore",
+
+    "Marketing for automotive dealerships, service centres and auto businesses using lead generation, paid advertising, SEO and social media campaigns.",
+
+    [
+      "automotive marketing Indore",
+      "car dealership marketing Indore",
+      "automobile lead generation",
+      "auto SEO",
+      "automotive advertising",
+    ],
+
+    "Automotive Digital Marketing & Lead Generation",
+
+    "Automotive Marketing"
+  ),
+
+
+  "/industries/fashion": serviceSEO(
+    "Fashion & Apparel Digital Marketing | Inchtomilez",
+
+    "Digital marketing for fashion, apparel and lifestyle brands through social media, ecommerce campaigns, influencer marketing, branding and paid advertising.",
+
+    [
+      "fashion marketing agency",
+      "fashion social media marketing",
+      "apparel marketing",
+      "fashion ecommerce marketing",
+      "influencer marketing fashion",
+    ],
+
+    "Digital Marketing for Fashion & Apparel Brands",
+
+    "Fashion Marketing"
+  ),
+
+
+  "/industries/legal": serviceSEO(
+    "Digital Marketing for Law Firms | Inchtomilez",
+
+    "Digital marketing for law firms and legal service providers using SEO, content, paid search and professional online visibility strategies.",
+
+    [
+      "law firm digital marketing",
+      "legal SEO",
+      "lawyer marketing",
+      "legal Google Ads",
+      "law firm lead generation",
+    ],
+
+    "Digital Marketing for Law Firms & Legal Services",
+
+    "Legal Marketing"
+  ),
+
+
+  "/industries/manufacturing": serviceSEO(
+    "Manufacturing & B2B Digital Marketing | Inchtomilez",
+
+    "B2B digital marketing for manufacturers and industrial companies through SEO, lead generation, websites, content and performance-focused campaigns.",
+
+    [
+      "manufacturing marketing agency",
+      "B2B marketing Indore",
+      "industrial SEO",
+      "manufacturer lead generation",
+      "industrial digital marketing",
+    ],
+
+    "Digital Marketing for Manufacturing & B2B Companies",
+
+    "Manufacturing Marketing"
+  ),
+
+
+  "/industries/agriculture": serviceSEO(
+    "Agriculture & Agribusiness Digital Marketing | Inchtomilez",
+
+    "Marketing for agriculture, agritech, farm equipment and agribusiness brands through digital campaigns, branding, websites and targeted customer acquisition.",
+
+    [
+      "agriculture marketing",
+      "agribusiness marketing",
+      "agritech digital marketing",
+      "agriculture advertising",
+      "farm equipment marketing",
+    ],
+
+    "Digital Marketing for Agriculture & Agribusiness",
+
+    "Agriculture Marketing"
+  ),
+
+
+  "/industries/logistics": serviceSEO(
+    "Logistics & Supply Chain Digital Marketing | Inchtomilez",
+
+    "Digital marketing for logistics, transport, freight and supply-chain businesses focused on B2B visibility, lead generation, SEO and website performance.",
+
+    [
+      "logistics marketing",
+      "transport marketing",
+      "freight marketing",
+      "logistics SEO",
+      "B2B logistics lead generation",
+    ],
+
+    "Digital Marketing for Logistics & Supply Chain Companies",
+
+    "Logistics Marketing"
+  ),
+
+
+  "/industries/construction": serviceSEO(
+    "Construction Digital Marketing Agency | Inchtomilez",
+
+    "Digital marketing for contractors, builders and construction companies using SEO, websites, paid advertising, lead generation and brand development.",
+
+    [
+      "construction marketing agency",
+      "contractor marketing",
+      "builder marketing Indore",
+      "construction SEO",
+      "construction lead generation",
+    ],
+
+    "Digital Marketing for Construction Companies",
+
+    "Construction Marketing"
+  ),
+
+
+  "/industries/retail": serviceSEO(
+    "Retail Digital Marketing Agency | Inchtomilez",
+
+    "Retail marketing strategies combining local SEO, social media, advertising, customer acquisition and omnichannel campaigns for stores and retail brands.",
+
+    [
+      "retail marketing agency",
+      "store marketing Indore",
+      "retail advertising",
+      "local retail SEO",
+      "retail social media",
+    ],
+
+    "Digital Marketing for Retail Brands",
+
+    "Retail Marketing"
+  ),
+
+
+  "/industries/technology": serviceSEO(
+    "Technology & SaaS Digital Marketing | Inchtomilez",
+
+    "Digital marketing for technology, software, SaaS and IT companies with B2B lead generation, SEO, content, paid campaigns and growth strategy.",
+
+    [
+      "SaaS marketing agency",
+      "technology marketing",
+      "IT company marketing",
+      "software lead generation",
+      "B2B SaaS SEO",
+    ],
+
+    "Digital Marketing for Technology & SaaS Companies",
+
+    "Technology Marketing"
+  ),
+
+
+  "/industries/finance": serviceSEO(
+    "Finance & Fintech Digital Marketing | Inchtomilez",
+
+    "Digital marketing for financial services and fintech companies with compliant acquisition campaigns, content, SEO, paid media and digital brand strategy.",
+
+    [
+      "fintech marketing",
+      "financial services marketing",
+      "finance SEO",
+      "financial advertising",
+      "fintech lead generation",
+    ],
+
+    "Digital Marketing for Finance & Fintech",
+
+    "Finance Marketing"
+  ),
+
+
+  "/industries/entertainment": serviceSEO(
+    "Entertainment & Media Digital Marketing | Inchtomilez",
+
+    "Digital campaigns for entertainment, media, events and production brands focused on audience growth, promotion, social engagement and visibility.",
+
+    [
+      "entertainment marketing",
+      "media marketing",
+      "event promotion",
+      "entertainment social media",
+      "audience marketing",
+    ],
+
+    "Digital Marketing for Entertainment & Media",
+
+    "Entertainment Marketing"
+  ),
+
+
+  "/industries/non-profit": serviceSEO(
+    "Non-Profit & NGO Digital Marketing | Inchtomilez",
+
+    "Purpose-driven digital marketing for NGOs and non-profit organizations covering awareness, campaigns, fundraising communication and community engagement.",
+
+    [
+      "NGO digital marketing",
+      "non-profit marketing",
+      "charity marketing",
+      "fundraising campaigns",
+      "social cause marketing",
+    ],
+
+    "Digital Marketing for NGOs & Non-Profit Organizations",
+
+    "Non-Profit Marketing"
+  ),
+
+
+  "/industries/sports": serviceSEO(
+    "Sports & Fitness Digital Marketing | Inchtomilez",
+
+    "Marketing for sports teams, gyms, fitness businesses and athletic brands through social media, lead generation, branding and digital advertising.",
+
+    [
+      "sports marketing",
+      "gym marketing Indore",
+      "fitness marketing agency",
+      "sports social media",
+      "fitness lead generation",
+    ],
+
+    "Digital Marketing for Sports & Fitness Brands",
+
+    "Sports Marketing"
+  ),
+
+
+  // ==========================================================================
+  // COMPANY / TRUST PAGES
+  // ==========================================================================
+
+  "/team": organizationSEO(
+    "Our Team | Digital Marketing Experts at Inchtomilez",
+
+    "Meet the people behind Inchtomilez across SEO, paid media, social media, web development, branding, creative production and digital strategy.",
+
+    [
+      "Inchtomilez team",
+      "digital marketing experts Indore",
+      "SEO experts Indore",
+      "marketing professionals Indore",
+    ],
+
+    "Meet the Inchtomilez Team"
+  ),
+
+
+  "/careers": organizationSEO(
+    "Digital Marketing Jobs in Indore | Careers at Inchtomilez",
+
+    "Explore career opportunities at Inchtomilez in Indore across SEO, paid advertising, social media, content, design, development and digital marketing.",
+
+    [
+      "digital marketing jobs Indore",
+      "SEO jobs Indore",
+      "social media jobs Indore",
+      "Inchtomilez careers",
+      "marketing agency jobs Indore",
+    ],
+
+    "Build Your Career at Inchtomilez"
+  ),
+
+
+  "/testimonials": organizationSEO(
+    "Client Reviews & Testimonials | Inchtomilez",
+
+    "Read client experiences and testimonials about Inchtomilez digital marketing, advertising, SEO, paid campaigns, website and creative services.",
+
+    [
+      "Inchtomilez reviews",
+      "Inchtomilez testimonials",
+      "digital marketing agency reviews Indore",
+      "marketing client reviews",
+    ],
+
+    "What Our Clients Say"
+  ),
+
+
+  "/case-studies": organizationSEO(
+    "Digital Marketing Case Studies & Results | Inchtomilez",
+
+    "Explore Inchtomilez case studies covering SEO, advertising, lead generation, websites, social media and digital campaigns with measurable business outcomes.",
+
+    [
+      "digital marketing case studies",
+      "SEO case study Indore",
+      "Google Ads results",
+      "lead generation case studies",
+      "Inchtomilez results",
+    ],
+
+    "Digital Marketing Case Studies & Results"
+  ),
+
+
+  "/portfolio": organizationSEO(
+    "Digital Marketing & Creative Portfolio | Inchtomilez",
+
+    "Explore selected Inchtomilez work across websites, digital campaigns, branding, advertising, social media and creative production.",
+
+    [
+      "Inchtomilez portfolio",
+      "digital marketing portfolio",
+      "web design portfolio Indore",
+      "branding portfolio",
+      "advertising portfolio",
+    ],
+
+    "Our Work & Portfolio"
+  ),
+
+
+  "/press": organizationSEO(
+    "Press & Media | Inchtomilez",
+
+    "News, announcements, media coverage, company updates and industry recognition related to Inchtomilez Digital Marketing And Advertising Agency.",
+
+    [
+      "Inchtomilez news",
+      "Inchtomilez press",
+      "marketing agency news Indore",
+      "Inchtomilez media",
+    ],
+
+    "Press & Media"
+  ),
+
+
+  "/partners": organizationSEO(
+    "Technology & Business Partners | Inchtomilez",
+
+    "Explore technology, platform and business relationships supporting Inchtomilez digital marketing, advertising and technology services.",
+
+    [
+      "Inchtomilez partners",
+      "marketing technology partners",
+      "digital agency partnerships",
+      "business partners",
+    ],
+
+    "Our Technology & Business Partners"
+  ),
+
+
+  "/awards": organizationSEO(
+    "Awards & Recognition | Inchtomilez",
+
+    "Explore awards, achievements and recognition associated with Inchtomilez Digital Marketing And Advertising Agency.",
+
+    [
+      "Inchtomilez awards",
+      "marketing agency awards Indore",
+      "digital marketing recognition",
+      "agency achievements",
+    ],
+
+    "Awards & Recognition"
+  ),
+
+
+  // ==========================================================================
+  // BLOG CATEGORY PAGES
+  // BlogDetailPage handles individual article SEO dynamically.
+  // ==========================================================================
+
+  "/blogs/seo": websiteSEO(
+    "SEO & Local SEO Guides | Inchtomilez",
+
+    "SEO guides covering local SEO, technical SEO, search rankings, Google Business Profile, on-page optimization and organic growth strategies.",
+
+    [
+      "SEO guides",
+      "local SEO blog",
+      "SEO tips",
+      "technical SEO guides",
+      "Google Business Profile SEO",
+    ],
+
+    "SEO & Local SEO Guides"
+  ),
+
+
+  "/blogs/ppc": websiteSEO(
+    "Google Ads & PPC Guides | Inchtomilez",
+
+    "Practical Google Ads and PPC guides covering campaign strategy, bidding, targeting, conversion optimization and paid advertising performance.",
+
+    [
+      "Google Ads guides",
+      "PPC blog",
+      "Google Ads tips",
+      "paid advertising guides",
+      "PPC optimization",
+    ],
+
+    "Google Ads & PPC Guides"
+  ),
+
+
+  "/blogs/social-media": websiteSEO(
+    "Social Media Marketing Guides | Inchtomilez",
+
+    "Social media marketing guides covering Instagram, Facebook, Meta Ads, content strategy, reels, engagement and campaign growth.",
+
+    [
+      "social media marketing blog",
+      "Instagram marketing guides",
+      "Facebook marketing tips",
+      "Meta Ads guides",
+      "social media strategy",
+    ],
+
+    "Social Media Marketing Guides"
+  ),
+
+
+  "/blogs/content-marketing": websiteSEO(
+    "Content Marketing Guides | Inchtomilez",
+
+    "Content marketing guides covering strategy, blog writing, SEO content, copywriting, campaign content and audience engagement.",
+
+    [
+      "content marketing blog",
+      "content writing guides",
+      "copywriting tips",
+      "SEO content",
+      "blog strategy",
+    ],
+
+    "Content Marketing Guides"
+  ),
+
+
+  "/blogs/web-design": websiteSEO(
+    "Web Design & Development Guides | Inchtomilez",
+
+    "Guides on web design, development, website performance, UX, ecommerce, WordPress and conversion-focused digital experiences.",
+
+    [
+      "web design blog",
+      "website development guides",
+      "WordPress guides",
+      "ecommerce development",
+      "website optimization",
+    ],
+
+    "Web Design & Development Guides"
+  ),
+
+
+  "/blogs/branding": websiteSEO(
+    "Branding & Creative Guides | Inchtomilez",
+
+    "Branding and creative strategy guides covering identity, positioning, visual communication, brand development and campaign creativity.",
+
+    [
+      "branding blog",
+      "brand strategy",
+      "brand identity guides",
+      "creative marketing",
+      "branding tips",
+    ],
+
+    "Branding & Creative Guides"
+  ),
+
+
+  "/blogs/email-marketing": websiteSEO(
+    "Email Marketing Guides | Inchtomilez",
+
+    "Email marketing guides covering campaigns, automation, segmentation, newsletters, lead nurturing and retention strategy.",
+
+    [
+      "email marketing blog",
+      "email automation",
+      "email campaign guides",
+      "newsletter marketing",
+      "lead nurturing",
+    ],
+
+    "Email Marketing Guides"
+  ),
+
+
+  "/blogs/video-production": websiteSEO(
+    "Video & Media Production Guides | Inchtomilez",
+
+    "Guides covering video production, advertising videos, reels, commercial content, photography and visual media strategy.",
+
+    [
+      "video production blog",
+      "video marketing guides",
+      "reels strategy",
+      "commercial video",
+      "media production",
+    ],
+
+    "Video & Media Production Guides"
+  ),
+
+
+  "/blogs/analytics": websiteSEO(
+    "Marketing Analytics & Reporting Guides | Inchtomilez",
+
+    "Digital analytics guides covering measurement, attribution, conversion tracking, GA4, reporting, dashboards and marketing performance.",
+
+    [
+      "marketing analytics blog",
+      "GA4 guides",
+      "conversion tracking",
+      "marketing reporting",
+      "digital analytics",
+    ],
+
+    "Marketing Analytics & Reporting Guides"
+  ),
+
+
+  "/blogs/ecommerce": websiteSEO(
+    "Ecommerce Marketing Guides | Inchtomilez",
+
+    "Ecommerce guides covering online advertising, product marketing, SEO, marketplaces, conversion optimization and customer acquisition.",
+
+    [
+      "ecommerce marketing blog",
+      "online store marketing",
+      "ecommerce SEO",
+      "ecommerce ads",
+      "Shopify marketing",
+    ],
+
+    "Ecommerce Marketing Guides"
+  ),
+
+
+  // ==========================================================================
   // RESOURCE PAGES
-  // ============================================================================
-  '/resources': {
-    title: 'Digital Marketing Resources | Guides, Tools & Templates',
-    description: 'Free digital marketing resources. Guides, ebooks, tools, templates, and resources to grow your business.',
-    keywords: ['marketing resources', 'free guides', 'marketing tools', 'marketing templates', 'digital marketing resources'],
-    h1: 'Digital Marketing Resources',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+  // ==========================================================================
 
-  '/downloads': {
-    title: 'Downloads | Free Marketing Templates & Guides',
-    description: 'Download free marketing templates, guides, checklists, and resources. Practical tools for your business growth.',
-    keywords: ['marketing downloads', 'free templates', 'marketing guides', 'free resources', 'marketing tools'],
-    h1: 'Free Downloads',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+  "/resources": websiteSEO(
+    "Digital Marketing Resources | Inchtomilez",
 
-  '/ebooks': {
-    title: 'Free Ebooks | Digital Marketing Guides & Ebooks',
-    description: 'Download free digital marketing ebooks. Comprehensive guides on SEO, PPC, social media, and content marketing.',
-    keywords: ['marketing ebooks', 'free ebooks', 'digital marketing guides', 'SEO ebook', 'marketing books'],
-    h1: 'Free Marketing Ebooks',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+    "Explore practical marketing resources covering SEO, paid advertising, social media, websites, branding and digital strategy.",
 
-  '/webinars': {
-    title: 'Webinars | Digital Marketing Training & Events',
-    description: 'Join our digital marketing webinars. Live training sessions, expert insights, and Q&A on SEO, PPC, and social media.',
-    keywords: ['marketing webinars', 'digital marketing training', 'online events', 'marketing workshops', 'SEO training'],
-    h1: 'Upcoming Webinars',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+    [
+      "digital marketing resources",
+      "SEO resources",
+      "marketing guides",
+      "advertising resources",
+      "marketing templates",
+    ],
 
-  '/tools': {
-    title: 'Free Marketing Tools | SEO, PPC & Social Media Tools',
-    description: 'Free digital marketing tools. SEO analyzers, keyword research tools, social media planners, and ROI calculators.',
-    keywords: ['marketing tools', 'free SEO tools', 'keyword tools', 'social media tools', 'marketing calculators'],
-    h1: 'Free Marketing Tools',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+    "Digital Marketing Resources"
+  ),
 
-  '/glossary': {
-    title: 'Marketing Glossary | Digital Marketing Terms & Definitions',
-    description: 'Digital marketing glossary with definitions of SEO, PPC, social media, and marketing terms. Learn marketing terminology.',
-    keywords: ['marketing glossary', 'marketing terms', 'SEO definitions', 'marketing dictionary', 'digital marketing terms'],
-    h1: 'Marketing Glossary',
-    ogType: 'website',
-    schemaType: 'website'
-  },
 
-  '/sitemap-page': {
-    title: 'Sitemap | Browse All Pages | Inchtomilez',
-    description: 'Complete sitemap of Inchtomilez website. Browse all pages, services, industries, blog posts, and resources.',
-    keywords: ['sitemap', 'site map', 'website pages', 'navigation', 'all pages'],
-    h1: 'Website Sitemap',
-    ogType: 'website',
-    schemaType: 'website'
-  },
+  "/downloads": websiteSEO(
+    "Marketing Downloads, Templates & Guides | Inchtomilez",
 
-  // Add more service pages
-  '/services/influencer-marketing': {
-    title: 'Influencer Marketing Services | Brand Collaborations & Campaigns',
-    description: 'Influencer marketing services. Influencer partnerships, campaign management, brand collaborations, and social media influencer outreach.',
-    keywords: ['influencer marketing', 'influencer partnerships', 'brand collaborations', 'influencer campaigns', 'social media influencers'],
-    h1: 'Influencer Marketing Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Influencer Marketing'
-  },
+    "Download practical digital marketing templates, checklists, guides and resources from Inchtomilez.",
 
-  '/services/digital-marketing': {
-    title: 'Digital Marketing Services | Complete Online Marketing Solutions',
-    description: 'Comprehensive digital marketing services. SEO, PPC, social media, content, email, and analytics. Full-service digital marketing agency.',
-    keywords: ['digital marketing services', 'online marketing', 'internet marketing', 'digital agency', 'full-service marketing'],
-    h1: 'Digital Marketing Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'Digital Marketing'
-  },
+    [
+      "marketing templates",
+      "digital marketing downloads",
+      "SEO checklist",
+      "marketing guides",
+      "free marketing resources",
+    ],
 
-  '/services/btl-activations': {
-    title: 'BTL Activations | Below The Line Marketing & Events',
-    description: 'Below the line marketing and activations. Experiential marketing, event marketing, promotional activities, and direct engagement campaigns.',
-    keywords: ['BTL activations', 'below the line marketing', 'experiential marketing', 'event marketing', 'promotional activities'],
-    h1: 'BTL Activations',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'BTL Marketing'
-  },
+    "Marketing Downloads & Templates"
+  ),
 
-  '/services/ooh-advertising': {
-    title: 'OOH Advertising | Outdoor Advertising & Billboards',
-    description: 'Out-of-home advertising services. Billboards, transit ads, street furniture advertising, and outdoor media planning.',
-    keywords: ['OOH advertising', 'outdoor advertising', 'billboards', 'transit ads', 'outdoor media'],
-    h1: 'OOH Advertising Services',
-    ogType: 'service',
-    schemaType: 'service',
-    category: 'OOH Advertising'
-  },
+
+  "/ebooks": websiteSEO(
+    "Digital Marketing Ebooks & Guides | Inchtomilez",
+
+    "Explore ebooks and long-form guides covering SEO, advertising, social media, content and digital business growth.",
+
+    [
+      "digital marketing ebooks",
+      "SEO ebook",
+      "Google Ads guide",
+      "social media ebook",
+      "marketing guides",
+    ],
+
+    "Digital Marketing Ebooks"
+  ),
+
+
+  "/webinars": websiteSEO(
+    "Digital Marketing Webinars | Inchtomilez",
+
+    "Explore digital marketing webinars and sessions covering SEO, Google Ads, social media, websites and growth strategy.",
+
+    [
+      "digital marketing webinars",
+      "SEO webinar",
+      "Google Ads webinar",
+      "marketing training",
+      "digital marketing sessions",
+    ],
+
+    "Digital Marketing Webinars"
+  ),
+
+
+  "/tools": websiteSEO(
+    "Digital Marketing Tools | Inchtomilez",
+
+    "Explore useful digital marketing tools and utilities for SEO, advertising, analytics, social media and campaign planning.",
+
+    [
+      "digital marketing tools",
+      "SEO tools",
+      "marketing calculators",
+      "advertising tools",
+      "marketing utilities",
+    ],
+
+    "Digital Marketing Tools"
+  ),
+
+
+  "/glossary": websiteSEO(
+    "Digital Marketing Glossary | SEO, PPC & Marketing Terms",
+
+    "Understand common SEO, PPC, advertising, analytics, social media and digital marketing terminology with the Inchtomilez marketing glossary.",
+
+    [
+      "digital marketing glossary",
+      "SEO terms",
+      "PPC terms",
+      "marketing definitions",
+      "advertising terminology",
+    ],
+
+    "Digital Marketing Glossary"
+  ),
+
+
+  "/sitemap-page": websiteSEO(
+    "Website Sitemap | Inchtomilez",
+
+    "Browse important pages, services, industries, resources and content available on the Inchtomilez website.",
+
+    [
+      "Inchtomilez sitemap",
+      "website pages",
+      "Inchtomilez services",
+    ],
+
+    "Website Sitemap"
+  ),
+
+
+  // ==========================================================================
+  // LEGAL PAGES
+  // ==========================================================================
+
+  "/privacy-policy": websiteSEO(
+    "Privacy Policy | Inchtomilez",
+
+    "Read the Inchtomilez privacy policy explaining how information may be collected, processed, stored and protected when using our website and services.",
+
+    [
+      "Inchtomilez privacy policy",
+      "privacy policy",
+      "data privacy",
+    ],
+
+    "Privacy Policy"
+  ),
+
+
+  "/terms-of-service": websiteSEO(
+    "Terms of Service | Inchtomilez",
+
+    "Read the terms governing use of the Inchtomilez website and applicable conditions related to our digital marketing and advertising services.",
+
+    [
+      "Inchtomilez terms",
+      "terms of service",
+      "terms and conditions",
+    ],
+
+    "Terms of Service"
+  ),
+
+
+  "/cookie-policy": websiteSEO(
+    "Cookie Policy | Inchtomilez",
+
+    "Read information about cookies and similar technologies that may be used on the Inchtomilez website.",
+
+    [
+      "Inchtomilez cookie policy",
+      "cookie policy",
+      "website cookies",
+    ],
+
+    "Cookie Policy"
+  ),
+
+
+  "/disclaimer": websiteSEO(
+    "Disclaimer | Inchtomilez",
+
+    "Read important disclaimers and limitations related to information, content and services provided through the Inchtomilez website.",
+
+    [
+      "Inchtomilez disclaimer",
+      "website disclaimer",
+      "legal disclaimer",
+    ],
+
+    "Disclaimer"
+  ),
+
+
+  "/refund-policy": websiteSEO(
+    "Refund & Cancellation Policy | Inchtomilez",
+
+    "Read the Inchtomilez refund and cancellation policy and the terms that may apply to eligible services and engagements.",
+
+    [
+      "Inchtomilez refund policy",
+      "refund policy",
+      "cancellation policy",
+    ],
+
+    "Refund & Cancellation Policy"
+  ),
 };
+
+
+// ============================================================================
+// DEVELOPMENT SAFETY CHECK
+// ============================================================================
+
+/**
+ * Warn during development if an SEO entry is incomplete.
+ *
+ * This does NOT run as an error in production and therefore will not
+ * stop a Vercel deployment.
+ */
+
+if (
+  typeof process !== "undefined" &&
+  process.env.NODE_ENV === "development"
+) {
+  Object.entries(
+    COMPLETE_SEO_DATA
+  ).forEach(
+    ([path, data]) => {
+
+      if (
+        !data.title ||
+        !data.description ||
+        !data.h1
+      ) {
+        console.warn(
+          `[SEO] Incomplete metadata for route: ${path}`
+        );
+      }
+
+      if (
+        data.title.length > 70
+      ) {
+        console.warn(
+          `[SEO] Long title (${data.title.length} chars): ${path}`
+        );
+      }
+
+      if (
+        data.description.length > 180
+      ) {
+        console.warn(
+          `[SEO] Long description (${data.description.length} chars): ${path}`
+        );
+      }
+    }
+  );
+}
