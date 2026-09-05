@@ -1,24 +1,17 @@
 /**
  * 🎯 MASTER SEO SYSTEM - SINGLE SOURCE OF TRUTH
- * 
- * Version: 4.0 - CONSOLIDATED & UPGRADED
- * 
- * This file consolidates ALL SEO logic:
- * - seoConfig.tsx (old)
- * - seo-system.tsx (old)
- * - SEOHead component logic
- * - SEOHeadSSG component logic
- * 
- * Features:
- * ✅ Complete meta tags (title, description, keywords, OG, Twitter)
- * ✅ Structured data (JSON-LD) for all page types
- * ✅ Breadcrumbs for Google sitelinks
- * ✅ Organization schema with sitelinks
- * ✅ Article schema for blog posts
- * ✅ FAQPage schema
- * ✅ Service schema for service pages
- * ✅ Canonical URLs
- * ✅ 313 pages fully optimized
+ *
+ * Version: 4.1 - REAL BUSINESS DATA
+ *
+ * IMPORTANT:
+ * Business identity data in this file must stay consistent with:
+ * - Google Business Profile
+ * - Website footer/contact page
+ * - Organization schema
+ * - LocalBusiness schema
+ *
+ * Primary Location:
+ * Vijay Nagar, Indore, Madhya Pradesh 452010
  */
 
 import { useLocation } from 'react-router';
@@ -30,83 +23,162 @@ import { COMPLETE_SEO_DATA } from './seo-database-complete';
 // ============================================================================
 
 export const SITE_CONFIG = {
+  /**
+   * Short public-facing brand name.
+   * Google currently recognizes the entity as "Inchtomilez".
+   */
   name: 'Inchtomilez',
-  fullName: 'Inchtomilez Digital Marketing And Advertising Agency',
+
+  /**
+   * Full business/agency name.
+   */
+  fullName:
+    'Inchtomilez Digital Marketing And Advertising Agency | Indore',
+
   url: 'https://www.inchtomilez.com',
+
   logo: 'https://www.inchtomilez.com/logo.png',
+
   ogImage: 'https://www.inchtomilez.com/og-image.jpg',
-  phone: '+91-9669988666',
-  email: 'info@inchtomilez.com',
+
+  /**
+   * Primary GBP phone number.
+   */
+  phone: '+91-9009970709',
+
+  /**
+   * Primary website contact email.
+   */
+  email: 'inchtomilez@gmail.com',
+
+  /**
+   * GBP states that Inchtomilez was founded in 2017.
+   */
+  foundingDate: '2017',
+
+  /**
+   * Exact business address aligned with Google Business Profile.
+   */
   address: {
-    street: '123 Digital Avenue',
+    street:
+      '7th Floor Block A, Metro Tower, Sch No 54, Vijay Nagar, Scheme 54 PU4',
     city: 'Indore',
     state: 'Madhya Pradesh',
-    postal: '452001',
-    country: 'India'
+    postal: '452010',
+    country: 'India',
+    countryCode: 'IN'
   },
+
+  /**
+   * Keep only real official social profiles here.
+   * We can verify these individually in a later SEO step.
+   */
   social: {
     facebook: 'https://facebook.com/inchtomilez',
     twitter: 'https://twitter.com/inchtomilez',
     linkedin: 'https://linkedin.com/company/inchtomilez',
     instagram: 'https://instagram.com/inchtomilez'
-  },
-  founder: {
-    name: 'John Doe',
-    url: 'https://www.inchtomilez.com/team'
   }
 } as const;
 
 // ============================================================================
-// SITELINKS SCHEMA (For Google Search Sitelinks)
+// WEBSITE / SITELINKS SCHEMA
 // ============================================================================
 
+/**
+ * Existing export name is intentionally preserved so other files importing
+ * SITELINKS_SEARCH_BOX do not break.
+ */
 export const SITELINKS_SEARCH_BOX = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  'name': SITE_CONFIG.fullName,
-  'url': SITE_CONFIG.url,
-  'potentialAction': {
-    '@type': 'SearchAction',
-    'target': {
-      '@type': 'EntryPoint',
-      'urlTemplate': `${SITE_CONFIG.url}/search?q={search_term_string}`
-    },
-    'query-input': 'required name=search_term_string'
+  '@id': `${SITE_CONFIG.url}/#website`,
+  name: SITE_CONFIG.name,
+  alternateName: SITE_CONFIG.fullName,
+  url: SITE_CONFIG.url,
+
+  /**
+   * NOTE:
+   * We are intentionally NOT adding a SearchAction here until we verify that
+   * https://www.inchtomilez.com/search?q= actually works as a public search
+   * results page.
+   */
+  publisher: {
+    '@id': `${SITE_CONFIG.url}/#organization`
   }
 };
+
+// ============================================================================
+// ORGANIZATION SCHEMA
+// ============================================================================
 
 export const ORGANIZATION_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  'name': SITE_CONFIG.fullName,
-  'url': SITE_CONFIG.url,
-  'logo': SITE_CONFIG.logo,
-  'description': 'Leading digital marketing agency in Indore offering SEO, PPC, social media marketing, content marketing, branding, and web design services.',
-  'foundingDate': '2015',
-  'founders': [
+  '@id': `${SITE_CONFIG.url}/#organization`,
+
+  name: SITE_CONFIG.name,
+
+  legalName: SITE_CONFIG.fullName,
+
+  alternateName: [
+    'Inchtomilez',
+    'Inchtomilez Digital Marketing And Advertising Agency',
+    'Inchtomilez Digital Marketing Agency Indore'
+  ],
+
+  url: SITE_CONFIG.url,
+
+  logo: {
+    '@type': 'ImageObject',
+    '@id': `${SITE_CONFIG.url}/#logo`,
+    url: SITE_CONFIG.logo,
+    contentUrl: SITE_CONFIG.logo
+  },
+
+  image: SITE_CONFIG.ogImage,
+
+  description:
+    'Inchtomilez is a digital marketing and advertising agency in Indore, Madhya Pradesh, providing SEO, Google Ads, social media marketing, branding, website development, advertising and performance marketing services.',
+
+  foundingDate: SITE_CONFIG.foundingDate,
+
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: SITE_CONFIG.address.street,
+    addressLocality: SITE_CONFIG.address.city,
+    addressRegion: SITE_CONFIG.address.state,
+    postalCode: SITE_CONFIG.address.postal,
+    addressCountry: SITE_CONFIG.address.countryCode
+  },
+
+  contactPoint: [
     {
-      '@type': 'Person',
-      'name': SITE_CONFIG.founder.name,
-      'url': SITE_CONFIG.founder.url
+      '@type': 'ContactPoint',
+      telephone: SITE_CONFIG.phone,
+      contactType: 'customer service',
+      email: SITE_CONFIG.email,
+      areaServed: 'IN',
+      availableLanguage: ['English', 'Hindi']
     }
   ],
-  'address': {
-    '@type': 'PostalAddress',
-    'streetAddress': SITE_CONFIG.address.street,
-    'addressLocality': SITE_CONFIG.address.city,
-    'addressRegion': SITE_CONFIG.address.state,
-    'postalCode': SITE_CONFIG.address.postal,
-    'addressCountry': SITE_CONFIG.address.country
-  },
-  'contactPoint': {
-    '@type': 'ContactPoint',
-    'telephone': SITE_CONFIG.phone,
-    'contactType': 'Customer Service',
-    'email': SITE_CONFIG.email,
-    'areaServed': 'IN',
-    'availableLanguage': ['English', 'Hindi']
-  },
-  'sameAs': [
+
+  areaServed: [
+    {
+      '@type': 'City',
+      name: 'Indore'
+    },
+    {
+      '@type': 'State',
+      name: 'Madhya Pradesh'
+    },
+    {
+      '@type': 'Country',
+      name: 'India'
+    }
+  ],
+
+  sameAs: [
     SITE_CONFIG.social.facebook,
     SITE_CONFIG.social.twitter,
     SITE_CONFIG.social.linkedin,
@@ -115,46 +187,115 @@ export const ORGANIZATION_SCHEMA = {
 };
 
 // ============================================================================
-// BREADCRUMB GENERATOR (For Google Sitelinks)
+// LOCAL BUSINESS SCHEMA
+// ============================================================================
+
+/**
+ * This is especially important for the Indore SEO strategy.
+ *
+ * We intentionally omit:
+ * - geo coordinates until exact office coordinates are verified
+ * - openingHoursSpecification until full GBP hours are verified
+ * - priceRange because it is not needed unless we have a real value
+ */
+export const LOCAL_BUSINESS_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': `${SITE_CONFIG.url}/#localbusiness`,
+
+  name: SITE_CONFIG.fullName,
+
+  alternateName: SITE_CONFIG.name,
+
+  url: SITE_CONFIG.url,
+
+  telephone: SITE_CONFIG.phone,
+
+  email: SITE_CONFIG.email,
+
+  logo: SITE_CONFIG.logo,
+
+  image: SITE_CONFIG.ogImage,
+
+  description:
+    'Inchtomilez Digital Marketing And Advertising Agency in Indore helps businesses grow through SEO, Google Ads, social media marketing, branding, website development, advertising and digital strategy.',
+
+  foundingDate: SITE_CONFIG.foundingDate,
+
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: SITE_CONFIG.address.street,
+    addressLocality: SITE_CONFIG.address.city,
+    addressRegion: SITE_CONFIG.address.state,
+    postalCode: SITE_CONFIG.address.postal,
+    addressCountry: SITE_CONFIG.address.countryCode
+  },
+
+  areaServed: {
+    '@type': 'City',
+    name: 'Indore'
+  },
+
+  parentOrganization: {
+    '@id': `${SITE_CONFIG.url}/#organization`
+  },
+
+  sameAs: [
+    SITE_CONFIG.social.facebook,
+    SITE_CONFIG.social.twitter,
+    SITE_CONFIG.social.linkedin,
+    SITE_CONFIG.social.instagram
+  ]
+};
+
+// ============================================================================
+// BREADCRUMB GENERATOR
 // ============================================================================
 
 export function generateBreadcrumbs(path: string) {
   const segments = path.split('/').filter(Boolean);
-  
+
   const items = [
     {
       '@type': 'ListItem',
-      'position': 1,
-      'name': 'Home',
-      'item': SITE_CONFIG.url
+      position: 1,
+      name: 'Home',
+      item: SITE_CONFIG.url
     }
   ];
 
   let currentPath = '';
+
   segments.forEach((segment, index) => {
     currentPath += `/${segment}`;
+
     const name = segment
       .split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .map(
+        word =>
+          word.charAt(0).toUpperCase() +
+          word.slice(1)
+      )
       .join(' ');
-    
+
     items.push({
       '@type': 'ListItem',
-      'position': index + 2,
-      'name': name,
-      'item': `${SITE_CONFIG.url}${currentPath}`
+      position: index + 2,
+      name,
+      item: `${SITE_CONFIG.url}${currentPath}`
     });
   });
 
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    'itemListElement': items
+    '@id': `${SITE_CONFIG.url}${path}#breadcrumb`,
+    itemListElement: items
   };
 }
 
 // ============================================================================
-// SEO DATA FOR ALL 313 PAGES
+// SEO DATA
 // ============================================================================
 
 export interface SEOData {
@@ -164,68 +305,127 @@ export interface SEOData {
   h1: string;
   ogType?: string;
   ogImage?: string;
-  schemaType?: 'website' | 'article' | 'service' | 'faq' | 'organization';
+  schemaType?:
+    | 'website'
+    | 'article'
+    | 'service'
+    | 'faq'
+    | 'organization';
   author?: string;
   datePublished?: string;
   dateModified?: string;
   category?: string;
 }
 
-export const SEO_DATABASE: Record<string, SEOData> = COMPLETE_SEO_DATA;
+export const SEO_DATABASE: Record<string, SEOData> =
+  COMPLETE_SEO_DATA;
 
 // ============================================================================
-// GENERATE ARTICLE SCHEMA (For Blog Posts)
+// ARTICLE SCHEMA
 // ============================================================================
 
-export function generateArticleSchema(seoData: SEOData, path: string) {
-  return {
+export function generateArticleSchema(
+  seoData: SEOData,
+  path: string
+) {
+  const schema: Record<string, any> = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    'headline': seoData.h1,
-    'description': seoData.description,
-    'image': seoData.ogImage || SITE_CONFIG.ogImage,
-    'author': {
+
+    headline: seoData.h1,
+
+    description: seoData.description,
+
+    image:
+      seoData.ogImage ||
+      SITE_CONFIG.ogImage,
+
+    author: {
       '@type': 'Organization',
-      'name': SITE_CONFIG.fullName,
-      'url': SITE_CONFIG.url
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.url
     },
-    'publisher': {
+
+    publisher: {
       '@type': 'Organization',
-      'name': SITE_CONFIG.fullName,
-      'logo': {
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      logo: {
         '@type': 'ImageObject',
-        'url': SITE_CONFIG.logo
+        url: SITE_CONFIG.logo
       }
     },
-    'datePublished': seoData.datePublished || new Date().toISOString(),
-    'dateModified': seoData.dateModified || new Date().toISOString(),
-    'mainEntityOfPage': {
+
+    mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${SITE_CONFIG.url}${path}`
     }
   };
+
+  /**
+   * Do not fabricate publication dates.
+   * Only output dates when real dates exist in SEO data.
+   */
+  if (seoData.datePublished) {
+    schema.datePublished =
+      seoData.datePublished;
+  }
+
+  if (seoData.dateModified) {
+    schema.dateModified =
+      seoData.dateModified;
+  }
+
+  return schema;
 }
 
 // ============================================================================
-// GENERATE SERVICE SCHEMA
+// SERVICE SCHEMA
 // ============================================================================
 
-export function generateServiceSchema(seoData: SEOData, path: string) {
+export function generateServiceSchema(
+  seoData: SEOData,
+  path: string
+) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    'name': seoData.h1,
-    'description': seoData.description,
-    'provider': {
+
+    '@id':
+      `${SITE_CONFIG.url}${path}#service`,
+
+    name: seoData.h1,
+
+    description: seoData.description,
+
+    url: `${SITE_CONFIG.url}${path}`,
+
+    provider: {
       '@type': 'Organization',
-      'name': SITE_CONFIG.fullName,
-      'url': SITE_CONFIG.url
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.url
     },
-    'areaServed': {
-      '@type': 'Country',
-      'name': 'India'
-    },
-    'serviceType': seoData.category || 'Digital Marketing'
+
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Indore'
+      },
+      {
+        '@type': 'State',
+        name: 'Madhya Pradesh'
+      },
+      {
+        '@type': 'Country',
+        name: 'India'
+      }
+    ],
+
+    serviceType:
+      seoData.category ||
+      'Digital Marketing'
   };
 }
 
@@ -235,47 +435,137 @@ export function generateServiceSchema(seoData: SEOData, path: string) {
 
 export function useSEO() {
   const location = useLocation();
+
   const path = location.pathname;
 
   return useMemo(() => {
-    // Get SEO data for current route
-    const seoData = SEO_DATABASE[path] || SEO_DATABASE['/'];
+    /**
+     * Get SEO information for current URL.
+     *
+     * Existing fallback is retained so we do not risk
+     * breaking routes during this first SEO phase.
+     */
+    const seoData =
+      SEO_DATABASE[path] ||
+      SEO_DATABASE['/'];
 
-    // Generate canonical URL
-    const canonicalUrl = `${SITE_CONFIG.url}${path}`;
+    /**
+     * Canonical URL.
+     */
+    const canonicalUrl =
+      path === '/'
+        ? SITE_CONFIG.url
+        : `${SITE_CONFIG.url}${path}`;
 
-    // Generate breadcrumbs
-    const breadcrumbs = generateBreadcrumbs(path);
+    /**
+     * Breadcrumb schema.
+     */
+    const breadcrumbs =
+      generateBreadcrumbs(path);
 
-    // Generate schema based on page type
-    let structuredData: any[] = [breadcrumbs];
+    /**
+     * Schemas injected for current page.
+     */
+    const structuredData: any[] = [
+      breadcrumbs
+    ];
 
-    // Always include sitelinks search box on homepage
+    // ------------------------------------------------------------------------
+    // HOMEPAGE
+    // ------------------------------------------------------------------------
+
     if (path === '/') {
-      structuredData.push(SITELINKS_SEARCH_BOX);
-      structuredData.push(ORGANIZATION_SCHEMA);
+      structuredData.push(
+        SITELINKS_SEARCH_BOX
+      );
+
+      structuredData.push(
+        ORGANIZATION_SCHEMA
+      );
+
+      structuredData.push(
+        LOCAL_BUSINESS_SCHEMA
+      );
     }
 
-    // Add specific schemas based on page type
-    if (seoData.schemaType === 'article' || path.startsWith('/blogs/')) {
-      if (!path.endsWith('/blogs') && !path.match(/^\/blogs\/(seo|ppc|social-media|content-marketing|branding|video|web-design|email-marketing|analytics|trends)$/)) {
-        structuredData.push(generateArticleSchema(seoData, path));
+    // ------------------------------------------------------------------------
+    // BLOG ARTICLES
+    // ------------------------------------------------------------------------
+
+    if (
+      seoData.schemaType === 'article' ||
+      path.startsWith('/blogs/')
+    ) {
+      const isBlogCategory =
+        /^\/blogs\/(seo|ppc|social-media|content-marketing|branding|video|web-design|email-marketing|analytics|trends)$/.test(
+          path
+        );
+
+      if (
+        path !== '/blogs' &&
+        !isBlogCategory
+      ) {
+        structuredData.push(
+          generateArticleSchema(
+            seoData,
+            path
+          )
+        );
       }
-    } else if (seoData.schemaType === 'service' || path.startsWith('/services/')) {
-      structuredData.push(generateServiceSchema(seoData, path));
-    } else if (seoData.schemaType === 'organization') {
-      structuredData.push(ORGANIZATION_SCHEMA);
+    }
+
+    // ------------------------------------------------------------------------
+    // SERVICES
+    // ------------------------------------------------------------------------
+
+    else if (
+      seoData.schemaType === 'service' ||
+      path.startsWith('/services/')
+    ) {
+      structuredData.push(
+        generateServiceSchema(
+          seoData,
+          path
+        )
+      );
+    }
+
+    // ------------------------------------------------------------------------
+    // ORGANIZATION PAGES
+    // ------------------------------------------------------------------------
+
+    else if (
+      seoData.schemaType ===
+      'organization'
+    ) {
+      structuredData.push(
+        ORGANIZATION_SCHEMA
+      );
     }
 
     return {
       title: seoData.title,
-      description: seoData.description,
-      keywords: seoData.keywords.join(', '),
+
+      description:
+        seoData.description,
+
+      keywords:
+        seoData.keywords.join(', '),
+
       h1: seoData.h1,
+
       canonicalUrl,
-      ogImage: seoData.ogImage || SITE_CONFIG.ogImage,
-      ogType: seoData.ogType || 'website',
+
+      ogImage:
+        seoData.ogImage ||
+        SITE_CONFIG.ogImage,
+
+      ogType:
+        seoData.ogType ||
+        'website',
+
       structuredData,
+
       breadcrumbs
     };
   }, [path]);
