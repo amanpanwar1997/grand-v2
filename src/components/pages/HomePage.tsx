@@ -24,83 +24,83 @@ export function HomePage() {
 
   // Quick Facts for Hero
   const quickFacts = [
-    { label: 'Founder-Led Agency' },
-    { label: 'Indore + Pune Presence' },
-    { label: 'Strategy • Creative • Performance' },
-    { label: 'Digital • Advertising • Technology' },
+    { label: '96+ Clients Served' },
+    { label: '100+ Brands Managed' },
+    { label: '7+ Years of Expertise' },
+    { label: '74+ Campaigns Delivered' },
   ];
 
   // Core Services - 14 services with proper icons
   const coreServices = [
     {
       title: 'Digital Marketing',
-      description: 'SEO, paid media, social, content and analytics connected around clear business objectives.',
+      description: 'SEO, SEM, SMM, Email & Content Marketing. Complete digital ecosystems powered by data.',
       icon: Rocket,
       link: '/services/digital-marketing',
     },
     {
       title: 'Advertising',
-      description: 'Google, Meta, YouTube and LinkedIn campaigns planned, tested and optimized around measurable outcomes.',
+      description: 'Google, Meta, YouTube, LinkedIn Ads. Multi-channel campaigns with full transparency.',
       icon: Megaphone,
       link: '/services/advertising',
     },
     {
       title: 'Branding & Strategy',
-      description: 'Positioning, identity, messaging and strategic planning that give brands a clear market direction.',
+      description: 'Brand positioning, design, identity systems, and messaging frameworks that resonate.',
       icon: Sparkles,
       link: '/services/branding',
     },
     {
       title: 'BTL Activations',
-      description: 'On-ground activations, exhibitions, retail engagement and experiential campaigns designed for real-world interaction.',
+      description: 'Events, exhibitions, retail promotions, and experiential marketing that creates impact.',
       icon: Users2,
       link: '/services/btl-activations',
     },
     {
       title: 'OOH Advertising',
-      description: 'Hoardings, transit, airport and retail media planned around location, audience and campaign context.',
+      description: 'Billboards, transit, airport, mall media - visibility where your audience lives.',
       icon: MapPinned,
       link: '/services/ooh-advertising',
     },
     {
       title: 'Website & App Development',
-      description: 'Strategy-led websites, e-commerce and digital products built for speed, usability, visibility and conversion.',
+      description: 'UI/UX, E-commerce, Mobile Apps - fast, responsive, conversion-optimized platforms.',
       icon: Monitor,
       link: '/services/website-development',
     },
     {
       title: 'Software Development',
-      description: 'Custom dashboards, CRM workflows, automation and business tools designed around real operational needs.',
+      description: 'CRM, ERP, SaaS, Automation - custom solutions that scale with your business.',
       icon: Code,
       link: '/services/software-development',
     },
     {
       title: 'Public Relations',
-      description: 'Media outreach, brand communications and influence programs designed to build visibility and credibility.',
+      description: 'Media outreach, press coverage, influencer collaborations that build credibility.',
       icon: MessageSquare,
       link: '/services/public-relations',
     },
     {
       title: 'Political Campaigns',
-      description: 'Digital communication, audience strategy, content and campaign coordination for public and political outreach.',
+      description: 'Targeted digital advocacy, sentiment mapping, voter analysis with real-time dashboards.',
       icon: Vote,
       link: '/services/political-campaigns',
     },
     {
       title: 'Product Marketing',
-      description: 'Launch planning, go-to-market strategy, positioning and multi-channel execution for new and growing products.',
+      description: 'Launch planning, go-to-market strategy, omnichannel execution for product success.',
       icon: Package,
       link: '/services/product-marketing',
     },
     {
       title: 'Graphic Design',
-      description: 'Campaign, social, digital and print design built around consistent brand systems and communication goals.',
+      description: 'Social media, campaigns, print - professional designs aligned with brand guidelines.',
       icon: Palette,
       link: '/services/graphic-design',
     },
     {
       title: 'Media Production',
-      description: 'Video production, photography, product shoots and short-form content designed for modern brand communication.',
+      description: 'Video production, photography, drone shoots - cinematic brand storytelling.',
       icon: Camera,
       link: '/services/media-production',
     },
@@ -109,34 +109,34 @@ export function HomePage() {
   // Why We're Different - 6 principles
   const differentiators = [
     {
-      icon: Target,
-      title: 'Business-First Strategy',
-      description: 'We begin with the business objective, audience and market context before recommending channels or campaigns.',
-    },
-    {
-      icon: Layers,
-      title: 'Integrated Capabilities',
-      description: 'Strategy, creative, media, performance and technology work together instead of operating as separate silos.',
-    },
-    {
       icon: FileCheck,
-      title: 'Clear Scope & Communication',
-      description: 'Defined deliverables, practical timelines and straightforward communication keep every engagement aligned.',
+      title: 'Transparent Pricing & Reports',
+      description: 'Clear scope, fixed pricing, detailed monthly reports. You know exactly where every rupee goes.',
     },
     {
-      icon: HeartHandshake,
-      title: 'Founder-Led Direction',
-      description: 'Senior strategic involvement keeps decisions close to the business problem and the quality of execution.',
+      icon: Shield,
+      title: 'No Exaggerated Claims',
+      description: 'We set realistic expectations. SEO takes 3-6 months. Paid ads need testing. No overnight miracles.',
     },
     {
-      icon: ChartBar,
-      title: 'Measure. Learn. Improve.',
-      description: 'We use meaningful performance signals to understand what is working, what needs refinement and where to scale.',
+      icon: Clock,
+      title: 'Honest Timelines & Measurable KPIs',
+      description: 'Proper project timelines with clear milestones. Data-driven KPIs that matter to your business.',
+    },
+    {
+      icon: Award,
+      title: '98% Client Retention',
+      description: 'Most clients stay for years because we deliver consistent value and honest communication.',
     },
     {
       icon: Users,
-      title: 'Built for Long-Term Partnership',
-      description: 'We aim to become an extension of the businesses we work with, not just another vendor completing isolated tasks.',
+      title: 'Weekly Communication & Full Accountability',
+      description: 'Regular video calls, live dashboards, open dialogue about what is working and what needs work.',
+    },
+    {
+      icon: Target,
+      title: 'Results-First Mindset',
+      description: 'We focus on metrics that drive business growth - leads, conversions, revenue, not vanity stats.',
     },
   ];
 
@@ -144,33 +144,33 @@ export function HomePage() {
   const digitalMarketingServices = [
     {
       icon: Search,
-      title: 'SEO & Organic Search',
-      description: 'Technical SEO, on-page optimization, content strategy and authority building for stronger search visibility.',
+      title: 'SEO (On-page, Off-page, Technical)',
+      description: '3-6 months to show results. Content optimization, link building, technical audits.',
     },
     {
       icon: MapPin,
-      title: 'Google Business Profile & Local Search',
-      description: 'Profile optimization, local content, review workflows and visibility improvements for location-led businesses.',
+      title: 'Google My Business Optimization',
+      description: 'Local visibility on Google Maps. Real photos, reviews, regular updates for store visits.',
     },
     {
       icon: Target,
-      title: 'Google Ads & Paid Search',
-      description: 'Intent-led campaign planning, keyword strategy, landing-page alignment, testing and ongoing optimization.',
+      title: 'Google Ads & Display Network',
+      description: 'Keyword planning, A/B testing, tracked clicks. Every rupee accounted for.',
     },
     {
       icon: Share2,
       title: 'Meta & LinkedIn Campaigns',
-      description: 'Audience-led paid social campaigns supported by creative testing, remarketing and performance analysis.',
+      description: 'Targeted social media advertising with continuous optimization for better performance.',
     },
     {
       icon: Mail,
-      title: 'Email & Lifecycle Marketing',
-      description: 'Nurture journeys, segmented communication and automation designed around the customer lifecycle.',
+      title: 'Email Marketing Automation',
+      description: 'Nurture campaigns, drip sequences, segmented lists for higher engagement.',
     },
     {
       icon: BarChart3,
-      title: 'Analytics & Performance Intelligence',
-      description: 'Reporting that connects traffic, leads, conversions and campaign behavior to practical next steps.',
+      title: 'Analytics & Performance Reports',
+      description: 'Monthly dashboards showing traffic, conversions, ROI with actionable insights.',
     },
   ];
 
@@ -179,22 +179,22 @@ export function HomePage() {
     {
       icon: Building2,
       title: 'Billboards & Hoardings',
-      description: 'Strategic outdoor placements planned around location, audience movement and campaign visibility.',
+      description: 'Strategic placements in high-traffic areas with geo-mapping visibility reports.',
     },
     {
       icon: Tv,
       title: 'Transit Media',
-      description: 'Bus, cab and mobility-led media formats that extend brand visibility across high-movement routes.',
+      description: 'Bus wraps, metro ads, cab branding - mobile impressions across the city.',
     },
     {
       icon: Globe,
       title: 'Airport Branding',
-      description: 'Premium-format advertising for business and travel audiences in high-attention environments.',
+      description: 'Premium visibility at airports targeting travelers and business audiences.',
     },
     {
       icon: Boxes,
       title: 'Mall & Retail Media',
-      description: 'Retail displays, kiosks and in-store branding designed around footfall and purchase context.',
+      description: 'Shopping center displays, kiosks, in-store branding for retail traffic.',
     },
   ];
 
@@ -203,56 +203,61 @@ export function HomePage() {
     {
       icon: Users2,
       title: 'Mall & Retail Activations',
-      description: 'Product demonstrations, sampling and pop-up experiences designed for direct consumer interaction.',
+      description: 'Product sampling, demos, pop-up stores with measurable lead capture.',
     },
     {
       icon: Trophy,
       title: 'Campus & Roadshows',
-      description: 'On-ground outreach programs that take the brand directly to defined communities and audiences.',
+      description: 'College tours, city roadshows, mobile brand experiences.',
     },
     {
       icon: Building2,
       title: 'Trade Exhibitions',
-      description: 'Booth experience, campaign communication and lead capture planned around event objectives.',
+      description: 'Booth design, staffing, lead collection with post-event analytics.',
     },
     {
       icon: Boxes,
-      title: 'Society & Community Activations',
-      description: 'Local engagement programs designed for residential communities and hyperlocal audiences.',
+      title: 'Society-Level Branding',
+      description: 'Residential complex activations, community engagement programs.',
     },
   ];
 
   // Tools & Technologies
   const tools = [
     'Google Analytics 4',
-    'Google Search Console',
-    'Google Ads',
-    'Google Merchant Center',
-    'Meta Business Suite',
+    'Search Console',
     'SEMrush',
     'Ahrefs',
+    'HubSpot',
+    'Meta Business Suite',
+    'Google Ads',
     'Adobe Creative Cloud',
-    'Figma',
     'WordPress',
-    'Shopify',
-    'React',
-    'Vite',
-    'Vercel',
+    'Shopify Plus',
+    'AWS Cloud',
+    'MongoDB',
+    'Firebase',
+    'Mailchimp',
+    'Zapier',
+    'Tableau',
+    'Salesforce',
+    'Hotjar',
+    'Node.js',
   ];
 
   // Industries Served
   const industries = [
     { name: 'Healthcare', icon: Heart },
-    { name: 'Technology & SaaS', icon: Cpu },
+    { name: 'Technology', icon: Cpu },
     { name: 'Real Estate', icon: Home },
-    { name: 'E-Commerce & Retail', icon: ShoppingCart },
+    { name: 'E-Commerce', icon: ShoppingCart },
     { name: 'Education', icon: GraduationCap },
-    { name: 'FMCG', icon: Package },
+    { name: 'Finance', icon: DollarSign },
     { name: 'Hospitality', icon: Hotel },
     { name: 'Automotive', icon: Car },
-    { name: 'Jewellery & Lifestyle', icon: Sparkles },
+    { name: 'Fashion', icon: Shirt },
     { name: 'F&B', icon: Utensils },
-    { name: 'Professional Services', icon: Briefcase },
+    { name: 'Legal', icon: Scale },
     { name: 'Manufacturing', icon: Factory },
   ];
 
@@ -261,92 +266,92 @@ export function HomePage() {
     {
       step: '01',
       icon: Search,
-      title: 'Discover',
-      description: 'Understand the business, audience, market, competition and current digital presence.',
-      duration: 'Foundation',
+      title: 'Discovery & Research',
+      description: 'Understanding goals, audience, and competition.',
+      duration: '5-7 Days',
     },
     {
       step: '02',
       icon: FileCheck,
-      title: 'Strategize',
-      description: 'Define priorities, channels, messaging, deliverables and the roadmap for execution.',
-      duration: 'Direction',
+      title: 'Strategy & Planning',
+      description: 'Roadmap, timelines, and KPIs with transparent pricing.',
+      duration: '7-10 Days',
     },
     {
       step: '03',
       icon: Lightbulb,
-      title: 'Create',
-      description: 'Translate strategy into campaigns, content, design, landing pages and brand communication.',
-      duration: 'Build',
+      title: 'Creative Production',
+      description: 'Design, copy, and content. Quality takes time.',
+      duration: '10-15 Days',
     },
     {
       step: '04',
       icon: Rocket,
-      title: 'Execute',
-      description: 'Launch with structured implementation, testing, coordination and quality control.',
-      duration: 'Launch',
+      title: 'Campaign Execution',
+      description: 'Testing, optimization, and gradual scaling.',
+      duration: '3-5 Days',
     },
     {
       step: '05',
       icon: TrendingUp,
-      title: 'Measure & Improve',
-      description: 'Review performance, identify learning and continuously improve what can work better.',
+      title: 'Analysis & Improvement',
+      description: 'Weekly analysis and continuous optimization.',
       duration: 'Ongoing',
     },
   ];
 
-  // Performance Focus
+  // Real Success Metrics
   const successMetrics = [
     {
-      metric: 'Lead Quality',
-      industry: 'Performance Marketing',
-      description: 'We look beyond lead volume to understand relevance, intent and the quality of customer acquisition.',
+      metric: '300% Inquiry Growth',
+      industry: 'Healthcare',
+      description: 'GMB optimization + content marketing over 8 months',
     },
     {
-      metric: 'Search Visibility',
-      industry: 'SEO & Local Search',
-      description: 'We track discoverability, organic growth and the search opportunities that matter to the business.',
+      metric: '250% Organic Traffic',
+      industry: 'Fashion',
+      description: 'SEO campaign with consistent monthly growth',
     },
     {
-      metric: 'Conversion Efficiency',
-      industry: 'Paid Media & Web',
-      description: 'Campaign and landing-page performance are reviewed together to improve the journey from click to action.',
+      metric: '180% ROAS Improvement',
+      industry: 'Real Estate',
+      description: 'Google Ads testing and refinement over 3 months',
     },
     {
-      metric: 'Brand Consistency',
-      industry: 'Creative & Communication',
-      description: 'We evaluate whether campaigns, content and design are building one clear and recognizable brand experience.',
+      metric: '98% Client Retention',
+      industry: 'All Industries',
+      description: 'Long-term partnerships built on trust and results',
     },
   ];
 
-  // Partnership Standards
+  // Client Testimonials
   const testimonials = [
     {
-      quote: 'We start with the business problem before deciding the channel, campaign or creative direction.',
-      name: 'Business-First Thinking',
-      title: 'Our Working Standard',
-      result: 'Strategy Before Channels',
+      quote: 'Their GMB optimization alone increased our clinic footfall by 200%. Worth every rupee.',
+      name: 'Dr. Sneha Jain',
+      title: 'Prime Healthcare',
+      result: '200% Footfall Increase',
       rating: 5,
     },
     {
-      quote: 'Creative, media, performance and technology should support one another rather than compete for attention.',
-      name: 'Integrated Execution',
-      title: 'Our Working Standard',
-      result: 'One Connected Approach',
+      quote: 'OOH + Digital combo worked wonders for our retail brand. Strategic visibility everywhere.',
+      name: 'Priya Sharma',
+      title: 'Fashion Hub',
+      result: 'Strong Brand Recall',
       rating: 5,
     },
     {
-      quote: 'Clients should understand the priorities, the work in progress and the reason behind the next decision.',
-      name: 'Clear Communication',
-      title: 'Our Working Standard',
-      result: 'Clarity at Every Stage',
+      quote: 'Honest, data-driven, and dependable. Best agency we have worked with.',
+      name: 'Amit Patel',
+      title: 'Real Estate Pro',
+      result: '180% ROAS',
       rating: 5,
     },
     {
-      quote: 'We treat optimization as an ongoing discipline — learn from performance, improve the work and scale with context.',
-      name: 'Continuous Improvement',
-      title: 'Our Working Standard',
-      result: 'Measure • Learn • Improve',
+      quote: 'Transparent pricing and weekly updates. We always know what is happening with our campaigns.',
+      name: 'Vikram Singh',
+      title: 'TechStart Solutions',
+      result: 'Complete Transparency',
       rating: 5,
     },
   ];
@@ -379,7 +384,7 @@ export function HomePage() {
           <AnimatedSection animation="fadeInUp" delay={0.1}>
             <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 px-4 py-2 rounded-full mb-6">
               <Star className="w-4 h-4 text-white" fill="currentColor" />
-              <span className="text-[0.8125rem] font-medium uppercase tracking-wide text-yellow-500">Founder-Led • Indore + Pune</span>
+              <span className="text-[0.8125rem] font-medium uppercase tracking-wide text-yellow-500">Indore's Most Transparent Agency</span>
             </div>
           </AnimatedSection>
 
@@ -393,14 +398,14 @@ export function HomePage() {
           {/* Hindi Tagline - H2 */}
           <AnimatedSection animation="fadeInUp" delay={0.25}>
             <h2 className="text-[20px] md:text-[22px] font-bold text-[var(--muted-foreground)] mb-6 leading-[1.3]">
-              Duniya Brands Ke Peeche, Aur Brands Marketing Ke Peeche.
+              Duniya Brands Ke Peeche, Aur Brands Marketing Aur Advertising Ke!
             </h2>
           </AnimatedSection>
 
           {/* Subtext */}
           <AnimatedSection animation="fadeInUp" delay={0.3}>
             <p className="text-[0.9375rem] leading-relaxed text-[var(--muted-foreground)] max-w-4xl mx-auto mb-10" style={{ lineHeight: 1.6 }}>
-              We connect strategy, creativity, performance and technology to help ambitious businesses build stronger brands and better digital growth.
+              The world chases brands - but the smartest brands chase strategy.
             </p>
           </AnimatedSection>
           
@@ -421,7 +426,7 @@ export function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <MagneticButton href="/contact" strength={0.3}>
                 <span className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold shadow-2xl">
-                  Start a Conversation
+                  Get Free Consultation
                   <ArrowRight className="w-5 h-5" />
                 </span>
               </MagneticButton>
@@ -437,17 +442,17 @@ export function HomePage() {
           {/* Contact Info */}
           <AnimatedSection animation="fadeInUp" delay={0.6}>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-              <a href="tel:+919009970709" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
+              <a href="tel:+919669988666" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
                 <Phone className="w-4 h-4" />
-                +91 90099 70709
+                +91 966-998-8666
               </a>
-              <a href="mailto:info@inchtomilez.com" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
+              <a href="mailto:inchtomilez@gmail.com" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
                 <Mail className="w-4 h-4" />
-                info@inchtomilez.com
+                inchtomilez@gmail.com
               </a>
               <div className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)]">
                 <MapPin className="w-4 h-4" />
-                Indore • Pune, India
+                Indore, Madhya Pradesh, India
               </div>
             </div>
           </AnimatedSection>
@@ -519,10 +524,10 @@ export function HomePage() {
               {/* Main Statement */}
               <div className="glass-strong p-8 md:p-12 rounded-2xl mb-10">
                 <p className="text-[1.125rem] md:text-[1.25rem] leading-relaxed text-[var(--foreground)] font-semibold mb-6" style={{ lineHeight: 1.6 }}>
-                  We bring strategy, creative thinking, media and technology together around one business objective: meaningful growth.
+                  We don't sell illusions — we deliver results with data, creativity, and integrity.
                 </p>
                 <p className="text-[0.9375rem] leading-relaxed text-[var(--muted-foreground)]" style={{ lineHeight: 1.7 }}>
-                  Founded by Aman Panwar, Inchtomilez is an independent digital marketing and advertising agency built in Indore and expanding its presence to Pune in September 2026. We work across marketing, advertising, branding, websites, media and technology through one coordinated approach.
+                  Inchtomilez is not another agency where you compare quotes and settle for mediocrity. We're a team of digital strategists, creative minds, and growth hackers who transform ambitious ideas into measurable success stories.
                 </p>
               </div>
 
@@ -532,9 +537,9 @@ export function HomePage() {
                   <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Target className="text-yellow-500 icon-md" />
                   </div>
-                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Business-First</h3>
+                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Results-Driven</h3>
                   <p className="text-[0.875rem] text-[var(--muted-foreground)] leading-relaxed">
-                    We understand the business objective first, then choose the strategy, channels and execution needed to support it.
+                    Every campaign is designed to hit your KPIs. No vanity metrics, just real business growth.
                   </p>
                 </div>
 
@@ -542,9 +547,9 @@ export function HomePage() {
                   <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Shield className="text-yellow-500 icon-md" />
                   </div>
-                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Clear & Accountable</h3>
+                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">100% Transparent</h3>
                   <p className="text-[0.875rem] text-[var(--muted-foreground)] leading-relaxed">
-                    Defined scope, clear communication and practical reporting keep clients aligned with what is happening and why.
+                    Real-time dashboards, detailed reports, and honest conversations about what works.
                   </p>
                 </div>
 
@@ -552,43 +557,43 @@ export function HomePage() {
                   <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Sparkles className="text-yellow-500 icon-md" />
                   </div>
-                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Integrated Capability</h3>
+                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Premium Quality</h3>
                   <p className="text-[0.875rem] text-[var(--muted-foreground)] leading-relaxed">
-                    Strategy, creative, performance, websites and technology work together instead of operating as disconnected services.
+                    Ask for samples. Review our portfolio. You'll see why clients choose us over competitors.
                   </p>
                 </div>
               </div>
 
-              {/* How We Work */}
+              {/* Our Approach */}
               <div className="glass p-8 rounded-xl mb-10">
-                <h3 className="text-[1.125rem] font-medium mb-6 text-[var(--foreground)]">How We Work</h3>
+                <h3 className="text-[1.125rem] font-medium mb-6 text-[var(--foreground)]">Our Approach</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Strategy Before Channels</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">We begin with the business, audience and market context before deciding where and how to execute.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Data-Backed Strategies</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Every decision is supported by analytics, market research, and proven frameworks.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Creative With Purpose</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Design and content are developed to strengthen communication, attention and the overall brand experience.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Creative Excellence</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Award-winning designs and campaigns that capture attention and convert.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Performance With Context</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Campaigns are tested and refined using the signals that matter to the objective, not activity for its own sake.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Agile Execution</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Fast iterations, continuous optimization, and rapid adaptation to market changes.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Built for Long-Term Partnership</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">We aim to become an extension of the businesses we work with and improve the system as the business evolves.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Long-Term Partnership</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">We grow with you, scaling strategies as your business expands.</p>
                     </div>
                   </div>
                 </div>
@@ -597,12 +602,12 @@ export function HomePage() {
               {/* Bottom CTA */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/about" className="btn-primary inline-flex items-center gap-2">
-                  About Inchtomilez
+                  Learn Our Story
                   <ArrowRight className="icon-xs" />
                 </Link>
                 <Link to="/contact" className="px-6 py-3 bg-[var(--card)] border border-[var(--border)] hover:border-[var(--border)] rounded-xl transition-colors inline-flex items-center gap-2 text-[0.9375rem] font-semibold">
                   <Mail className="icon-xs" />
-                  Discuss a Project
+                  Request Portfolio
                 </Link>
               </div>
             </div>
@@ -638,7 +643,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="PERFORMANCE" 
+          text="SUCCESS" 
           className="absolute top-[62%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -657,15 +662,15 @@ export function HomePage() {
               
               <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
                 Duniya Brands Ke Peeche,<br />
-                Aur Brands Marketing Ke Peeche.
+                Aur Brands Marketing Aur Advertising Ke!
               </h2>
               
               <p className="text-[0.9375rem] leading-relaxed text-[var(--muted-foreground)] max-w-3xl mx-auto mb-6" style={{ lineHeight: 1.6 }}>
-                Great brands are built when <span className="text-yellow-500 font-semibold">strategy, communication and consistency</span> work together over time.
+                We believe great brands are not built by chance - they are built by <span className="text-yellow-500 font-semibold">strategy, communication, and consistency</span>.
               </p>
               
               <p className="text-[0.9375rem] leading-relaxed text-[var(--foreground)] font-semibold text-lg max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-                — Aman Panwar, Founder, Inchtomilez. For us, the line reflects a simple idea: strong brands are built through deliberate strategy, communication and consistent execution.
+                Our purpose is simple: help your business grow inch by inch until it becomes a mile of success.
               </p>
             </div>
           </div>
@@ -723,7 +728,7 @@ export function HomePage() {
               </h2>
               
               <p className="text-[0.9375rem] font-normal leading-relaxed text-[var(--muted-foreground)] max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-                Our difference is not one service. It is the way <span className="text-yellow-500 font-semibold">strategy, creative, performance and technology</span> come together around the business.
+                We are not another agency making promises. We are <span className="text-yellow-500 font-semibold">partners in your success</span>.
               </p>
             </div>
 
@@ -756,7 +761,7 @@ export function HomePage() {
                       <div className="flex items-center gap-2 pt-3 border-t border-white/5">
                         <CheckCircle className="w-4 h-4 text-yellow-500" />
                         <span className="text-[13px] md:text-[13px] font-medium text-yellow-500">
-                          Our Standard
+                          Guaranteed
                         </span>
                       </div>
                     </div>
@@ -771,17 +776,19 @@ export function HomePage() {
             {/* Trust Metrics Carousel - Faster Speed */}
             <div className="mb-12">
               <p className="text-[13px] md:text-[13px] font-medium uppercase tracking-wide text-yellow-500 mb-6 text-center">
-                How We Work
+                Built on Trust & Transparency
               </p>
               
               <AutoCarousel
                 items={[
-                  { icon: Building2, metric: 'Indore + Pune', label: 'Growing Local Presence' },
-                  { icon: Layers, metric: 'Integrated', label: 'Strategy • Creative • Media • Tech' },
-                  { icon: Target, metric: 'Business-First', label: 'Objectives Before Channels' },
-                  { icon: ChartBar, metric: 'Measured', label: 'Performance-Led Optimization' },
-                  { icon: HeartHandshake, metric: 'Collaborative', label: 'Long-Term Working Style' },
-                  { icon: Shield, metric: 'Clear', label: 'Scope, Communication & Accountability' },
+                  { icon: Award, metric: '98%', label: 'Client Retention Rate' },
+                  { icon: Star, metric: '4.9/5', label: 'Average Client Rating' },
+                  { icon: Users, metric: '96+', label: 'Clients Served' },
+                  { icon: Trophy, metric: '74+', label: 'Campaigns Delivered' },
+                  { icon: Clock, metric: '7+', label: 'Years of Excellence' },
+                  { icon: Target, metric: '100+', label: 'Brands Managed' },
+                  { icon: TrendingUp, metric: '300%', label: 'Avg. ROI Growth' },
+                  { icon: Zap, metric: '24/7', label: 'Support Available' },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
@@ -815,19 +822,19 @@ export function HomePage() {
             {/* Core Values Carousel - Slowest for Reading */}
             <div>
               <p className="text-[13px] md:text-[13px] font-medium uppercase tracking-wide text-yellow-500 mb-6 text-center">
-                Principles We Work By
+                Our Core Principles
               </p>
               
               <AutoCarousel
                 items={[
-                  { icon: Target, title: 'Business Context First', text: 'Understand the problem before choosing the channel' },
-                  { icon: HeartHandshake, title: 'Partnership Mindset', text: 'Work closely with the people who understand the business best' },
-                  { icon: FileCheck, title: 'Clear Scope', text: 'Defined responsibilities, deliverables and next steps' },
-                  { icon: ChartBar, title: 'Meaningful Measurement', text: 'Track signals that connect back to business outcomes' },
-                  { icon: Timer, title: 'Practical Timelines', text: 'Plan execution around what the work actually requires' },
-                  { icon: Lightbulb, title: 'Continuous Learning', text: 'Adapt creative, channels and tactics as the market changes' },
-                  { icon: Shield, title: 'Responsible Execution', text: 'Protect brand consistency, quality and client confidence' },
-                  { icon: Users, title: 'Connected Teams', text: 'Strategy, creative, performance and technology move together' },
+                  { icon: Shield, title: 'Transparency First', text: 'Every strategy, every rupee, fully visible' },
+                  { icon: HeartHandshake, title: 'Partnership Mindset', text: 'Your success is our success' },
+                  { icon: Target, title: 'Results-Driven', text: 'Metrics that matter to your business' },
+                  { icon: Lock, title: 'Data Security', text: 'Bank-grade protection for your data' },
+                  { icon: FileCheck, title: 'Clear Contracts', text: 'No hidden clauses or surprises' },
+                  { icon: Timer, title: 'Realistic Timelines', text: 'Honest expectations, achievable goals' },
+                  { icon: ChartBar, title: 'Regular Reporting', text: 'Weekly updates, monthly deep dives' },
+                  { icon: Lightbulb, title: 'Innovation Ready', text: 'Latest tools and strategies' },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
@@ -916,14 +923,14 @@ export function HomePage() {
             <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">COMPREHENSIVE SOLUTIONS</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
               <TextScramble 
-                text="One Agency. Connected Capabilities."
+                text="One Agency. Infinite Possibilities."
                 speed={1.5}
                 delay={200}
                 triggerOnView={true}
               />
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              We bring <span className="text-yellow-500 font-semibold">strategy, advertising, creative, digital, technology and on-ground execution</span> together so brands can work with one connected partner.
+              We unify every vertical of modern marketing under one roof — from <span className="text-yellow-500 font-semibold">digital to physical, strategy to execution</span>.
             </p>
 
             <BentoGrid2 
@@ -993,10 +1000,11 @@ export function HomePage() {
           <div className="max-w-6xl mx-auto relative z-10">
             <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">DIGITAL ECOSYSTEM</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              Digital Marketing, Built as a System
+              Digital Marketing That Builds Brands
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              From <span className="text-yellow-500 font-semibold">search and paid media to content, social and analytics</span>, we connect digital channels around the customer journey instead of treating them as isolated activities.
+              Our digital ecosystem covers everything from <span className="text-yellow-500 font-semibold">SEO optimization to paid performance marketing</span>. 
+              We do not just drive traffic - we drive trust.
             </p>
 
             <BentoGrid2 
@@ -1057,15 +1065,16 @@ export function HomePage() {
               <MapPin className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
               
               <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-                Local Search & Google Business Profile
+                Google My Business & Local Dominance
               </h2>
               
               <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                For location-led businesses, we strengthen <span className="text-yellow-500 font-semibold">visibility across Google Search and Maps</span> where local intent is highest.
+                For local visibility, we make your brand <span className="text-yellow-500 font-semibold">unmissable on Google Maps and search</span>.
               </p>
               
               <p className="text-[0.9375rem] leading-relaxed text-gray-300" style={{ lineHeight: 1.6 }}>
-                We improve profile completeness, local relevance, content, review workflows and listing consistency to support stronger discovery and customer action.
+                We optimize your Google Business Profile with real photos, reviews, keywords, and regular updates - 
+                <span className="text-yellow-500 font-semibold"> turning searches into store visits</span>.
               </p>
             </div>
           </div>
@@ -1112,52 +1121,53 @@ export function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 text-center leading-[1.3]">
-              Paid Media Built Around Intent & Performance
+              Google Ads & Paid Campaigns
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              We connect keyword strategy, audience intent, creative, landing pages and conversion tracking so <span className="text-yellow-500 font-semibold">paid media can be evaluated as a complete performance system.</span>
+              We manage everything from keyword planning to A/B tested ad creatives. 
+              <span className="text-yellow-500 font-semibold"> Every click is tracked. Every rupee is accounted for.</span>
             </p>
             
             <p className="text-[0.9375rem] leading-relaxed text-white font-semibold text-center mb-12">
-              The goal is not more ad activity — it is better-informed acquisition and continuous improvement.
+              Your ROI is our primary metric.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="glass-card p-6">
                 <Target className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Search Ads</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Reach people actively searching for relevant products, services or solutions.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Intent-driven traffic from users actively searching for your solutions.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Eye className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Display & Discovery</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Extend awareness and consideration through visual formats and audience-led placements.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Visual reach across Google network with targeted audience segments.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Zap className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Performance Max</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Use Google’s cross-channel automation where it fits the campaign objective and available conversion data.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">AI-powered campaigns across all Google channels for maximum impact.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Play className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">YouTube Video Ads</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Build awareness, consideration and remarketing journeys through video-led advertising.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Engaging video content that captures attention and drives action.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Users className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Retargeting & Remarketing</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Reconnect with audiences who have already interacted with the website, content or campaigns.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Re-engage visitors who showed interest but did not convert yet.</p>
               </div>
               
               <div className="glass-card p-6">
                 <BarChart3 className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Analytics & Optimization</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Review search terms, audiences, creatives, landing pages and conversion signals to improve campaign decisions.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Continuous testing and refinement based on performance data.</p>
               </div>
             </div>
           </div>
@@ -1206,22 +1216,22 @@ export function HomePage() {
             <Search className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
             
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-              SEO & Search Performance
+              SEO & Webmaster Tools Management
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8" style={{ lineHeight: 1.6 }}>
-              We strengthen the website&apos;s <span className="text-yellow-500 font-semibold">technical foundation, content relevance and search visibility</span> so it is easier for search engines and users to understand.
+              We ensure your website is <span className="text-yellow-500 font-semibold">technically perfect</span> - fast, crawlable, and indexed correctly.
             </p>
 
             <div className="glass-card p-8 text-left">
-              <h3 className="text-[1.375rem] font-medium mb-6 leading-[1.4]">Search & Technical Focus:</h3>
+              <h3 className="text-[1.375rem] font-medium mb-6 leading-[1.4]">Our Toolkit Includes:</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Google Search Console (Webmaster Tools)</p>
-                    <p className="text-[0.8125rem] text-gray-400">Monitor indexing, crawl coverage and search performance</p>
+                    <p className="text-[0.8125rem] text-gray-400">Monitor indexing, fix crawl errors, optimize search performance</p>
                   </div>
                 </div>
                 
@@ -1229,7 +1239,7 @@ export function HomePage() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Bing Webmaster</p>
-                    <p className="text-[0.8125rem] text-gray-400">Extend search visibility and technical monitoring beyond Google</p>
+                    <p className="text-[0.8125rem] text-gray-400">Additional search visibility on Microsoft network</p>
                   </div>
                 </div>
                 
@@ -1237,7 +1247,7 @@ export function HomePage() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">SEMrush / Ahrefs</p>
-                    <p className="text-[0.8125rem] text-gray-400">Keyword research, competitive analysis and authority reviews</p>
+                    <p className="text-[0.8125rem] text-gray-400">Keyword research, competitor analysis, backlink audits</p>
                   </div>
                 </div>
                 
@@ -1245,7 +1255,7 @@ export function HomePage() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Site Speed & Schema Optimization</p>
-                    <p className="text-[0.8125rem] text-gray-400">Improve performance, structured data and technical search readiness</p>
+                    <p className="text-[0.8125rem] text-gray-400">Technical SEO for faster load times and better rankings</p>
                   </div>
                 </div>
                 
@@ -1253,7 +1263,7 @@ export function HomePage() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Monthly SEO Health Reports</p>
-                    <p className="text-[0.8125rem] text-gray-400">Review visibility, traffic patterns, technical issues and opportunities</p>
+                    <p className="text-[0.8125rem] text-gray-400">Transparent reporting on rankings, traffic, and opportunities</p>
                   </div>
                 </div>
               </div>
@@ -1304,15 +1314,16 @@ export function HomePage() {
             <Share2 className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
             
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-              Social Media Strategy & Content
+              Social Media Marketing
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              <span className="text-yellow-500 font-semibold">Content, community and performance should reinforce the same brand.</span> From reels and campaigns to platform planning, we build social systems around consistency and audience relevance.
+              <span className="text-yellow-500 font-semibold">Creative storytelling meets analytics.</span> 
+              From reels and carousels to paid campaigns, we manage your entire social presence with clarity and consistency.
             </p>
 
             <div className="inline-block glass-card p-6 mb-12">
-              <h3 className="text-[1.375rem] font-medium mb-4 leading-[1.4]">Platforms We Work Across:</h3>
+              <h3 className="text-[1.375rem] font-medium mb-4 leading-[1.4]">Platforms We Master:</h3>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="bg-yellow-500 text-black px-4 py-2 rounded-lg text-[0.8125rem] font-semibold">Instagram</span>
                 <span className="bg-yellow-500 text-black px-4 py-2 rounded-lg text-[0.8125rem] font-semibold">Facebook</span>
@@ -1366,10 +1377,11 @@ export function HomePage() {
           <div className="max-w-6xl mx-auto relative z-10">
             <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">OUT-OF-HOME ADVERTISING</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              OOH Advertising — Visibility in the Real World
+              OOH Advertising - Visibility That Lasts
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              From hoardings and transit to airport and retail media, we plan OOH around <span className="text-yellow-500 font-semibold">location, audience movement, format and campaign context.</span>
+              Billboards, hoardings, transit media, airport screens, and mall branding - 
+              <span className="text-yellow-500 font-semibold"> we plan, place, and monitor every outdoor impression</span> using data-driven heatmaps.
             </p>
 
             <BentoGrid2 
@@ -1385,24 +1397,24 @@ export function HomePage() {
 
             <div className="mt-12">
               <div className="glass-strong p-8 rounded-2xl">
-                <h3 className="text-[1.375rem] font-medium mb-6 text-center leading-[1.4]">OOH Planning & Evaluation:</h3>
+                <h3 className="text-[1.375rem] font-medium mb-6 text-center leading-[1.4]">OOH Analytics We Provide:</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center">
                     <MapPin className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Placement Mapping</p>
-                    <p className="text-[0.8125rem] text-gray-400">Document locations, formats and geographic coverage</p>
+                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Geo-mapping Visibility Reports</p>
+                    <p className="text-[0.8125rem] text-gray-400">See exactly where your ads are placed and their reach</p>
                   </div>
                   
                   <div className="text-center">
                     <BarChart3 className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Reach & Footfall Context</p>
-                    <p className="text-[0.8125rem] text-gray-400">Use available audience and location data to assess placement potential</p>
+                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">ROI & Footfall Estimates</p>
+                    <p className="text-[0.8125rem] text-gray-400">Data-driven estimates of impressions and impact</p>
                   </div>
                   
                   <div className="text-center">
                     <Settings className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Campaign Optimization</p>
-                    <p className="text-[0.8125rem] text-gray-400">Refine formats and placements as campaign learning develops</p>
+                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Dynamic Campaign Adjustments</p>
+                    <p className="text-[0.8125rem] text-gray-400">Optimize placements based on performance data</p>
                   </div>
                 </div>
               </div>
@@ -1462,10 +1474,11 @@ export function HomePage() {
           <div className="max-w-6xl mx-auto relative z-10">
             <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">EXPERIENTIAL MARKETING</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              BTL Activations — Brands in the Real World
+              BTL Activations - Real-World Brand Engagement
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Create direct interaction through <span className="text-yellow-500 font-semibold">experiential and on-ground marketing</span>, with activation planning, lead capture and post-campaign learning built around the objective.
+              Bring your brand to life through <span className="text-yellow-500 font-semibold">experiential marketing</span>. 
+              Each campaign is fully measurable with lead capture & post-event analytics.
             </p>
 
             <BentoGrid2 
@@ -1537,10 +1550,10 @@ export function HomePage() {
                 <Monitor className="w-12 h-12 text-yellow-500 mb-6" />
                 <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Website & App Development</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  Fast, usable and <span className="text-yellow-500 font-semibold">business-focused digital experiences</span>.
+                  Fast, functional, <span className="text-yellow-500 font-semibold">conversion-optimized web ecosystems</span>.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  From corporate websites to e-commerce and digital products, we connect design, development, search readiness and conversion thinking.
+                  From corporate websites to e-commerce and app development - we build with design precision and SEO intelligence.
                 </p>
                 <Link
                   to="/services/website-development"
@@ -1555,10 +1568,10 @@ export function HomePage() {
                 <Code className="w-12 h-12 text-yellow-500 mb-6" />
                 <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Software & Automation</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  Custom software, dashboards and <span className="text-yellow-500 font-semibold">automation built around real workflows</span>.
+                  Custom software, dashboards, and <span className="text-yellow-500 font-semibold">CRMs that simplify workflows</span>.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  We identify repeatable processes and build practical systems that reduce friction as operations grow.
+                  We automate routine tasks and deliver smarter scalability for growing businesses.
                 </p>
                 <Link
                   to="/services/software-development"
@@ -1617,10 +1630,11 @@ export function HomePage() {
                 <Camera className="w-12 h-12 text-yellow-500 mb-6" />
                 <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Media Production & Creative Design</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  From product shoots and short-form content to <span className="text-yellow-500 font-semibold">brand films and campaign assets</span>, we connect production with the communication objective.
+                  From product shoots to <span className="text-yellow-500 font-semibold">cinematic brand films</span>, 
+                  we handle the full creative process.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  Content designed to communicate, differentiate and remain consistent with the brand.
+                  Content that tells stories - not just fills space.
                 </p>
                 <Link
                   to="/services/media-production"
@@ -1633,12 +1647,12 @@ export function HomePage() {
               {/* Public Relations */}
               <div className="glass-card p-8">
                 <MessageSquare className="w-12 h-12 text-yellow-500 mb-6" />
-                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Public Relations & Brand Influence</h2>
+                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Public Relations & Influence Management</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  We support brands with <span className="text-yellow-500 font-semibold">media communication, outreach and reputation-led visibility</span>.
+                  We help brands <span className="text-yellow-500 font-semibold">earn media coverage</span> and maintain credibility.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  Across print, digital and influence ecosystems, the focus remains clear messaging, relevance and credibility.
+                  Across print, digital, and influencer ecosystems - building trust that lasts.
                 </p>
                 <Link
                   to="/services/public-relations"
@@ -1693,10 +1707,11 @@ export function HomePage() {
           <div className="max-w-6xl mx-auto relative z-10">
             <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">OUR METHODOLOGY</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              From Understanding to Execution
+              Our Process – How We Work
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              A <span className="text-yellow-500 font-semibold">structured working process</span> that keeps research, strategy, creative, execution and optimization connected.
+              A <span className="text-yellow-500 font-semibold">systematic approach</span> refined over 7 years and 74+ campaigns. 
+              Clear steps, realistic timelines.
             </p>
 
             <BentoGrid2 
@@ -1759,7 +1774,7 @@ export function HomePage() {
               Industries We Serve
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Our experience spans <span className="text-yellow-500 font-semibold">healthcare, technology, real estate, e-commerce, education, FMCG, hospitality, automotive, jewellery, F&amp;B, professional services and manufacturing.</span>
+              <span className="text-yellow-500 font-semibold">Healthcare • Tech • Real Estate • E-Commerce • Education • Finance • Hospitality • F&B • Legal • Manufacturing • Automotive</span>
             </p>
 
             <BentoGrid2 
@@ -1827,10 +1842,10 @@ export function HomePage() {
           <div className="max-w-6xl mx-auto mb-12 relative z-10">
             <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">TECHNOLOGY STACK</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              Platforms Behind the Work
+              Tools We Trust
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              We use a practical mix of <span className="text-yellow-500 font-semibold">analytics, advertising, search, creative, commerce and development platforms</span> based on the work being delivered.
+              <span className="text-yellow-500 font-semibold">Industry-standard platforms</span> and enterprise-grade tools for maximum performance.
             </p>
           </div>
 
@@ -1850,7 +1865,7 @@ export function HomePage() {
         
         {/* Layer 1: Far Background - Ultra-Slow, Massive */}
         <OutlinedText 
-          text="PERFORMANCE" 
+          text="SUCCESS" 
           className="absolute top-[4%] right-[3%] text-[18rem] md:text-[22rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -1861,7 +1876,7 @@ export function HomePage() {
         
         {/* Layer 2: Mid Ground - Fast with Heavy Scale */}
         <OutlinedText 
-          text="FOCUS" 
+          text="METRICS" 
           className="absolute top-[40%] left-[8%] text-[9rem] md:text-[13rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -1873,7 +1888,7 @@ export function HomePage() {
         
         {/* Layer 3: Near Foreground - Ultra-Fast, Dynamic */}
         <OutlinedText 
-          text="IMPROVE" 
+          text="RESULTS" 
           className="absolute bottom-[10%] right-[18%] text-[7rem] md:text-[10rem] pointer-events-none"
           direction="top"
           parallax={true}
@@ -1885,12 +1900,13 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">PERFORMANCE FOCUS</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">PROVEN RESULTS</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              What We Measure. What We Improve.
+              Real Numbers, Real Success
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              We focus on <span className="text-yellow-500 font-semibold">business-relevant indicators</span> that help us understand performance, identify friction and make better decisions.
+              Results from <span className="text-yellow-500 font-semibold">96+ client partnerships</span> representing 
+              years of consistent effort and optimization.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1914,7 +1930,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Fully visible at left */}
         <OutlinedText 
-          text="PARTNERSHIP" 
+          text="TESTIMONIALS" 
           className="absolute top-[10%] left-0 text-[8rem] md:text-[12rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -1934,7 +1950,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Fully visible at left */}
         <OutlinedText 
-          text="VALUE" 
+          text="REVIEWS" 
           className="absolute top-[62%] left-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -1944,22 +1960,22 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto mb-12 relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">PARTNERSHIP STANDARDS</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">CLIENT FEEDBACK</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              What We Value in Every Partnership
+              Client Testimonials
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              These are the <span className="text-yellow-500 font-semibold">working standards</span> we bring to strategy, execution and client collaboration.
+              Honest feedback from <span className="text-yellow-500 font-semibold">real clients</span> about their experience working with us.
             </p>
           </div>
 
           <AutoCarousel speed="slow">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="glass-card min-w-[300px] sm:min-w-[380px] max-w-[420px] flex-shrink-0 snap-center p-6">
-                {/* Partnership standard markers */}
+                {/* Rating */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <CheckCircle key={i} className="w-4 h-4 text-yellow-500" />
+                    <Star key={i} className="w-4 h-4 text-yellow-500" fill="currentColor" />
                   ))}
                 </div>
                 
@@ -2032,11 +2048,11 @@ export function HomePage() {
               </h2>
               
               <p className="text-[0.9375rem] leading-relaxed text-white font-semibold text-lg mb-4" style={{ lineHeight: 1.6 }}>
-                We commit to clear thinking, responsible execution and continuous improvement.
+                We will not promise miracles - only measurable progress.
               </p>
               
               <p className="text-[0.9375rem] leading-relaxed text-gray-300" style={{ lineHeight: 1.6 }}>
-                We value <span className="text-yellow-500 font-semibold">strong systems, useful communication and sustainable progress</span> over short-term noise.
+                We value <span className="text-yellow-500 font-semibold">long-term success</span> over short-term noise.
               </p>
             </div>
           </div>
@@ -2088,9 +2104,10 @@ export function HomePage() {
             <div className="glass-strong p-8 md:p-12 rounded-2xl text-center relative z-10">
               <Mail className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
               
-              <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Ideas Worth Taking Back to Your Business</h2>
+              <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Newsletter - Stay Ahead of the Curve</h2>
               <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 max-w-2xl mx-auto" style={{ lineHeight: 1.6 }}>
-                Get practical perspectives on strategy, advertising, SEO, creative, websites and digital growth from the Inchtomilez team. <span className="text-yellow-500 font-semibold">Useful thinking, without the noise.</span>
+                Get monthly insights, trends, and marketing hacks from the InchToMilez team. 
+                <span className="text-yellow-500 font-semibold"> No fluff. No spam. Just growth.</span>
               </p>
               
               <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
@@ -2106,7 +2123,7 @@ export function HomePage() {
                   type="submit"
                   className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 text-[0.9375rem] font-semibold whitespace-nowrap shadow-lg hover:scale-105"
                 >
-                  Join the Newsletter
+                  Subscribe Now
                 </button>
               </form>
               
@@ -2122,7 +2139,7 @@ export function HomePage() {
         
         {/* Layer 1: Far Background - Slow Wide Panorama */}
         <OutlinedText 
-          text="INDORE" 
+          text="GLOBAL" 
           className="absolute top-[8%] right-[5%] text-[16rem] md:text-[20rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2133,7 +2150,7 @@ export function HomePage() {
         
         {/* Layer 2: Mid Ground - Medium Counter Sweep */}
         <OutlinedText 
-          text="PUNE" 
+          text="VISION" 
           className="absolute top-[40%] left-[10%] text-[10rem] md:text-[14rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -2145,7 +2162,7 @@ export function HomePage() {
         
         {/* Layer 3: Near Foreground - Fast Panoramic */}
         <OutlinedText 
-          text="EXPANSION" 
+          text="WORLDWIDE" 
           className="absolute bottom-[12%] right-[14%] text-[7rem] md:text-[10rem] pointer-events-none"
           direction="top"
           parallax={true}
@@ -2160,15 +2177,15 @@ export function HomePage() {
             <Globe className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
             
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-              From Indore to Pune
+              Global Vision - Local Expertise
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-4" style={{ lineHeight: 1.6 }}>
-              Inchtomilez was built in Indore. In September 2026, we expanded our presence to Pune.
+              Born in Indore, growing worldwide.
             </p>
             
             <p className="text-[0.9375rem] leading-relaxed text-white font-semibold text-lg" style={{ lineHeight: 1.6 }}>
-              Two cities, one connected agency approach across strategy, creative, performance, advertising and technology.
+              Our goal: make transparent, ethical marketing India's biggest export.
             </p>
           </div>
         </div>
@@ -2216,9 +2233,10 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">Ready to Move Your Brand Forward?</h2>
+            <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">Ready to Go from Inch to Mile?</h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-10 max-w-2xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Tell us where the business is today and where you want it to go. <span className="text-yellow-500 font-semibold">We&apos;ll help you identify the right next move.</span>
+              Let us build your next success story together. 
+              <span className="text-yellow-500 font-semibold"> Free consultation. No obligations. Just honest insights.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -2226,7 +2244,7 @@ export function HomePage() {
                 to="/contact"
                 className="bg-yellow-500 hover:bg-yellow-400 text-black px-10 py-5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.9375rem] font-semibold shadow-xl hover:shadow-yellow-500/50 hover:scale-105"
               >
-                Start a Conversation
+                Get Free Consultation
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
@@ -2238,13 +2256,13 @@ export function HomePage() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-              <a href="tel:+919009970709" className="flex items-center gap-2 text-[0.9375rem] text-gray-300 hover:text-yellow-500 transition-colors font-semibold">
+              <a href="tel:+919669988666" className="flex items-center gap-2 text-[0.9375rem] text-gray-300 hover:text-yellow-500 transition-colors font-semibold">
                 <Phone className="w-5 h-5" />
-                📞 +91 90099 70709
+                📞 +91 966-998-8666
               </a>
-              <a href="mailto:info@inchtomilez.com" className="flex items-center gap-2 text-[0.9375rem] text-gray-300 hover:text-yellow-500 transition-colors font-semibold">
+              <a href="mailto:inchtomilez@gmail.com" className="flex items-center gap-2 text-[0.9375rem] text-gray-300 hover:text-yellow-500 transition-colors font-semibold">
                 <Mail className="w-5 h-5" />
-                info@inchtomilez.com
+                inchtomilez@gmail.com
               </a>
             </div>
           </div>
