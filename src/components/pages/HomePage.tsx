@@ -366,98 +366,474 @@ export function HomePage() {
       <StructuredData data={[organizationSchema, localBusinessSchema, websiteSchema]} />
       
 
-      
-      {/* 1. Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        
-        {/* Video Background - Professional & Safe
-            Note: Place your video file in /public/videos/hero-video.mp4
-            If video fails to load, component gracefully falls back to solid black background. */}
-        <VideoBackground 
-          src="/videos/hero-video.mp4"
-          overlayOpacity={0.7}
-          startTime={9}
-        />
-        
-        <div className="max-w-6xl mx-auto text-center w-full relative z-10">
-          {/* Badge */}
-          <AnimatedSection animation="fadeInUp" delay={0.1}>
-            <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 px-4 py-2 rounded-full mb-6">
-              <Star className="w-4 h-4 text-white" fill="currentColor" />
-              <span className="text-[0.8125rem] font-medium uppercase tracking-wide text-yellow-500">DIGITAL • CREATIVE • ADVERTISING • TECHNOLOGY</span>
-            </div>
-          </AnimatedSection>
 
-          {/* H1 - SEO Optimized (hidden, using seo.h1) */}
-          <AnimatedSection animation="fadeInUp" delay={0.2}>
-            <h1 className="text-[30px] md:text-[42px] font-medium tracking-tight mb-6 leading-[1.3]">
-              Duniya Brands Ke Peeche, Aur Brands Marketing Aur Advertising Ke!
-            </h1>
-          </AnimatedSection>
 
-          {/* Hindi Tagline - H2 */}
-          <AnimatedSection animation="fadeInUp" delay={0.25}>
-            <h2 className="text-[20px] md:text-[22px] font-bold text-[var(--muted-foreground)] mb-6 leading-[1.3]">
-              We Create Brands People Notice. Campaigns People Remember. Experiences People Choose.
-            </h2>
-          </AnimatedSection>
 
-          {/* Subtext */}
-          <AnimatedSection animation="fadeInUp" delay={0.3}>
-            <p className="text-[0.9375rem] leading-relaxed text-[var(--muted-foreground)] max-w-4xl mx-auto mb-10" style={{ lineHeight: 1.6 }}>
-              We build ideas, campaigns and digital experiences that make people look, remember and choose.
-            </p>
-          </AnimatedSection>
-          
-          {/* Quick Facts */}
-          <AnimatedSection animation="fadeInUp" delay={0.4}>
-            <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-10">
-              {quickFacts.map((fact, index) => (
-                <div key={index} className="flex items-center gap-2 bg-[var(--card)] border border-[var(--border)] px-4 py-2 rounded-full">
-                  <CheckCircle className="w-4 h-4 text-yellow-500" />
-                  <span className="text-[0.8125rem] text-[var(--muted-foreground)]">{fact.label}</span>
-                </div>
-              ))}
-            </div>
-          </AnimatedSection>
 
-          {/* CTAs - Enhanced with Magnetic Buttons */}
-          <AnimatedSection animation="fadeInUp" delay={0.5}>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <MagneticButton href="/contact" strength={0.3}>
-                <span className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold shadow-2xl">
-                  Start Something
-                  <ArrowRight className="w-5 h-5" />
-                </span>
-              </MagneticButton>
-              <MagneticButton href="/services" strength={0.2}>
-                <span className="glass-yellow px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold">
-                  Explore Inchtomilez
-                  <ArrowRight className="w-5 h-5" />
-                </span>
-              </MagneticButton>
-            </div>
-          </AnimatedSection>
 
-          {/* Contact Info */}
-          <AnimatedSection animation="fadeInUp" delay={0.6}>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
-              <a href="tel:+919669988666" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
-                <Phone className="w-4 h-4" />
-                +91 966-998-8666
-              </a>
-              <a href="mailto:inchtomilez@gmail.com" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
-                <Mail className="w-4 h-4" />
-                inchtomilez@gmail.com
-              </a>
-              <div className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)]">
-                <MapPin className="w-4 h-4" />
-                Indore • Pune • India
+{/* 1. HERO SECTION — CINEMATIC VIDEO LANDING */}
+<section className="relative min-h-[100svh] w-full overflow-hidden bg-black flex items-end">
+
+  {/* =========================================================
+      BACKGROUND VIDEO
+      - muted is required for reliable browser autoplay
+      - playsInline prevents forced fullscreen on mobile
+      - preload="metadata" avoids unnecessarily downloading
+        the full video before the page becomes usable
+  ========================================================== */}
+  <video
+    className="
+      absolute inset-0
+      w-full h-full
+      object-cover
+      object-center
+      pointer-events-none
+      select-none
+    "
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="metadata"
+    disablePictureInPicture
+    aria-hidden="true"
+  >
+    <source
+      src="https://orange-woodcock-416561.hostingersite.com/wp-content/uploads/2024/09/Sequence-01_2.mp4"
+      type="video/mp4"
+    />
+  </video>
+
+
+  {/* =========================================================
+      VIDEO OVERLAYS
+      Gives us:
+      1. overall darkening
+      2. stronger darkness behind text
+      3. cinematic bottom fade
+  ========================================================== */}
+
+  {/* Main dark layer */}
+  <div
+    className="absolute inset-0 bg-black/45 pointer-events-none"
+    aria-hidden="true"
+  />
+
+  {/* Left readability gradient */}
+  <div
+    className="
+      absolute inset-0
+      bg-gradient-to-r
+      from-black/90
+      via-black/55
+      to-black/10
+      pointer-events-none
+    "
+    aria-hidden="true"
+  />
+
+  {/* Bottom cinematic gradient */}
+  <div
+    className="
+      absolute inset-0
+      bg-gradient-to-t
+      from-black/90
+      via-black/20
+      to-transparent
+      pointer-events-none
+    "
+    aria-hidden="true"
+  />
+
+
+  {/* =========================================================
+      HERO CONTENT
+  ========================================================== */}
+  <div
+    className="
+      relative z-10
+      w-full
+      px-5
+      sm:px-8
+      lg:px-12
+      xl:px-16
+      pb-8
+      sm:pb-10
+      md:pb-12
+      lg:pb-14
+      pt-32
+    "
+  >
+    <div className="max-w-[1450px] mx-auto">
+
+      {/* Content width deliberately kept left-aligned */}
+      <div className="max-w-[1100px]">
+
+        {/* Badge */}
+        <AnimatedSection animation="fadeInUp" delay={0.08}>
+          <div
+            className="
+              inline-flex
+              items-center
+              gap-2
+              mb-5
+              sm:mb-6
+              border
+              border-yellow-500/40
+              bg-black/35
+              backdrop-blur-md
+              rounded-full
+              px-4
+              py-2
+            "
+          >
+            <Star
+              className="w-3.5 h-3.5 text-yellow-500"
+              fill="currentColor"
+            />
+
+            <span
+              className="
+                text-[10px]
+                sm:text-[11px]
+                md:text-[12px]
+                uppercase
+                tracking-[0.14em]
+                font-semibold
+                text-white/90
+              "
+            >
+              DIGITAL • CREATIVE • ADVERTISING • TECHNOLOGY
+            </span>
+          </div>
+        </AnimatedSection>
+
+
+        {/* =====================================================
+            MAIN BRAND STATEMENT
+        ====================================================== */}
+        <AnimatedSection animation="fadeInUp" delay={0.14}>
+          <h1
+            className="
+              max-w-[1180px]
+              text-[34px]
+              sm:text-[42px]
+              md:text-[54px]
+              lg:text-[64px]
+              xl:text-[72px]
+              font-semibold
+              tracking-[-0.035em]
+              leading-[1.02]
+              text-white
+              uppercase
+              mb-5
+            "
+          >
+            Duniya{" "}
+            <span className="text-yellow-500">
+              Brands
+            </span>{" "}
+            Ke Peeche,
+            <br className="hidden md:block" />
+            <span className="md:ml-0">
+              Aur Brands Marketing Aur Advertising Ke!
+            </span>
+          </h1>
+        </AnimatedSection>
+
+
+        {/* Supporting headline */}
+        <AnimatedSection animation="fadeInUp" delay={0.2}>
+          <h2
+            className="
+              max-w-[900px]
+              text-[17px]
+              sm:text-[19px]
+              md:text-[21px]
+              lg:text-[23px]
+              leading-[1.45]
+              font-medium
+              text-white/90
+              mb-3
+            "
+          >
+            We Create Brands People Notice. Campaigns People Remember.
+            Experiences People Choose.
+          </h2>
+        </AnimatedSection>
+
+
+        {/* Supporting copy */}
+        <AnimatedSection animation="fadeInUp" delay={0.25}>
+          <p
+            className="
+              max-w-[760px]
+              text-[14px]
+              sm:text-[15px]
+              md:text-[16px]
+              leading-[1.7]
+              text-white/65
+              mb-7
+              md:mb-8
+            "
+          >
+            We build ideas, campaigns and digital experiences that make
+            people look, remember and choose.
+          </p>
+        </AnimatedSection>
+
+
+        {/* =====================================================
+            QUICK FACTS
+        ====================================================== */}
+        <AnimatedSection animation="fadeInUp" delay={0.3}>
+          <div
+            className="
+              flex
+              flex-wrap
+              items-center
+              gap-x-5
+              gap-y-3
+              mb-7
+              md:mb-8
+            "
+          >
+            {quickFacts.map((fact, index) => (
+              <div
+                key={index}
+                className="
+                  flex
+                  items-center
+                  gap-2
+                  text-[11px]
+                  sm:text-[12px]
+                  md:text-[13px]
+                  font-medium
+                  text-white/75
+                "
+              >
+                <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+
+                <span>{fact.label}</span>
               </div>
+            ))}
+          </div>
+        </AnimatedSection>
+
+
+        {/* =====================================================
+            CTA ROW
+        ====================================================== */}
+        <AnimatedSection animation="fadeInUp" delay={0.36}>
+          <div
+            className="
+              flex
+              flex-col
+              sm:flex-row
+              sm:items-center
+              gap-3
+              sm:gap-4
+              mb-8
+            "
+          >
+
+            {/* PRIMARY CTA */}
+            <Link
+              to="/contact"
+              className="
+                group
+                inline-flex
+                items-center
+                justify-center
+                gap-2
+                min-h-[52px]
+                px-7
+                bg-yellow-500
+                hover:bg-yellow-400
+                text-black
+                text-[14px]
+                sm:text-[15px]
+                font-semibold
+                rounded-md
+                transition-all
+                duration-300
+                hover:-translate-y-0.5
+                hover:shadow-[0_12px_35px_rgba(234,179,8,0.25)]
+              "
+            >
+              Start Something
+
+              <ArrowRight
+                className="
+                  w-4 h-4
+                  transition-transform
+                  duration-300
+                  group-hover:translate-x-1
+                "
+              />
+            </Link>
+
+
+            {/* SECONDARY CTA */}
+            <Link
+              to="/services"
+              className="
+                group
+                inline-flex
+                items-center
+                justify-center
+                gap-2
+                min-h-[52px]
+                px-7
+                border
+                border-white/25
+                bg-white/[0.07]
+                hover:bg-white/[0.12]
+                hover:border-yellow-500/60
+                backdrop-blur-md
+                text-white
+                text-[14px]
+                sm:text-[15px]
+                font-semibold
+                rounded-md
+                transition-all
+                duration-300
+              "
+            >
+              Explore Inchtomilez
+
+              <ArrowRight
+                className="
+                  w-4 h-4
+                  transition-transform
+                  duration-300
+                  group-hover:translate-x-1
+                "
+              />
+            </Link>
+
+          </div>
+        </AnimatedSection>
+
+
+        {/* =====================================================
+            CONTACT LINE
+        ====================================================== */}
+        <AnimatedSection animation="fadeInUp" delay={0.42}>
+          <div
+            className="
+              flex
+              flex-col
+              sm:flex-row
+              sm:flex-wrap
+              sm:items-center
+              gap-3
+              sm:gap-6
+              pt-5
+              border-t
+              border-white/10
+              max-w-[900px]
+            "
+          >
+
+            <a
+              href="tel:+919669988666"
+              className="
+                flex
+                items-center
+                gap-2
+                text-[12px]
+                sm:text-[13px]
+                text-white/60
+                hover:text-yellow-500
+                transition-colors
+              "
+            >
+              <Phone className="w-4 h-4" />
+              +91 966-998-8666
+            </a>
+
+
+            <a
+              href="mailto:inchtomilez@gmail.com"
+              className="
+                flex
+                items-center
+                gap-2
+                text-[12px]
+                sm:text-[13px]
+                text-white/60
+                hover:text-yellow-500
+                transition-colors
+              "
+            >
+              <Mail className="w-4 h-4" />
+              inchtomilez@gmail.com
+            </a>
+
+
+            <div
+              className="
+                flex
+                items-center
+                gap-2
+                text-[12px]
+                sm:text-[13px]
+                text-white/60
+              "
+            >
+              <MapPin className="w-4 h-4" />
+              Indore • Pune • India
             </div>
-          </AnimatedSection>
-        </div>
-      </section>
+
+          </div>
+        </AnimatedSection>
+
+      </div>
+    </div>
+  </div>
+
+
+  {/* =========================================================
+      SMALL SCROLL INDICATOR
+      Desktop only — kept subtle
+  ========================================================== */}
+  <div
+    className="
+      hidden
+      lg:flex
+      absolute
+      right-10
+      bottom-12
+      z-20
+      items-center
+      gap-3
+      rotate-90
+      origin-bottom-right
+      text-white/40
+    "
+  >
+    <span className="text-[10px] uppercase tracking-[0.25em]">
+      Scroll
+    </span>
+
+    <div className="w-10 h-px bg-white/30" />
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
       {/* 2. Who We Are - V4.0 3D PARALLAX ENHANCED */}
       <section className="min-h-[100vh] py-16 md:py-24 flex items-center relative overflow-hidden" style={{ perspective: '1000px' }}>
