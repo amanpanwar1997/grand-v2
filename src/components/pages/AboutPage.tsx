@@ -99,7 +99,7 @@ export function AboutPage() {
       label: 'Our Purpose',
 
       description:
-        'To connect strategy, advertising, creative, search and technology around one objective: helping businesses build stronger market presence and sustainable growth.',
+        'To turn business ambition into brand momentum by connecting strategy, creative, media, search and technology around one clear direction.',
     },
 
     {
@@ -108,7 +108,7 @@ export function AboutPage() {
       label: 'Our Vision',
 
       description:
-        'To build a modern independent agency from India that combines sharp strategy, strong creative and accountable execution without losing clarity, speed or personal involvement.',
+        'To build an independent Indian agency capable of creating work that can move from local markets to bigger stages without losing speed, clarity or craft.',
     },
 
     {
@@ -117,7 +117,7 @@ export function AboutPage() {
       label: 'Our Approach',
 
       description:
-        'We start with the business problem, not the platform. The channel mix follows the objective, the audience and the opportunity.',
+        'Start with the problem. Find the opportunity. Build the idea. Choose the channels. Then make every touchpoint work together.',
     },
 
     {
@@ -126,7 +126,7 @@ export function AboutPage() {
       label: 'Founder-Led',
 
       description:
-        'Founded by Aman Panwar in Indore, Inchtomilez remains closely involved in strategy and execution while growing into a broader integrated agency.',
+        'Founded by Aman Panwar in Indore, Inchtomilez stays close to the thinking, the work and the decisions that shape every engagement.',
     },
 
     {
@@ -135,7 +135,7 @@ export function AboutPage() {
       label: 'Our Presence',
 
       description:
-        'Built in Indore and expanding to Pune in September 2026, we work as one connected agency across locations, disciplines and client requirements.',
+        'Born in Indore. Expanding into Pune in September 2026. One connected agency built to work across markets, industries and disciplines.',
     },
 
     {
@@ -144,7 +144,7 @@ export function AboutPage() {
       label: 'Our Commitment',
 
       description:
-        'We want every engagement to leave the business stronger — with clearer positioning, better digital assets, more effective campaigns and better decisions.',
+        'Leave every brand clearer, stronger and better equipped to move — with sharper positioning, better experiences and more effective communication.',
     },
 
   ];
@@ -164,7 +164,7 @@ export function AboutPage() {
       label: 'Strategy',
 
       description:
-        'Positioning, audience, market, offer and growth priorities come first. Strategy gives every channel a reason to exist.',
+        'Find where the brand should move before deciding how loudly it should speak.',
     },
 
     {
@@ -173,7 +173,7 @@ export function AboutPage() {
       label: 'Creative',
 
       description:
-        'Ideas, messaging and design turn strategy into communication people can notice, understand and remember.',
+        'Turn strategy into ideas, identities and communication people can actually notice, understand and remember.',
     },
 
     {
@@ -182,7 +182,7 @@ export function AboutPage() {
       label: 'Performance',
 
       description:
-        'Paid media, search and lead generation are managed around qualified demand, conversion quality and continuous improvement.',
+        'Put the work in front of the right people, learn from real response and keep improving what earns attention and action.',
     },
 
     {
@@ -191,7 +191,7 @@ export function AboutPage() {
       label: 'Technology',
 
       description:
-        'Websites, landing pages, e-commerce and digital systems make sure attention has somewhere effective to go.',
+        'Build the websites, commerce and digital systems that make the experience after the click as strong as the campaign.',
     },
 
   ];
@@ -211,7 +211,7 @@ export function AboutPage() {
       label: 'Understand First',
 
       description:
-        'We look at the business model, customer journey, market, competition and current digital setup before proposing activity.',
+        'Before the platform, we understand the business, the audience, the market and what actually needs to change.',
     },
 
     {
@@ -220,16 +220,16 @@ export function AboutPage() {
       label: 'Communicate Clearly',
 
       description:
-        'You should always know the objective, the priority, what is being executed and what the next decision depends on.',
+        'Clear thinking should stay clear in execution — the objective, priority and next move should never disappear behind jargon.',
     },
 
     {
       icon: CheckCircle,
 
-      label: 'Execute Properly',
+      label: 'Launch Properly',
 
       description:
-        'Strategy only matters when the details are right — from creative and media setup to landing pages, tracking and delivery.',
+        'Good thinking means little if the details fail. Creative, media, experience, tracking and delivery all have to hold together.',
     },
 
     {
@@ -238,7 +238,7 @@ export function AboutPage() {
       label: 'Improve Continuously',
 
       description:
-        'We review real response, performance and market signals, then refine the work instead of repeating the same plan.',
+        'Launch, learn, improve. We use real response to sharpen the work instead of putting the same plan on repeat.',
     },
 
   ];
@@ -253,45 +253,45 @@ export function AboutPage() {
   const differenceFactors = [
 
     {
-      label: 'Business Before Channels',
+      label: 'Problem Before Platform',
 
       sublabel:
-        'The problem comes first; the platform comes later'
+        'Understand what needs to change before choosing where to advertise'
     },
 
     {
-      label: 'One Connected Direction',
+      label: 'One Brand. One Direction.',
 
       sublabel:
-        'Strategy, creative, media, search and technology stay aligned'
+        'Strategy, creative, media, search and technology move together'
     },
 
     {
-      label: 'Execution Ownership',
+      label: 'Stay Close to the Work',
 
       sublabel:
-        'We stay close to the work from planning through implementation'
+        'Thinking means little if the details are left behind'
     },
 
     {
-      label: 'Commercial Awareness',
+      label: 'Built Around the Business',
 
       sublabel:
-        'Marketing decisions are tied back to leads, sales and business priorities'
+        'Marketing decisions stay connected to demand, experience and growth'
     },
 
     {
-      label: 'Clear Communication',
+      label: 'Clarity Over Jargon',
 
       sublabel:
-        'Priorities, progress, risks and next steps remain visible'
+        'You should understand the thinking, the priority and the next move'
     },
 
     {
-      label: 'Built to Adapt',
+      label: 'Built to Keep Moving',
 
       sublabel:
-        'The approach evolves as markets, platforms and customer behaviour change'
+        'Markets change. Platforms change. The strategy evolves with them'
     },
 
   ];
@@ -311,7 +311,7 @@ export function AboutPage() {
       label: 'Strategy & Consulting',
 
       description:
-        'Market understanding, positioning, go-to-market thinking, campaign planning and practical growth roadmaps.',
+        'Positioning, audience, market and go-to-market thinking that gives the brand a clear place to move.',
     },
 
     {
@@ -320,7 +320,7 @@ export function AboutPage() {
       label: 'Digital Advertising',
 
       description:
-        'Google Ads, Meta Ads, paid media planning, lead generation, retargeting and conversion-led optimization.',
+        'Paid media across Google, Meta and other channels — built around intent, attention and continuous optimisation.',
     },
 
     {
@@ -329,7 +329,7 @@ export function AboutPage() {
       label: 'SEO & Search Growth',
 
       description:
-        'Technical SEO, local search, content optimization and search strategies built for durable organic visibility.',
+        'Organic, local and technical search systems designed to make the brand easier to discover and harder to overlook.',
     },
 
     {
@@ -338,7 +338,7 @@ export function AboutPage() {
       label: 'Brand & Creative',
 
       description:
-        'Brand identity, campaign concepts, graphic design, social content, ad creative and visual communication.',
+        'Identity, campaigns, design, content and communication that give the brand something recognisable to say.',
     },
 
     {
@@ -347,16 +347,16 @@ export function AboutPage() {
       label: 'Web & Commerce',
 
       description:
-        'Business websites, landing pages, e-commerce experiences and digital infrastructure built to support conversion.',
+        'Websites, landing pages and commerce experiences built to turn interest into a reason to stay, explore and act.',
     },
 
     {
       icon: Handshake,
 
-      label: 'Account & Growth Management',
+      label: 'Integrated Growth Management',
 
       description:
-        'Ongoing coordination, reporting, priorities and cross-channel alignment so strategy and execution stay connected.',
+        'One connected view across priorities, media, creative and delivery so the work keeps moving in the same direction.',
     },
 
   ];
@@ -373,55 +373,55 @@ export function AboutPage() {
     {
       icon: Target,
 
-      label: 'Integrated Agency Model',
+      label: 'One Connected Agency',
 
       description:
-        'One team can connect strategy, creative, media, search and technology instead of treating them as separate vendors.',
+        'Strategy, creative, advertising, search and technology work as one system around the brand.',
     },
 
     {
       icon: Sparkles,
 
-      label: 'Founder-Led Involvement',
+      label: 'Founder-Led Thinking',
 
       description:
-        'The agency stays close to business context, key decisions and the quality of execution.',
+        'Senior thinking stays close to the business, the decisions and the standard of the work.',
     },
 
     {
       icon: Trophy,
 
-      label: 'Channel-Agnostic Thinking',
+      label: 'Idea Before Channel',
 
       description:
-        'We recommend what fits the objective, not what happens to be easiest for us to sell.',
+        'We choose the medium around the objective — not the service around what is easiest to sell.',
     },
 
     {
       icon: Zap,
 
-      label: 'Built Around Execution',
+      label: 'Built to Be Made',
 
       description:
-        'Plans are shaped by what can actually be implemented well across creative, media and technology.',
+        'The best strategy is one that survives contact with design, media, technology and the real market.',
     },
 
     {
       icon: BarChart3,
 
-      label: 'Measurement With Context',
+      label: 'Data With Context',
 
       description:
-        'We use data to make better decisions without reducing business performance to vanity metrics.',
+        'Numbers matter when they explain behaviour, sharpen decisions and improve the next move.',
     },
 
     {
       icon: Heart,
 
-      label: 'Long-Term Partnership',
+      label: 'Built for the Long Game',
 
       description:
-        'We prefer relationships where the work can compound, improve and become more valuable over time.',
+        'We prefer work that compounds — stronger systems, better decisions and better brand memory over time.',
     },
 
   ];
@@ -438,19 +438,19 @@ export function AboutPage() {
     {
       number: '01',
 
-      label: 'Discover',
+      label: 'Understand',
 
       description:
-        'We understand the business, offer, audience, competition, current marketing and the outcome you need.',
+        'Business, market, audience, competition, current experience and the real problem behind the brief.',
     },
 
     {
       number: '02',
 
-      label: 'Strategize',
+      label: 'Define',
 
       description:
-        'We define the positioning, priorities, channel mix, creative direction, deliverables and measurement plan.',
+        'Position, objective, audience, message, channel roles and the standard the work needs to meet.',
     },
 
     {
@@ -459,25 +459,25 @@ export function AboutPage() {
       label: 'Create',
 
       description:
-        'We turn the strategy into campaigns, content, design systems, websites, landing pages and communication assets.',
+        'Turn the direction into ideas, campaigns, design, content and digital experiences.',
     },
 
     {
       number: '04',
 
-      label: 'Execute',
+      label: 'Launch',
 
       description:
-        'We launch with coordinated media, technology, tracking and quality control across the agreed touchpoints.',
+        'Take the work into market with media, technology, tracking and quality control working together.',
     },
 
     {
       number: '05',
 
-      label: 'Optimize & Scale',
+      label: 'Learn & Scale',
 
       description:
-        'We learn from performance, improve the system and scale the parts that are creating meaningful business value.',
+        'Read the response, improve what matters and take the strongest parts of the system further.',
     },
 
   ];
@@ -495,42 +495,42 @@ export function AboutPage() {
       label: 'Healthcare',
 
       sublabel:
-        'Doctors, clinics, hospitals, healthcare services, wellness and patient-acquisition programs',
+        'Trust-led communication for doctors, clinics, hospitals, healthcare services and wellness brands',
     },
 
     {
       label: 'Real Estate',
 
       sublabel:
-        'Developers, residential and commercial projects, property brands and lead-generation campaigns',
+        'Demand, positioning and lead-generation for developers, residential and commercial property brands',
     },
 
     {
       label: 'Education',
 
       sublabel:
-        'Institutions, courses, learning brands, admissions marketing and education businesses',
+        'Admissions, reputation and growth communication for institutions, courses and learning brands',
     },
 
     {
       label: 'E-Commerce & Retail',
 
       sublabel:
-        'D2C brands, online stores, retail businesses, marketplaces and product-led growth',
+        'Brand, performance and commerce for D2C, retail, online stores and marketplace-led businesses',
     },
 
     {
       label: 'Automotive',
 
       sublabel:
-        'Dealerships, automotive services, accessories, products and customer-acquisition campaigns',
+        'Brand, product and acquisition campaigns across dealerships, automotive services and products',
     },
 
     {
       label: 'Professional Services',
 
       sublabel:
-        'Consulting firms, B2B companies, service businesses and growth-stage enterprises',
+        'Positioning, demand generation and digital presence for B2B, consulting and service businesses',
     },
 
   ];
@@ -578,548 +578,23 @@ export function AboutPage() {
 
 
 
-      {/* ================================================================
-          1. HERO — ABOUT INCHTOMILEZ
-          PREMIUM TWO-COLUMN / ADVANTEDGE-INSPIRED LAYOUT
-      ================================================================ */}
 
-      <section className="relative overflow-hidden py-20 sm:py-24 md:py-28 lg:py-32 md:min-h-[100vh] flex items-center">
 
 
-        {/* ================================================================
-            BACKGROUND OUTLINED TEXT
-        ================================================================ */}
 
-        <div
-          className="absolute top-[5%] left-1/2 -translate-x-1/2 text-[8rem] sm:text-[10rem] md:text-[13rem] lg:text-[15rem] pointer-events-none font-bold text-outlined-visible-full select-none whitespace-nowrap opacity-70"
-          aria-hidden="true"
-        >
-          OUR STORY
-        </div>
 
 
-        {/* ================================================================
-            AMBIENT BACKGROUND DETAILS
-        ================================================================ */}
 
-        <div
-          className="absolute -left-48 top-[18%] h-[420px] w-[420px] rounded-full bg-yellow-500/[0.035] blur-[130px] pointer-events-none"
-          aria-hidden="true"
-        />
 
-        <div
-          className="absolute -right-48 bottom-[5%] h-[500px] w-[500px] rounded-full bg-yellow-500/[0.045] blur-[150px] pointer-events-none"
-          aria-hidden="true"
-        />
 
-        <div
-          className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
-          aria-hidden="true"
-        />
-
-
-        {/* ================================================================
-            CONTAINER
-        ================================================================ */}
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-
-          <div className="max-w-7xl mx-auto">
-
-            <div className="grid grid-cols-1 lg:grid-cols-[0.93fr_1.07fr] gap-10 lg:gap-14 xl:gap-20 items-center">
-
-
-              {/* ================================================================
-                  LEFT COLUMN — ABOUT CONTENT
-              ================================================================ */}
-
-              <div className="relative z-20 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
-
-
-                {/* About Badge */}
-
-                <AnimatedSection
-                  animation="fadeInUp"
-                  delay={0.1}
-                >
-
-                  <div className="inline-flex items-center gap-2.5 rounded-full border border-yellow-500/25 bg-yellow-500/[0.07] px-4 py-2 backdrop-blur-md mb-6">
-
-                    <Sparkles className="w-3.5 h-3.5 text-yellow-500" />
-
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-yellow-500">
-                      About Inchtomilez
-                    </span>
-
-                  </div>
-
-                </AnimatedSection>
-
-
-
-                {/* ================================================================
-                    MAIN H1
-                ================================================================ */}
-
-                <AnimatedSection
-                  animation="fadeInUp"
-                  delay={0.2}
-                >
-
-                  <h1 className="text-[34px] sm:text-[42px] md:text-[48px] lg:text-[52px] xl:text-[56px] font-medium tracking-[-0.035em] leading-[1.08] text-white mb-6">
-
-                    {seo.h1}
-
-                  </h1>
-
-                </AnimatedSection>
-
-
-
-                {/* ================================================================
-                    CORE POSITIONING
-                ================================================================ */}
-
-                <AnimatedSection
-                  animation="fadeInUp"
-                  delay={0.3}
-                >
-
-                  <p className="text-[17px] sm:text-[18px] md:text-[20px] font-semibold leading-[1.55] text-white mb-5">
-
-                    An independent agency built to connect
-
-                    <span className="text-yellow-500">
-                      {' '}strategy, creative, media, search and technology
-                    </span>
-
-                    {' '}around one business direction.
-
-                  </p>
-
-                </AnimatedSection>
-
-
-
-                {/* ================================================================
-                    ABOUT COPY
-                ================================================================ */}
-
-                <AnimatedSection
-                  animation="fadeInUp"
-                  delay={0.4}
-                >
-
-                  <p
-                    className="text-[0.9375rem] md:text-[1rem] text-gray-400 max-w-xl mx-auto lg:mx-0 mb-6"
-                    style={{
-                      lineHeight: 1.8
-                    }}
-                  >
-
-                    Inchtomilez is a founder-led digital marketing and advertising
-                    agency built in Indore. We work across brand strategy,
-                    advertising, creative, performance marketing, SEO, websites
-                    and digital technology — bringing the work together instead
-                    of treating every channel as a separate activity.
-
-                  </p>
-
-                </AnimatedSection>
-
-
-
-                {/* ================================================================
-                    PRESENCE
-                ================================================================ */}
-
-                <AnimatedSection
-                  animation="fadeInUp"
-                  delay={0.45}
-                >
-
-                  <div className="flex items-start justify-center lg:justify-start gap-3 mb-7">
-
-                    <div className="w-8 h-8 rounded-lg border border-yellow-500/15 bg-yellow-500/[0.06] flex items-center justify-center flex-shrink-0">
-
-                      <MapPin className="w-4 h-4 text-yellow-500" />
-
-                    </div>
-
-                    <p
-                      className="text-[0.8125rem] md:text-[0.875rem] text-gray-500 text-left max-w-lg"
-                      style={{
-                        lineHeight: 1.7
-                      }}
-                    >
-
-                      Built in Indore. Expanding our presence into Pune in
-                      September 2026 — operating with one connected approach
-                      across both cities.
-
-                    </p>
-
-                  </div>
-
-                </AnimatedSection>
-
-
-
-                {/* ================================================================
-                    CONNECTED AGENCY FRAMEWORK
-                ================================================================ */}
-
-                <AnimatedSection
-                  animation="fadeInUp"
-                  delay={0.5}
-                >
-
-                  <div className="border-t border-white/10 pt-6 mb-8">
-
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500 mb-4">
-                      One Connected Agency Model
-                    </p>
-
-
-                    <div className="flex flex-wrap justify-center lg:justify-start items-center gap-2">
-
-                      {[
-                        {
-                          label: 'Strategy',
-                          icon: Target
-                        },
-                        {
-                          label: 'Creative',
-                          icon: Palette
-                        },
-                        {
-                          label: 'Media',
-                          icon: Megaphone
-                        },
-                        {
-                          label: 'Search',
-                          icon: Search
-                        },
-                        {
-                          label: 'Technology',
-                          icon: Code
-                        }
-                      ].map((item) => {
-
-                        const Icon = item.icon;
-
-                        return (
-
-                          <div
-                            key={item.label}
-                            className="group inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.035] px-3 py-2 transition-all duration-300 hover:border-yellow-500/25 hover:bg-yellow-500/[0.05]"
-                          >
-
-                            <Icon className="w-3.5 h-3.5 text-yellow-500" />
-
-                            <span className="text-[11px] font-medium text-gray-300">
-                              {item.label}
-                            </span>
-
-                          </div>
-
-                        );
-
-                      })}
-
-                    </div>
-
-                  </div>
-
-                </AnimatedSection>
-
-
-
-                {/* ================================================================
-                    CTA
-                ================================================================ */}
-
-                <AnimatedSection
-                  animation="fadeInUp"
-                  delay={0.6}
-                >
-
-                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-
-
-                    <Link
-                      to="/contact"
-                      className="bg-yellow-500 hover:bg-yellow-400 text-black px-7 py-3.5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.875rem] font-semibold shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-0.5"
-                    >
-
-                      Discuss Your Growth
-
-                      <ArrowRight className="w-4 h-4" />
-
-                    </Link>
-
-
-                    <Link
-                      to="/services"
-                      className="glass-card border border-white/10 hover:border-yellow-500/25 px-7 py-3.5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.875rem] font-semibold hover:-translate-y-0.5"
-                    >
-
-                      Explore Our Services
-
-                    </Link>
-
-
-                  </div>
-
-                </AnimatedSection>
-
-
-              </div>
-
-
-
-              {/* ================================================================
-                  RIGHT COLUMN — GLOBE / ABOUT VISUAL
-              ================================================================ */}
-
-              <div className="relative min-h-[420px] sm:min-h-[500px] lg:min-h-[610px] flex items-center justify-center">
-
-
-                {/* ================================================================
-                    DECORATIVE ORBIT RINGS
-                ================================================================ */}
-
-                <div
-                  className="absolute w-[310px] h-[310px] sm:w-[410px] sm:h-[410px] lg:w-[560px] lg:h-[560px] rounded-full border border-white/[0.05]"
-                  aria-hidden="true"
-                />
-
-                <div
-                  className="absolute w-[250px] h-[250px] sm:w-[335px] sm:h-[335px] lg:w-[470px] lg:h-[470px] rounded-full border border-yellow-500/[0.07]"
-                  aria-hidden="true"
-                />
-
-                <div
-                  className="absolute w-[190px] h-[190px] sm:w-[265px] sm:h-[265px] lg:w-[380px] lg:h-[380px] rounded-full border border-white/[0.035]"
-                  aria-hidden="true"
-                />
-
-
-                {/* ================================================================
-                    GLOBE
-                    ORIGINAL CONFIGURATION PRESERVED
-                ================================================================ */}
-
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-
-                  <AnimatedSection
-                    animation="fadeIn"
-                    delay={0.6}
-                  >
-
-
-                    {/* Mobile */}
-
-                    <div className="block md:hidden">
-
-                      <EarthGlobe
-                        size={350}
-                        particleCount={500}
-                        rotationSpeed={0.0008}
-                        glowIntensity={0.4}
-                        className="animate-float"
-                      />
-
-                    </div>
-
-
-                    {/* Desktop */}
-
-                    <div className="hidden md:block">
-
-                      <EarthGlobe
-                        size={550}
-                        particleCount={500}
-                        rotationSpeed={0.0008}
-                        glowIntensity={0.4}
-                        className="animate-float"
-                      />
-
-                    </div>
-
-
-                  </AnimatedSection>
-
-                </div>
-
-
-
-                {/* ================================================================
-                    TOP FLOATING CARD — FOUNDER LED
-                ================================================================ */}
-
-                <div className="absolute top-[5%] right-0 sm:right-[5%] lg:right-0 z-20">
-
-                  <AnimatedSection
-                    animation="fadeInUp"
-                    delay={0.75}
-                  >
-
-                    <div className="glass-strong border border-white/10 rounded-2xl px-5 py-4 backdrop-blur-xl shadow-2xl max-w-[220px]">
-
-                      <div className="flex items-center gap-2 mb-2">
-
-                        <div className="w-2 h-2 rounded-full bg-yellow-500" />
-
-                        <p className="text-[9px] uppercase tracking-[0.17em] font-semibold text-yellow-500">
-                          Founder-Led
-                        </p>
-
-                      </div>
-
-                      <p className="text-[0.8125rem] font-medium leading-[1.6] text-white">
-                        Built by Aman Panwar with a hands-on foundation in digital growth.
-                      </p>
-
-                    </div>
-
-                  </AnimatedSection>
-
-                </div>
-
-
-
-                {/* ================================================================
-                    BOTTOM FLOATING CARD — AGENCY SYSTEM
-                ================================================================ */}
-
-                <div className="absolute bottom-[6%] left-0 sm:left-[4%] lg:left-0 z-20">
-
-                  <AnimatedSection
-                    animation="fadeInUp"
-                    delay={0.85}
-                  >
-
-                    <div className="glass-strong border border-yellow-500/15 rounded-2xl overflow-hidden backdrop-blur-xl shadow-2xl w-[270px] sm:w-[300px]">
-
-
-                      {/* Card copy */}
-
-                      <div className="p-5">
-
-                        <div className="flex items-center gap-3">
-
-                          <div className="w-10 h-10 rounded-xl bg-yellow-500 flex items-center justify-center flex-shrink-0">
-
-                            <Rocket className="w-5 h-5 text-black" />
-
-                          </div>
-
-
-                          <div>
-
-                            <p className="text-[9px] uppercase tracking-[0.16em] font-semibold text-yellow-500 mb-1">
-                              Connected by Design
-                            </p>
-
-                            <p className="text-[0.8125rem] font-semibold text-white leading-[1.55]">
-                              One direction. Multiple disciplines.
-                            </p>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-
-                      {/* Micro system */}
-
-                      <div className="border-t border-white/10">
-
-                        <div className="grid grid-cols-5 divide-x divide-white/10">
-
-                          {[
-                            'Think',
-                            'Create',
-                            'Reach',
-                            'Convert',
-                            'Grow'
-                          ].map((item, index) => (
-
-                            <div
-                              key={item}
-                              className="px-1.5 py-3 text-center transition-colors duration-300 hover:bg-white/[0.04]"
-                            >
-
-                              <span className="block text-[8px] font-semibold text-yellow-500 mb-1">
-                                0{index + 1}
-                              </span>
-
-                              <span className="block text-[8px] text-gray-400">
-                                {item}
-                              </span>
-
-                            </div>
-
-                          ))}
-
-                        </div>
-
-                      </div>
-
-
-                    </div>
-
-                  </AnimatedSection>
-
-                </div>
-
-
-
-                {/* ================================================================
-                    SMALL POSITIONING LINE
-                ================================================================ */}
-
-                <div className="absolute bottom-0 right-[2%] hidden lg:block z-20">
-
-                  <AnimatedSection
-                    animation="fadeIn"
-                    delay={1}
-                  >
-
-                    <div className="flex items-center gap-3">
-
-                      <span className="w-7 h-[2px] bg-yellow-500 rounded-full" />
-
-                      <p className="text-[10px] font-medium text-gray-600">
-                        From inches of progress to miles of growth.
-                      </p>
-
-                    </div>
-
-                  </AnimatedSection>
-
-                </div>
-
-
-              </div>
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-      </section>
 
 
 
 
 
       
+
+
       {/* ================================================================
           WHO WE ARE
       ================================================================ */}
@@ -1153,7 +628,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              An Integrated Agency Built Around Business Growth
+              Built for Brands That Intend to Move.
 
             </h2>
 
@@ -1169,9 +644,7 @@ export function AboutPage() {
               <span className="text-yellow-500 font-semibold">
                 {' '}founder-led digital marketing and advertising agency
               </span>
-              {' '}connecting strategy, advertising, branding, creative, search,
-              performance marketing and technology under one integrated
-              agency model.
+              {' '}connecting strategy, creative, advertising, search and technology so the brand moves through the market as one connected idea.
 
             </p>
 
@@ -1220,14 +693,14 @@ export function AboutPage() {
 
             <p className="text-[13px] font-medium uppercase tracking-wide text-yellow-500 mb-6 text-center">
 
-              OUR GROWTH SYSTEM
+              WHAT MOVES A BRAND
 
             </p>
 
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Four Disciplines. One Connected Growth System.
+              Four Disciplines. One Direction.
 
             </h2>
 
@@ -1239,13 +712,11 @@ export function AboutPage() {
               }}
             >
 
-              Strong digital growth is rarely created by one channel alone.
-              We align
+              Strong brands are rarely built by one channel acting alone. We connect
               <span className="text-yellow-500 font-semibold">
                 {' '}strategy, creative, performance and technology
               </span>
-              {' '}so each discipline strengthens the next and supports the same
-              business objective.
+              {' '}so the thinking, the experience and the media all move toward the same objective.
 
             </p>
 
@@ -1301,7 +772,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Clarity Before Activity. Execution With Purpose.
+              We Don't Start With a Platform. We Start With the Problem.
 
             </h2>
 
@@ -1313,8 +784,7 @@ export function AboutPage() {
               }}
             >
 
-              We do not begin with a platform recommendation. We begin by
-              understanding the business, then turn that understanding into
+              We begin with what needs to change — then decide what the brand should say, build and do. From there, we turn the thinking into
               <span className="text-yellow-500 font-semibold">
                 {' '}focused execution and continuous improvement.
               </span>
@@ -1388,7 +858,7 @@ export function AboutPage() {
 
               <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-                Built by One Founder. Growing With One Vision.
+                One Founder. One Point of View. A Bigger Canvas.
 
               </h2>
 
@@ -1413,8 +883,7 @@ export function AboutPage() {
                 <span className="text-yellow-500 font-semibold">
                   {' '}Aman Panwar
                 </span>
-                {' '}in Indore after years of hands-on work across websites,
-                SEO, digital marketing and business growth.
+                {' '}in Indore, shaped by years of hands-on work across websites, SEO and digital marketing — learning what makes brands easier to find, understand and choose.
 
               </p>
 
@@ -1476,8 +945,7 @@ export function AboutPage() {
 
                         <p className="text-[0.8125rem] text-gray-400 leading-relaxed">
 
-                          Hands-on foundation in website development, SEO and
-                          digital marketing.
+                          Hands-on roots in websites, search and digital marketing — where strategy meets real execution.
 
                         </p>
 
@@ -1493,8 +961,7 @@ export function AboutPage() {
 
                         <p className="text-[0.8125rem] text-gray-400 leading-relaxed">
 
-                          Built the agency around practical strategy, strong execution
-                          and direct client communication.
+                          Built the agency around clear thinking, ownership of the work and direct client relationships.
 
                         </p>
 
@@ -1510,8 +977,7 @@ export function AboutPage() {
 
                         <p className="text-[0.8125rem] text-gray-400 leading-relaxed">
 
-                          Leading Inchtomilez from its Indore base into its
-                          September 2026 Pune expansion.
+                          Leading Inchtomilez from its Indore foundation into its September 2026 Pune expansion — without losing the hands-on approach.
 
                         </p>
 
@@ -1537,10 +1003,7 @@ export function AboutPage() {
                       }}
                     >
 
-                      Inchtomilez did not begin as a large agency. It began with one
-                      founder doing the work — building websites, improving search
-                      visibility and helping businesses understand what digital
-                      marketing could actually do for them.
+                      Inchtomilez began with one founder doing the work himself — building websites, solving search problems and working directly with businesses. That hands-on beginning shaped the agency's bias toward clarity, ownership and execution.
 
                     </p>
 
@@ -1552,10 +1015,7 @@ export function AboutPage() {
                       }}
                     >
 
-                      As client needs became broader, the agency evolved beyond
-                      individual services into a connected model spanning strategy,
-                      advertising, branding, creative, SEO, performance marketing
-                      and technology.
+                      As the briefs grew, so did the canvas. Search connected with advertising. Advertising connected with branding. Creative connected with media. Websites connected with technology. The agency evolved into a more integrated way of moving brands.
 
                     </p>
 
@@ -1567,9 +1027,7 @@ export function AboutPage() {
                       }}
                     >
 
-                      The principle is still the same — understand the business
-                      first, make the strategy clear, execute with discipline and
-                      improve from real market response.
+                      The principle never changed — understand what the business needs, make the thinking clear, and build work strong enough to travel beyond the pitch.
 
                     </p>
 
@@ -1659,7 +1117,7 @@ export function AboutPage() {
 
               <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-                Built in Indore. Expanding Into Pune.
+                Built in Indore. Moving Into Pune.
 
               </h2>
 
@@ -1671,9 +1129,7 @@ export function AboutPage() {
                 }}
               >
 
-                In September 2026, Inchtomilez expands into Pune — extending
-                the same connected agency approach beyond Indore while keeping
-                strategy and execution under one team.
+                In September 2026, Inchtomilez steps into Pune — extending the same connected way of thinking into a new market while keeping strategy, creative and execution under one agency.
 
               </p>
 
@@ -1725,9 +1181,7 @@ export function AboutPage() {
                     }}
                   >
 
-                    Indore is where Inchtomilez was built. It remains the
-                    foundation of our working culture, client relationships and
-                    hands-on approach to strategy and execution.
+                    Indore is where Inchtomilez learned to do the work up close. It remains the foundation of our culture, our relationships and our hands-on way of building strategy into execution.
 
                   </p>
 
@@ -1797,9 +1251,7 @@ export function AboutPage() {
                     }}
                   >
 
-                    Our Pune presence brings Inchtomilez closer to businesses
-                    across technology, healthcare, real estate, education,
-                    manufacturing and the wider western India market.
+                    Our Pune presence brings Inchtomilez closer to ambitious businesses across technology, healthcare, real estate, education, manufacturing and the wider western India market.
 
                   </p>
 
@@ -1842,7 +1294,7 @@ export function AboutPage() {
 
                 <p className="text-[0.9375rem] text-gray-400 mb-6">
 
-                  Two cities. One agency. One standard of thinking and execution.
+                  Two cities. One agency. One way of thinking.
 
                 </p>
 
@@ -1907,7 +1359,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Built Differently for Connected Growth
+              Not Another Vendor. One Connected Direction.
 
             </h2>
 
@@ -1919,8 +1371,7 @@ export function AboutPage() {
               }}
             >
 
-              There is no fixed formula for growth. The right mix depends on
-              the business, market, audience and objective — so we start with
+              There is no universal marketing formula. The right move depends on the brand, the audience, the market and the problem — so we start with
               <span className="text-yellow-500 font-semibold">
                 {' '}context before channels.
               </span>
@@ -1979,7 +1430,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Capabilities That Work Better Together
+              Different Capabilities. One Brand Experience.
 
             </h2>
 
@@ -1991,10 +1442,9 @@ export function AboutPage() {
               }}
             >
 
-              Different growth problems need different capabilities. Our
-              services can work independently when needed or combine as
+              Different problems need different disciplines. Use them independently when needed — or bring them together as
               <span className="text-yellow-500 font-semibold">
-                {' '}one connected agency engagement.
+                {' '}one connected brand system.
               </span>
 
             </p>
@@ -2051,7 +1501,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Different Markets. Different Buying Journeys.
+              Different Markets. Different Reasons to Choose.
 
             </h2>
 
@@ -2063,9 +1513,7 @@ export function AboutPage() {
               }}
             >
 
-              Customer behaviour, sales cycles, trust signals and competition
-              change from one industry to another. We adapt the strategy to the
-              market instead of forcing every business into the same playbook.
+              Healthcare needs trust. Real estate needs conviction. Retail needs desire. B2B needs clarity. The category changes — so the strategy should too.
 
             </p>
 
@@ -2128,7 +1576,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              A Partner That Connects the Work
+              Because The Work Should Connect.
 
             </h2>
 
@@ -2140,9 +1588,7 @@ export function AboutPage() {
               }}
             >
 
-              Our role is not to add more disconnected marketing activity.
-              It is to connect the right capabilities around the business and
-              keep strategy, execution and learning moving in the same direction.
+              Your audience does not experience strategy, creative, media and technology as separate departments. Neither should your brand. We connect the work so every touchpoint reinforces the next.
 
             </p>
 
@@ -2198,7 +1644,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              From Business Context to Scalable Execution
+              Think First. Build Properly. Keep Moving.
 
             </h2>
 
@@ -2212,10 +1658,9 @@ export function AboutPage() {
 
               A
               <span className="text-yellow-500 font-semibold">
-                {' '}structured working process
+                {' '}clear working process
               </span>
-              {' '}keeps decisions, creative, media, technology and optimization
-              connected from the first conversation onward.
+              {' '}keeps the idea from getting lost between the brief and the market. We move from understanding to direction, creation, launch and learning — without disconnecting the pieces.
 
             </p>
 
@@ -2269,7 +1714,7 @@ export function AboutPage() {
 
                 <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-6">
 
-                  Good Marketing Should Make the Business Clearer.
+                  Brands Should Mean Something.
 
                 </h2>
 
@@ -2281,17 +1726,14 @@ export function AboutPage() {
                   }}
                 >
 
-                  We believe strong marketing becomes easier to improve when the
-                  objective, reasoning and priorities are clear. Clients should
-                  understand what we are doing, why it matters and what the next
-                  decision depends on.
+                  We believe the strongest brands do more than occupy media. They occupy memory. That takes clear thinking, a recognisable point of view and execution that keeps the same meaning wherever the audience meets the brand.
 
                 </p>
 
 
                 <p className="text-yellow-500 font-medium text-[0.9375rem]">
 
-                  Clear thinking. Connected execution. Continuous improvement.
+                  Clear thinking. Distinctive work. One connected brand.
 
                 </p>
 
@@ -2329,7 +1771,7 @@ export function AboutPage() {
 
               <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4">
 
-                Get Practical Marketing Insights
+                Ideas Worth Opening.
 
               </h2>
 
@@ -2341,12 +1783,11 @@ export function AboutPage() {
                 }}
               >
 
-                Join our
+                Occasional
                 <span className="text-yellow-500 font-semibold">
-                  {' '}monthly newsletter
+                  {' '}thinking worth opening
                 </span>
-                {' '}for practical thinking on strategy, advertising, creative,
-                search, technology and business growth.
+                {' '}on brands, advertising, digital, creative and technology — written to be useful, not to fill your inbox.
 
               </p>
 
@@ -2372,7 +1813,7 @@ export function AboutPage() {
                   className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 text-[0.9375rem] font-semibold whitespace-nowrap shadow-lg hover:scale-105"
                 >
 
-                  Subscribe
+                  Send Me The Good Stuff
 
                 </button>
 
@@ -2419,14 +1860,14 @@ export function AboutPage() {
 
             <p className="text-[13px] font-medium uppercase tracking-wide text-yellow-500 mb-6">
 
-              LET&apos;S BUILD WHAT&apos;S NEXT
+              THE NEXT MOVE
 
             </p>
 
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-6">
 
-              Build the Next Stage of Growth.
+              What Should Your Brand Become Next?
 
             </h2>
 
@@ -2438,10 +1879,7 @@ export function AboutPage() {
               }}
             >
 
-              Whether you are building a brand, generating demand, improving
-              your digital presence or looking for a long-term agency partner,
-              the next step is the same: understand where the business needs to
-              go and build the right system to help it get there.
+              Maybe the brand needs more attention. A sharper identity. Better advertising. A stronger digital experience. Or simply a clearer direction. Bring us the ambition — we'll start with what needs to move.
 
             </p>
 
