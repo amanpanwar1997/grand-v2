@@ -366,103 +366,122 @@ export function HomePage() {
 
 
       {/* ============================================================
-          1. HOME HERO SECTION — FINAL / REDUCED / THEME-ALIGNED
-          Clean hierarchy, restrained content, same HomePage design system
+          1. HOME HERO SECTION — PREMIUM / LIGHTER VIDEO / RALEWAY
+          Only Section 1 is redesigned. Sections 2+ remain unchanged.
       ============================================================ */}
       <section
         className="relative min-h-screen w-full overflow-hidden bg-black"
-        style={{ minHeight: '100vh' }}
+        style={{
+          minHeight: '100vh',
+          fontFamily: "'Raleway', sans-serif",
+        }}
         aria-labelledby="home-hero-heading"
       >
-        {/* Existing shared video component — no extra playback logic */}
+        {/* Background video — shared optimized component */}
         <VideoBackground
           src="https://orange-woodcock-416561.hostingersite.com/wp-content/uploads/2024/09/Sequence-01_2.mp4"
-          overlayOpacity={0.12}
+          overlayOpacity={0.04}
           startTime={0}
         />
 
-        {/* Cinematic readability layers */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none"
-          style={{
-            background:
-              'linear-gradient(90deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.76) 34%, rgba(0,0,0,0.42) 62%, rgba(0,0,0,0.14) 100%)',
-          }}
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none"
-          style={{
-            background:
-              'linear-gradient(0deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.28) 28%, rgba(0,0,0,0.06) 58%, rgba(0,0,0,0.18) 100%)',
-          }}
-          aria-hidden="true"
-        />
-
-        {/* Very subtle Inchtomilez yellow atmosphere */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none"
-          style={{
-            background:
-              'radial-gradient(circle at 16% 68%, rgba(234,179,8,0.09) 0%, rgba(234,179,8,0.02) 30%, transparent 52%)',
-          }}
-          aria-hidden="true"
-        />
-
         {/*
-          Same horizontal system used by the rest of HomePage:
-          container -> max-w-6xl -> controlled content width
+          LIGHTER READABILITY SYSTEM
+          Keeps the Times-Square video visible instead of burying it in black.
+          Darkness is concentrated only behind the copy and near the lower edge.
         */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 w-full min-h-screen flex items-center">
-          <div className="max-w-6xl mx-auto w-full pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-28 lg:pb-20">
-            <div className="max-w-[1040px]">
+        <div
+          className="absolute inset-0 z-[1] pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(90deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.48) 30%, rgba(0,0,0,0.22) 56%, rgba(0,0,0,0.06) 78%, rgba(0,0,0,0.02) 100%)',
+          }}
+          aria-hidden="true"
+        />
 
-              {/* Eyebrow — mirrors section labels used throughout the page */}
+        <div
+          className="absolute inset-0 z-[1] pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(0deg, rgba(0,0,0,0.36) 0%, rgba(0,0,0,0.12) 25%, rgba(0,0,0,0) 56%)',
+          }}
+          aria-hidden="true"
+        />
+
+        {/* Soft Inchtomilez yellow atmosphere — intentionally subtle */}
+        <div
+          className="absolute inset-0 z-[1] pointer-events-none"
+          style={{
+            background:
+              'radial-gradient(circle at 13% 70%, rgba(234,179,8,0.08) 0%, rgba(234,179,8,0.025) 24%, transparent 44%)',
+          }}
+          aria-hidden="true"
+        />
+
+        {/* Same container geometry used throughout the HomePage */}
+        <div className="relative z-10 container mx-auto min-h-screen w-full px-4 sm:px-6 lg:px-8 flex items-center">
+          <div className="max-w-6xl mx-auto w-full pt-28 pb-14 sm:pt-32 sm:pb-16 md:pt-32 md:pb-16 lg:pt-28 lg:pb-16">
+            <div className="max-w-[1080px]">
+
+              {/* Eyebrow — same compact hierarchy as subsequent sections */}
               <AnimatedSection animation="fadeInUp" delay={0.08}>
-                <p className="text-[10px] sm:text-[11px] md:text-xs font-medium uppercase tracking-[0.14em] text-yellow-500 mb-4 sm:mb-5">
-                  Digital • Creative • Advertising • Technology
-                </p>
+                <div className="mb-4 sm:mb-5">
+                  <p
+                    className="text-[10px] sm:text-[11px] md:text-[12px] font-semibold uppercase tracking-[0.11em] sm:tracking-[0.13em] text-yellow-500"
+                    style={{ fontFamily: "'Raleway', sans-serif" }}
+                  >
+                    Digital • Creative • Advertising • Technology
+                  </p>
+                </div>
               </AnimatedSection>
 
-              {/* Primary brand statement */}
+              {/* Main brand statement — exact slogan, controlled two-line composition */}
               <AnimatedSection animation="fadeInUp" delay={0.14}>
                 <h1
                   id="home-hero-heading"
-                  className="max-w-[1040px] text-white font-medium tracking-[-0.035em] leading-[1.08] mb-5 sm:mb-6"
+                  className="max-w-[1080px] mb-4 sm:mb-5 text-white font-semibold tracking-[-0.025em]"
+                  style={{
+                    fontFamily: "'Raleway', sans-serif",
+                    lineHeight: 1.12,
+                  }}
                 >
-                  <span className="block text-[34px] sm:text-[40px] md:text-[46px] lg:text-[50px] xl:text-[54px]">
-                    Duniya <span className="text-yellow-500">Brands</span> Ke Peeche.
+                  <span className="block text-[31px] sm:text-[36px] md:text-[41px] lg:text-[46px] xl:text-[48px]">
+                    Duniya <span className="text-yellow-500">Brands</span> Ke Peeche,
                   </span>
-                  <span className="block mt-1 text-[30px] sm:text-[36px] md:text-[42px] lg:text-[46px] xl:text-[50px] text-white/95">
-                    Aur Brands Marketing Aur Advertising Ke Peeche.
+                  <span className="block mt-1 sm:mt-1.5 text-[29px] sm:text-[34px] md:text-[39px] lg:text-[44px] xl:text-[46px] text-white">
+                    Aur Brands Marketing Aur Advertising Ke!
                   </span>
                 </h1>
               </AnimatedSection>
 
-              {/* One concise supporting sentence only */}
+              {/* Concise supporting statement */}
               <AnimatedSection animation="fadeInUp" delay={0.2}>
-                <p className="max-w-[720px] text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-white/65 mb-7 sm:mb-8">
+                <p
+                  className="max-w-[720px] mb-6 sm:mb-7 text-[13px] sm:text-[14px] md:text-[15px] font-medium leading-[1.7] text-white/72"
+                  style={{ fontFamily: "'Raleway', sans-serif" }}
+                >
                   We create brands people notice, campaigns people remember, and experiences people choose.
                 </p>
               </AnimatedSection>
 
-              {/* Compact conversion actions */}
+              {/* Compact, correctly-sized conversion actions */}
               <AnimatedSection animation="fadeInUp" delay={0.28}>
-                <div className="flex flex-col min-[420px]:flex-row items-stretch min-[420px]:items-center gap-3 sm:gap-4">
+                <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-3.5">
                   <Link
                     to="/contact"
-                    className="group inline-flex min-h-[48px] w-full min-[420px]:w-auto items-center justify-center gap-2 rounded-xl bg-yellow-500 px-6 py-3 text-[14px] sm:text-[15px] font-semibold text-black transition-all duration-300 hover:bg-yellow-400 hover:-translate-y-0.5 shadow-[0_10px_30px_rgba(234,179,8,0.15)] hover:shadow-[0_14px_36px_rgba(234,179,8,0.22)]"
+                    className="group inline-flex h-[46px] w-full items-center justify-center gap-2 rounded-xl bg-yellow-500 px-5 sm:w-auto sm:min-w-[176px] sm:px-6 text-[13px] sm:text-[14px] font-semibold text-black shadow-[0_10px_24px_rgba(234,179,8,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-yellow-400 hover:shadow-[0_14px_30px_rgba(234,179,8,0.23)] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                    style={{ fontFamily: "'Raleway', sans-serif" }}
                   >
-                    Start Something
-                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    <span>Start Something</span>
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                   </Link>
 
                   <Link
                     to="/services"
-                    className="group inline-flex min-h-[48px] w-full min-[420px]:w-auto items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.055] px-6 py-3 text-[14px] sm:text-[15px] font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/[0.10] hover:border-yellow-500/35 hover:-translate-y-0.5"
+                    className="group inline-flex h-[46px] w-full items-center justify-center gap-2 rounded-xl border border-white/20 bg-black/20 px-5 sm:w-auto sm:min-w-[190px] sm:px-6 text-[13px] sm:text-[14px] font-semibold text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-yellow-500/45 hover:bg-white/[0.09] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                    style={{ fontFamily: "'Raleway', sans-serif" }}
                   >
-                    Explore Inchtomilez
-                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    <span>Explore Inchtomilez</span>
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                   </Link>
                 </div>
               </AnimatedSection>
@@ -471,9 +490,9 @@ export function HomePage() {
           </div>
         </div>
 
-        {/* Clean visual hand-off into Section 2 */}
+        {/* Minimal boundary — does not darken the video */}
         <div
-          className="absolute bottom-0 left-0 right-0 z-[2] h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent pointer-events-none"
+          className="absolute bottom-0 left-0 right-0 z-[2] h-px bg-white/[0.06] pointer-events-none"
           aria-hidden="true"
         />
       </section>
