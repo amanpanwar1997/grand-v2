@@ -22,14 +22,6 @@ export function HomePage() {
     setEmail('');
   };
 
-  // Quick Facts for Hero
-  const quickFacts = [
-    { label: 'Strategy Before Media' },
-    { label: 'Creative With Purpose' },
-    { label: 'Digital + Physical' },
-    { label: 'Built Around The Brand' },
-  ];
-
   // Core Services - 14 services with proper icons
   const coreServices = [
     {
@@ -374,28 +366,27 @@ export function HomePage() {
 
 
       {/* ============================================================
-          1. HOME HERO SECTION — FIXED, RESPONSIVE, THEME-ALIGNED
-          Only Section 1 is changed. Sections 2+ remain untouched.
+          1. HOME HERO SECTION — FINAL / REDUCED / THEME-ALIGNED
+          Clean hierarchy, restrained content, same HomePage design system
       ============================================================ */}
       <section
         className="relative min-h-screen w-full overflow-hidden bg-black"
         style={{ minHeight: '100vh' }}
         aria-labelledby="home-hero-heading"
       >
-        {/* Background video */}
+        {/* Existing shared video component — no extra playback logic */}
         <VideoBackground
           src="https://orange-woodcock-416561.hostingersite.com/wp-content/uploads/2024/09/Sequence-01_2.mp4"
-          overlayOpacity={0.14}
+          overlayOpacity={0.12}
           startTime={0}
         />
 
-        {/* Readability overlays */}
-        <div className="absolute inset-0 z-[1] bg-black/25 pointer-events-none" aria-hidden="true" />
+        {/* Cinematic readability layers */}
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
             background:
-              'linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.78) 34%, rgba(0,0,0,0.46) 60%, rgba(0,0,0,0.14) 100%)',
+              'linear-gradient(90deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.76) 34%, rgba(0,0,0,0.42) 62%, rgba(0,0,0,0.14) 100%)',
           }}
           aria-hidden="true"
         />
@@ -403,145 +394,84 @@ export function HomePage() {
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
             background:
-              'linear-gradient(0deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.36) 24%, rgba(0,0,0,0.08) 58%, rgba(0,0,0,0.16) 100%)',
-          }}
-          aria-hidden="true"
-        />
-
-        {/* Subtle brand glow */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none"
-          style={{
-            background:
-              'radial-gradient(circle at 18% 70%, rgba(234,179,8,0.10) 0%, rgba(234,179,8,0.025) 28%, transparent 50%)',
+              'linear-gradient(0deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.28) 28%, rgba(0,0,0,0.06) 58%, rgba(0,0,0,0.18) 100%)',
           }}
           aria-hidden="true"
         />
 
-        {/* Main content shell — same horizontal geometry used throughout HomePage */}
+        {/* Very subtle Inchtomilez yellow atmosphere */}
+        <div
+          className="absolute inset-0 z-[1] pointer-events-none"
+          style={{
+            background:
+              'radial-gradient(circle at 16% 68%, rgba(234,179,8,0.09) 0%, rgba(234,179,8,0.02) 30%, transparent 52%)',
+          }}
+          aria-hidden="true"
+        />
+
+        {/*
+          Same horizontal system used by the rest of HomePage:
+          container -> max-w-6xl -> controlled content width
+        */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 w-full min-h-screen flex items-center">
-          <div className="max-w-6xl mx-auto w-full pt-28 pb-14 sm:pt-32 sm:pb-16 md:pt-32 md:pb-20 lg:pt-28 lg:pb-20">
-            <div className="max-w-4xl">
+          <div className="max-w-6xl mx-auto w-full pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-28 lg:pb-20">
+            <div className="max-w-[1040px]">
 
-              {/* Positioning badge */}
+              {/* Eyebrow — mirrors section labels used throughout the page */}
               <AnimatedSection animation="fadeInUp" delay={0.08}>
-                <div className="mb-5 sm:mb-6">
-                  <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-yellow-500/30 bg-black/35 px-3.5 py-2 backdrop-blur-md">
-                    <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-yellow-500 flex-shrink-0" fill="currentColor" />
-                    <span className="text-[9px] min-[380px]:text-[10px] sm:text-[11px] md:text-[12px] font-semibold uppercase tracking-[0.08em] sm:tracking-[0.11em] text-white/90 whitespace-nowrap">
-                      DIGITAL • CREATIVE • ADVERTISING • TECHNOLOGY
-                    </span>
-                  </div>
-                </div>
-              </AnimatedSection>
-
-              {/* Main headline */}
-              <AnimatedSection animation="fadeInUp" delay={0.14}>
-                <h1
-                  id="home-hero-heading"
-                  className="max-w-4xl text-white font-medium tracking-[-0.03em] mb-5 sm:mb-6"
-                  style={{
-                    fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-                    lineHeight: 1.08,
-                  }}
-                >
-                  Duniya <span className="text-yellow-500">Brands</span> Ke Peeche,
-                  <br className="hidden md:block" />
-                  <span className="md:block md:mt-1">Aur Brands Marketing Aur Advertising Ke!</span>
-                </h1>
-              </AnimatedSection>
-
-              {/* Supporting statement */}
-              <AnimatedSection animation="fadeInUp" delay={0.2}>
-                <h2
-                  className="max-w-3xl text-[17px] sm:text-[18px] md:text-[20px] lg:text-[21px] font-semibold leading-[1.45] mb-3 sm:mb-4"
-                  style={{
-                    color: '#ffffff',
-                    background: 'none',
-                    backgroundImage: 'none',
-                    WebkitBackgroundClip: 'initial',
-                    WebkitTextFillColor: '#ffffff',
-                  }}
-                >
-                  We Create Brands People Notice. Campaigns People Remember. Experiences People Choose.
-                </h2>
-              </AnimatedSection>
-
-              {/* Description */}
-              <AnimatedSection animation="fadeInUp" delay={0.25}>
-                <p className="max-w-2xl text-[14px] sm:text-[15px] leading-[1.7] text-white/65 mb-6 sm:mb-7">
-                  We build ideas, campaigns and digital experiences that make people look, remember and choose.
+                <p className="text-[10px] sm:text-[11px] md:text-xs font-medium uppercase tracking-[0.14em] text-yellow-500 mb-4 sm:mb-5">
+                  Digital • Creative • Advertising • Technology
                 </p>
               </AnimatedSection>
 
-              {/* Quick facts */}
-              <AnimatedSection animation="fadeInUp" delay={0.3}>
-                <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 mb-7 sm:mb-8">
-                  {quickFacts.map((fact, index) => (
-                    <div
-                      key={index}
-                      className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/25 px-3 py-2 backdrop-blur-sm"
-                    >
-                      <CheckCircle className="w-3.5 h-3.5 text-yellow-500 flex-shrink-0" />
-                      <span className="text-[11px] sm:text-[12px] md:text-[13px] font-medium text-white/75 whitespace-nowrap">
-                        {fact.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+              {/* Primary brand statement */}
+              <AnimatedSection animation="fadeInUp" delay={0.14}>
+                <h1
+                  id="home-hero-heading"
+                  className="max-w-[1040px] text-white font-medium tracking-[-0.035em] leading-[1.08] mb-5 sm:mb-6"
+                >
+                  <span className="block text-[34px] sm:text-[40px] md:text-[46px] lg:text-[50px] xl:text-[54px]">
+                    Duniya <span className="text-yellow-500">Brands</span> Ke Peeche.
+                  </span>
+                  <span className="block mt-1 text-[30px] sm:text-[36px] md:text-[42px] lg:text-[46px] xl:text-[50px] text-white/95">
+                    Aur Brands Marketing Aur Advertising Ke Peeche.
+                  </span>
+                </h1>
               </AnimatedSection>
 
-              {/* CTAs — direct Links intentionally used here to keep exact compact sizing */}
-              <AnimatedSection animation="fadeInUp" delay={0.36}>
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-7 sm:mb-8">
+              {/* One concise supporting sentence only */}
+              <AnimatedSection animation="fadeInUp" delay={0.2}>
+                <p className="max-w-[720px] text-[14px] sm:text-[15px] md:text-[16px] leading-[1.7] text-white/65 mb-7 sm:mb-8">
+                  We create brands people notice, campaigns people remember, and experiences people choose.
+                </p>
+              </AnimatedSection>
+
+              {/* Compact conversion actions */}
+              <AnimatedSection animation="fadeInUp" delay={0.28}>
+                <div className="flex flex-col min-[420px]:flex-row items-stretch min-[420px]:items-center gap-3 sm:gap-4">
                   <Link
                     to="/contact"
-                    className="group sm:w-fit inline-flex min-h-[50px] items-center justify-center gap-2.5 rounded-xl bg-yellow-500 hover:bg-yellow-400 px-6 sm:px-7 py-3.5 text-[14px] sm:text-[15px] font-semibold text-black shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+                    className="group inline-flex min-h-[48px] w-full min-[420px]:w-auto items-center justify-center gap-2 rounded-xl bg-yellow-500 px-6 py-3 text-[14px] sm:text-[15px] font-semibold text-black transition-all duration-300 hover:bg-yellow-400 hover:-translate-y-0.5 shadow-[0_10px_30px_rgba(234,179,8,0.15)] hover:shadow-[0_14px_36px_rgba(234,179,8,0.22)]"
                   >
                     Start Something
-                    <ArrowRight className="w-4 h-4 sm:w-[18px] sm:h-[18px] transition-transform duration-300 group-hover:translate-x-1" />
+                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
 
                   <Link
                     to="/services"
-                    className="group sm:w-fit inline-flex min-h-[50px] items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.06] hover:bg-white/[0.10] hover:border-yellow-500/40 backdrop-blur-md px-6 sm:px-7 py-3.5 text-[14px] sm:text-[15px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
+                    className="group inline-flex min-h-[48px] w-full min-[420px]:w-auto items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.055] px-6 py-3 text-[14px] sm:text-[15px] font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/[0.10] hover:border-yellow-500/35 hover:-translate-y-0.5"
                   >
                     Explore Inchtomilez
-                    <ArrowRight className="w-4 h-4 sm:w-[18px] sm:h-[18px] transition-transform duration-300 group-hover:translate-x-1" />
+                    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
                 </div>
               </AnimatedSection>
 
-              {/* Contact strip */}
-              <AnimatedSection animation="fadeInUp" delay={0.42}>
-                <div className="max-w-3xl border-t border-white/10 pt-5 flex flex-col min-[520px]:flex-row min-[520px]:flex-wrap items-start min-[520px]:items-center gap-y-3 gap-x-5 md:gap-x-6">
-                  <a
-                    href="tel:+919669988666"
-                    className="group inline-flex items-center gap-2 text-[12px] sm:text-[13px] text-white/55 hover:text-yellow-500 transition-colors duration-200"
-                  >
-                    <Phone className="w-4 h-4 flex-shrink-0 text-white/40 group-hover:text-yellow-500 transition-colors" />
-                    <span>+91 966-998-8666</span>
-                  </a>
-
-                  <a
-                    href="mailto:inchtomilez@gmail.com"
-                    className="group inline-flex items-center gap-2 text-[12px] sm:text-[13px] text-white/55 hover:text-yellow-500 transition-colors duration-200"
-                  >
-                    <Mail className="w-4 h-4 flex-shrink-0 text-white/40 group-hover:text-yellow-500 transition-colors" />
-                    <span>inchtomilez@gmail.com</span>
-                  </a>
-
-                  <div className="inline-flex items-center gap-2 text-[12px] sm:text-[13px] text-white/55">
-                    <MapPin className="w-4 h-4 flex-shrink-0 text-white/40" />
-                    <span>Indore • Pune • India</span>
-                  </div>
-                </div>
-              </AnimatedSection>
             </div>
           </div>
         </div>
 
-        {/* Bottom separator */}
+        {/* Clean visual hand-off into Section 2 */}
         <div
           className="absolute bottom-0 left-0 right-0 z-[2] h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent pointer-events-none"
           aria-hidden="true"
