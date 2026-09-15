@@ -371,31 +371,31 @@ export function HomePage() {
 
 
 
-{/* 1. HERO SECTION — CINEMATIC VIDEO LANDING */}
-<section className="relative min-h-[100svh] w-full overflow-hidden bg-black flex items-end">
 
-  {/* =========================================================
+
+{/* ============================================================
+    1. HOME HERO SECTION
+    Full Video Background + Inchtomilez Content
+============================================================ */}
+<section className="relative min-h-screen w-full overflow-hidden bg-black flex items-center">
+
+  {/* ============================================================
       BACKGROUND VIDEO
-      - muted is required for reliable browser autoplay
-      - playsInline prevents forced fullscreen on mobile
-      - preload="metadata" avoids unnecessarily downloading
-        the full video before the page becomes usable
-  ========================================================== */}
+  ============================================================ */}
   <video
-    className="
-      absolute inset-0
-      w-full h-full
-      object-cover
-      object-center
-      pointer-events-none
-      select-none
-    "
     autoPlay
     muted
     loop
     playsInline
     preload="metadata"
     disablePictureInPicture
+    className="absolute inset-0 w-full h-full object-cover"
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+      objectPosition: 'center center',
+    }}
     aria-hidden="true"
   >
     <source
@@ -405,431 +405,319 @@ export function HomePage() {
   </video>
 
 
-  {/* =========================================================
-      VIDEO OVERLAYS
-      Gives us:
-      1. overall darkening
-      2. stronger darkness behind text
-      3. cinematic bottom fade
-  ========================================================== */}
+  {/* ============================================================
+      VIDEO DARK OVERLAY
+  ============================================================ */}
 
-  {/* Main dark layer */}
+  {/* General dark overlay */}
   <div
-    className="absolute inset-0 bg-black/45 pointer-events-none"
+    className="absolute inset-0 bg-black/40"
     aria-hidden="true"
   />
 
-  {/* Left readability gradient */}
+  {/* Stronger left overlay for readable content */}
   <div
-    className="
-      absolute inset-0
-      bg-gradient-to-r
-      from-black/90
-      via-black/55
-      to-black/10
-      pointer-events-none
-    "
+    className="absolute inset-0"
+    style={{
+      background:
+        'linear-gradient(90deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.68) 38%, rgba(0,0,0,0.28) 68%, rgba(0,0,0,0.10) 100%)',
+    }}
     aria-hidden="true"
   />
 
-  {/* Bottom cinematic gradient */}
+  {/* Bottom cinematic fade */}
   <div
-    className="
-      absolute inset-0
-      bg-gradient-to-t
-      from-black/90
-      via-black/20
-      to-transparent
-      pointer-events-none
-    "
+    className="absolute inset-0"
+    style={{
+      background:
+        'linear-gradient(0deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0) 75%)',
+    }}
     aria-hidden="true"
   />
 
 
-  {/* =========================================================
+  {/* ============================================================
       HERO CONTENT
-  ========================================================== */}
-  <div
-    className="
-      relative z-10
-      w-full
-      px-5
-      sm:px-8
-      lg:px-12
-      xl:px-16
-      pb-8
-      sm:pb-10
-      md:pb-12
-      lg:pb-14
-      pt-32
-    "
-  >
-    <div className="max-w-[1450px] mx-auto">
+  ============================================================ */}
+  <div className="relative z-10 w-full px-5 sm:px-8 md:px-10 lg:px-16 xl:px-20 py-24 md:py-28 lg:py-32">
 
-      {/* Content width deliberately kept left-aligned */}
-      <div className="max-w-[1100px]">
+    <div className="w-full max-w-7xl mx-auto">
 
-        {/* Badge */}
-        <AnimatedSection animation="fadeInUp" delay={0.08}>
+      {/* Left content */}
+      <div className="max-w-5xl">
+
+        {/* Small Brand Badge */}
+        <div className="mb-5 md:mb-6">
           <div
             className="
               inline-flex
               items-center
               gap-2
-              mb-5
-              sm:mb-6
-              border
-              border-yellow-500/40
-              bg-black/35
-              backdrop-blur-md
-              rounded-full
               px-4
               py-2
+              rounded-full
+              border
+              border-yellow-500/40
+              bg-black/40
             "
           >
             <Star
-              className="w-3.5 h-3.5 text-yellow-500"
+              className="w-4 h-4 text-yellow-500"
               fill="currentColor"
             />
 
-            <span
-              className="
-                text-[10px]
-                sm:text-[11px]
-                md:text-[12px]
-                uppercase
-                tracking-[0.14em]
-                font-semibold
-                text-white/90
-              "
-            >
-              DIGITAL • CREATIVE • ADVERTISING • TECHNOLOGY
+            <span className="text-[10px] sm:text-[11px] md:text-xs font-semibold tracking-[0.15em] uppercase text-white">
+              Digital • Creative • Advertising • Technology
             </span>
           </div>
-        </AnimatedSection>
+        </div>
 
 
-        {/* =====================================================
-            MAIN BRAND STATEMENT
-        ====================================================== */}
-        <AnimatedSection animation="fadeInUp" delay={0.14}>
-          <h1
-            className="
-              max-w-[1180px]
-              text-[34px]
-              sm:text-[42px]
-              md:text-[54px]
-              lg:text-[64px]
-              xl:text-[72px]
-              font-semibold
-              tracking-[-0.035em]
-              leading-[1.02]
-              text-white
-              uppercase
-              mb-5
-            "
-          >
-            Duniya{" "}
-            <span className="text-yellow-500">
-              Brands
-            </span>{" "}
-            Ke Peeche,
-            <br className="hidden md:block" />
-            <span className="md:ml-0">
-              Aur Brands Marketing Aur Advertising Ke!
-            </span>
-          </h1>
-        </AnimatedSection>
+        {/* ========================================================
+            MAIN HEADING
+        ======================================================== */}
+        <h1
+          className="
+            text-white
+            font-bold
+            uppercase
+            tracking-[-0.03em]
+            leading-[1.05]
+            mb-5
+            max-w-5xl
+          "
+          style={{
+            fontSize: 'clamp(32px, 4.3vw, 68px)',
+          }}
+        >
+          Duniya{' '}
+          <span className="text-yellow-500">
+            Brands
+          </span>{' '}
+          Ke Peeche,
+          <br className="hidden md:block" />
+          Aur Brands Marketing Aur Advertising Ke!
+        </h1>
 
 
-        {/* Supporting headline */}
-        <AnimatedSection animation="fadeInUp" delay={0.2}>
-          <h2
-            className="
-              max-w-[900px]
-              text-[17px]
-              sm:text-[19px]
-              md:text-[21px]
-              lg:text-[23px]
-              leading-[1.45]
-              font-medium
-              text-white/90
-              mb-3
-            "
-          >
-            We Create Brands People Notice. Campaigns People Remember.
-            Experiences People Choose.
-          </h2>
-        </AnimatedSection>
+        {/* ========================================================
+            SECONDARY HEADING
+        ======================================================== */}
+        <h2
+          className="
+            text-white
+            font-semibold
+            leading-[1.4]
+            max-w-4xl
+            mb-4
+          "
+          style={{
+            fontSize: 'clamp(17px, 1.55vw, 23px)',
+            color: '#ffffff',
+          }}
+        >
+          We Create Brands People Notice. Campaigns People Remember.
+          Experiences People Choose.
+        </h2>
 
 
-        {/* Supporting copy */}
-        <AnimatedSection animation="fadeInUp" delay={0.25}>
-          <p
-            className="
-              max-w-[760px]
-              text-[14px]
-              sm:text-[15px]
-              md:text-[16px]
-              leading-[1.7]
-              text-white/65
-              mb-7
-              md:mb-8
-            "
-          >
-            We build ideas, campaigns and digital experiences that make
-            people look, remember and choose.
-          </p>
-        </AnimatedSection>
+        {/* Description */}
+        <p
+          className="
+            max-w-3xl
+            text-white/75
+            text-sm
+            sm:text-[15px]
+            md:text-base
+            leading-7
+            mb-7
+          "
+        >
+          We build ideas, campaigns and digital experiences that make
+          people look, remember and choose.
+        </p>
 
 
-        {/* =====================================================
+        {/* ========================================================
             QUICK FACTS
-        ====================================================== */}
-        <AnimatedSection animation="fadeInUp" delay={0.3}>
-          <div
-            className="
-              flex
-              flex-wrap
-              items-center
-              gap-x-5
-              gap-y-3
-              mb-7
-              md:mb-8
-            "
-          >
-            {quickFacts.map((fact, index) => (
-              <div
-                key={index}
-                className="
-                  flex
-                  items-center
-                  gap-2
-                  text-[11px]
-                  sm:text-[12px]
-                  md:text-[13px]
-                  font-medium
-                  text-white/75
-                "
-              >
-                <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+        ======================================================== */}
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mb-8">
 
-                <span>{fact.label}</span>
-              </div>
-            ))}
-          </div>
-        </AnimatedSection>
-
-
-        {/* =====================================================
-            CTA ROW
-        ====================================================== */}
-        <AnimatedSection animation="fadeInUp" delay={0.36}>
-          <div
-            className="
-              flex
-              flex-col
-              sm:flex-row
-              sm:items-center
-              gap-3
-              sm:gap-4
-              mb-8
-            "
-          >
-
-            {/* PRIMARY CTA */}
-            <Link
-              to="/contact"
-              className="
-                group
-                inline-flex
-                items-center
-                justify-center
-                gap-2
-                min-h-[52px]
-                px-7
-                bg-yellow-500
-                hover:bg-yellow-400
-                text-black
-                text-[14px]
-                sm:text-[15px]
-                font-semibold
-                rounded-md
-                transition-all
-                duration-300
-                hover:-translate-y-0.5
-                hover:shadow-[0_12px_35px_rgba(234,179,8,0.25)]
-              "
-            >
-              Start Something
-
-              <ArrowRight
-                className="
-                  w-4 h-4
-                  transition-transform
-                  duration-300
-                  group-hover:translate-x-1
-                "
-              />
-            </Link>
-
-
-            {/* SECONDARY CTA */}
-            <Link
-              to="/services"
-              className="
-                group
-                inline-flex
-                items-center
-                justify-center
-                gap-2
-                min-h-[52px]
-                px-7
-                border
-                border-white/25
-                bg-white/[0.07]
-                hover:bg-white/[0.12]
-                hover:border-yellow-500/60
-                backdrop-blur-md
-                text-white
-                text-[14px]
-                sm:text-[15px]
-                font-semibold
-                rounded-md
-                transition-all
-                duration-300
-              "
-            >
-              Explore Inchtomilez
-
-              <ArrowRight
-                className="
-                  w-4 h-4
-                  transition-transform
-                  duration-300
-                  group-hover:translate-x-1
-                "
-              />
-            </Link>
-
-          </div>
-        </AnimatedSection>
-
-
-        {/* =====================================================
-            CONTACT LINE
-        ====================================================== */}
-        <AnimatedSection animation="fadeInUp" delay={0.42}>
-          <div
-            className="
-              flex
-              flex-col
-              sm:flex-row
-              sm:flex-wrap
-              sm:items-center
-              gap-3
-              sm:gap-6
-              pt-5
-              border-t
-              border-white/10
-              max-w-[900px]
-            "
-          >
-
-            <a
-              href="tel:+919669988666"
-              className="
-                flex
-                items-center
-                gap-2
-                text-[12px]
-                sm:text-[13px]
-                text-white/60
-                hover:text-yellow-500
-                transition-colors
-              "
-            >
-              <Phone className="w-4 h-4" />
-              +91 966-998-8666
-            </a>
-
-
-            <a
-              href="mailto:inchtomilez@gmail.com"
-              className="
-                flex
-                items-center
-                gap-2
-                text-[12px]
-                sm:text-[13px]
-                text-white/60
-                hover:text-yellow-500
-                transition-colors
-              "
-            >
-              <Mail className="w-4 h-4" />
-              inchtomilez@gmail.com
-            </a>
-
-
+          {quickFacts.map((fact, index) => (
             <div
-              className="
-                flex
-                items-center
-                gap-2
-                text-[12px]
-                sm:text-[13px]
-                text-white/60
-              "
+              key={index}
+              className="flex items-center gap-2"
             >
-              <MapPin className="w-4 h-4" />
-              Indore • Pune • India
-            </div>
+              <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0" />
 
+              <span className="text-xs sm:text-sm font-medium text-white/80">
+                {fact.label}
+              </span>
+            </div>
+          ))}
+
+        </div>
+
+
+        {/* ========================================================
+            CTA BUTTONS
+        ======================================================== */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-9">
+
+          {/* Primary CTA */}
+          <Link
+            to="/contact"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              bg-yellow-500
+              hover:bg-yellow-400
+              text-black
+              font-bold
+              text-sm
+              sm:text-[15px]
+              px-7
+              py-4
+              rounded-lg
+              transition-all
+              duration-300
+              hover:-translate-y-1
+              shadow-lg
+            "
+          >
+            Start Something
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+
+
+          {/* Secondary CTA */}
+          <Link
+            to="/services"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              border
+              border-white/30
+              bg-black/30
+              hover:bg-white/10
+              hover:border-yellow-500
+              text-white
+              font-semibold
+              text-sm
+              sm:text-[15px]
+              px-7
+              py-4
+              rounded-lg
+              transition-all
+              duration-300
+            "
+          >
+            Explore Inchtomilez
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+
+        </div>
+
+
+        {/* ========================================================
+            CONTACT DETAILS
+        ======================================================== */}
+        <div
+          className="
+            flex
+            flex-col
+            sm:flex-row
+            sm:flex-wrap
+            items-start
+            sm:items-center
+            gap-3
+            sm:gap-6
+            border-t
+            border-white/15
+            pt-5
+            max-w-4xl
+          "
+        >
+
+          {/* Phone */}
+          <a
+            href="tel:+919669988666"
+            className="
+              flex
+              items-center
+              gap-2
+              text-xs
+              sm:text-sm
+              text-white/60
+              hover:text-yellow-500
+              transition-colors
+            "
+          >
+            <Phone className="w-4 h-4" />
+            +91 966-998-8666
+          </a>
+
+
+          {/* Email */}
+          <a
+            href="mailto:inchtomilez@gmail.com"
+            className="
+              flex
+              items-center
+              gap-2
+              text-xs
+              sm:text-sm
+              text-white/60
+              hover:text-yellow-500
+              transition-colors
+            "
+          >
+            <Mail className="w-4 h-4" />
+            inchtomilez@gmail.com
+          </a>
+
+
+          {/* Location */}
+          <div
+            className="
+              flex
+              items-center
+              gap-2
+              text-xs
+              sm:text-sm
+              text-white/60
+            "
+          >
+            <MapPin className="w-4 h-4" />
+            Indore • Pune • India
           </div>
-        </AnimatedSection>
+
+        </div>
 
       </div>
     </div>
   </div>
 
 
-  {/* =========================================================
-      SMALL SCROLL INDICATOR
-      Desktop only — kept subtle
-  ========================================================== */}
-  <div
-    className="
-      hidden
-      lg:flex
-      absolute
-      right-10
-      bottom-12
-      z-20
-      items-center
-      gap-3
-      rotate-90
-      origin-bottom-right
-      text-white/40
-    "
-  >
-    <span className="text-[10px] uppercase tracking-[0.25em]">
+  {/* ============================================================
+      SMALL BOTTOM SCROLL MARKER
+      Desktop only
+  ============================================================ */}
+  <div className="hidden lg:flex absolute right-10 bottom-8 z-10 items-center gap-3 text-white/50">
+    <span className="text-[10px] tracking-[0.25em] uppercase">
       Scroll
     </span>
 
-    <div className="w-10 h-px bg-white/30" />
+    <div className="w-12 h-px bg-yellow-500/60" />
   </div>
 
 </section>
 
-
-
-
-
-
-
-
-
+      
 
 
 
