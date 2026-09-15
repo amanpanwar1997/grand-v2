@@ -99,7 +99,7 @@ export function AboutPage() {
       label: 'Our Purpose',
 
       description:
-        'To help businesses build stronger brands, smarter digital systems and sustainable growth through connected strategy, creativity, marketing and technology.',
+        'To connect strategy, advertising, creative, search and technology around one objective: helping businesses build stronger market presence and sustainable growth.',
     },
 
     {
@@ -108,7 +108,7 @@ export function AboutPage() {
       label: 'Our Vision',
 
       description:
-        'To build an independent Indian agency known for strategic thinking, quality execution, clear communication and long-term business partnerships.',
+        'To build a modern independent agency from India that combines sharp strategy, strong creative and accountable execution without losing clarity, speed or personal involvement.',
     },
 
     {
@@ -117,7 +117,7 @@ export function AboutPage() {
       label: 'Our Approach',
 
       description:
-        'We understand the business first. Then we decide what combination of strategy, creative, media, SEO, technology and execution can move it forward.',
+        'We start with the business problem, not the platform. The channel mix follows the objective, the audience and the opportunity.',
     },
 
     {
@@ -126,7 +126,7 @@ export function AboutPage() {
       label: 'Founder-Led',
 
       description:
-        'Inchtomilez was founded by Aman Panwar in Indore and continues to grow with a hands-on, business-first approach to digital marketing and advertising.',
+        'Founded by Aman Panwar in Indore, Inchtomilez remains closely involved in strategy and execution while growing into a broader integrated agency.',
     },
 
     {
@@ -135,7 +135,7 @@ export function AboutPage() {
       label: 'Our Presence',
 
       description:
-        'Built in Indore and expanding into Pune in September 2026, we work with businesses across industries, markets and digital growth stages.',
+        'Built in Indore and expanding to Pune in September 2026, we work as one connected agency across locations, disciplines and client requirements.',
     },
 
     {
@@ -144,7 +144,7 @@ export function AboutPage() {
       label: 'Our Commitment',
 
       description:
-        'Every engagement should create meaningful progress — stronger positioning, better digital experiences, measurable marketing and smarter business decisions.',
+        'We want every engagement to leave the business stronger — with clearer positioning, better digital assets, more effective campaigns and better decisions.',
     },
 
   ];
@@ -164,7 +164,7 @@ export function AboutPage() {
       label: 'Strategy',
 
       description:
-        'We define the business objective, understand the market, study the audience and build a clear direction before execution begins.',
+        'Positioning, audience, market, offer and growth priorities come first. Strategy gives every channel a reason to exist.',
     },
 
     {
@@ -173,7 +173,7 @@ export function AboutPage() {
       label: 'Creative',
 
       description:
-        'Brand communication, campaign concepts, visual design and content should earn attention while strengthening how the business is perceived.',
+        'Ideas, messaging and design turn strategy into communication people can notice, understand and remember.',
     },
 
     {
@@ -182,7 +182,7 @@ export function AboutPage() {
       label: 'Performance',
 
       description:
-        'Search, paid media, lead generation and digital campaigns are continuously measured, tested and optimized around meaningful outcomes.',
+        'Paid media, search and lead generation are managed around qualified demand, conversion quality and continuous improvement.',
     },
 
     {
@@ -191,7 +191,7 @@ export function AboutPage() {
       label: 'Technology',
 
       description:
-        'Websites, landing pages, e-commerce and digital experiences form the infrastructure that turns marketing attention into business opportunity.',
+        'Websites, landing pages, e-commerce and digital systems make sure attention has somewhere effective to go.',
     },
 
   ];
@@ -211,7 +211,7 @@ export function AboutPage() {
       label: 'Understand First',
 
       description:
-        'Before recommending channels or budgets, we understand the business model, customer journey, competition and actual growth objective.',
+        'We look at the business model, customer journey, market, competition and current digital setup before proposing activity.',
     },
 
     {
@@ -220,7 +220,7 @@ export function AboutPage() {
       label: 'Communicate Clearly',
 
       description:
-        'Clients should understand what is being done, why it matters, what the priorities are and what happens next.',
+        'You should always know the objective, the priority, what is being executed and what the next decision depends on.',
     },
 
     {
@@ -229,7 +229,7 @@ export function AboutPage() {
       label: 'Execute Properly',
 
       description:
-        'Good strategy requires disciplined execution, attention to detail and consistent quality across every customer touchpoint.',
+        'Strategy only matters when the details are right — from creative and media setup to landing pages, tracking and delivery.',
     },
 
     {
@@ -238,7 +238,7 @@ export function AboutPage() {
       label: 'Improve Continuously',
 
       description:
-        'We use performance data, customer response and market learning to continuously improve campaigns, creative and digital experiences.',
+        'We review real response, performance and market signals, then refine the work instead of repeating the same plan.',
     },
 
   ];
@@ -256,42 +256,42 @@ export function AboutPage() {
       label: 'Business Before Channels',
 
       sublabel:
-        'We understand the problem before recommending the platform'
+        'The problem comes first; the platform comes later'
     },
 
     {
-      label: 'Strategy + Execution',
+      label: 'One Connected Direction',
 
       sublabel:
-        'Planning and implementation remain connected'
+        'Strategy, creative, media, search and technology stay aligned'
     },
 
     {
-      label: 'Creative + Performance',
+      label: 'Execution Ownership',
 
       sublabel:
-        'Brand building and measurable marketing work together'
+        'We stay close to the work from planning through implementation'
     },
 
     {
-      label: 'Marketing + Technology',
+      label: 'Commercial Awareness',
 
       sublabel:
-        'Campaigns, websites and digital systems support one another'
+        'Marketing decisions are tied back to leads, sales and business priorities'
     },
 
     {
       label: 'Clear Communication',
 
       sublabel:
-        'You understand priorities, progress and next steps'
+        'Priorities, progress, risks and next steps remain visible'
     },
 
     {
-      label: 'Long-Term Thinking',
+      label: 'Built to Adapt',
 
       sublabel:
-        'We build systems that can continue creating value'
+        'The approach evolves as markets, platforms and customer behaviour change'
     },
 
   ];
@@ -311,52 +311,52 @@ export function AboutPage() {
       label: 'Strategy & Consulting',
 
       description:
-        'Digital strategy, market understanding, positioning, campaign planning, growth roadmaps and marketing direction.',
+        'Market understanding, positioning, go-to-market thinking, campaign planning and practical growth roadmaps.',
     },
 
     {
       icon: Megaphone,
 
-      label: 'Performance Marketing',
+      label: 'Digital Advertising',
 
       description:
-        'Google Ads, Meta Ads, lead generation, campaign management, optimization and conversion-focused advertising.',
+        'Google Ads, Meta Ads, paid media planning, lead generation, retargeting and conversion-led optimization.',
     },
 
     {
       icon: Search,
 
-      label: 'SEO & Organic Growth',
+      label: 'SEO & Search Growth',
 
       description:
-        'Technical SEO, local SEO, search strategy, content optimization and sustainable organic visibility.',
+        'Technical SEO, local search, content optimization and search strategies built for durable organic visibility.',
     },
 
     {
       icon: Palette,
 
-      label: 'Creative & Branding',
+      label: 'Brand & Creative',
 
       description:
-        'Brand identity, campaign creative, graphic design, social content, advertising assets and visual communication.',
+        'Brand identity, campaign concepts, graphic design, social content, ad creative and visual communication.',
     },
 
     {
       icon: Code,
 
-      label: 'Web & Technology',
+      label: 'Web & Commerce',
 
       description:
-        'Business websites, landing pages, e-commerce experiences, development and performance-focused digital infrastructure.',
+        'Business websites, landing pages, e-commerce experiences and digital infrastructure built to support conversion.',
     },
 
     {
       icon: Handshake,
 
-      label: 'Client Success',
+      label: 'Account & Growth Management',
 
       description:
-        'Clear project coordination, communication, reporting and alignment between agency execution and business priorities.',
+        'Ongoing coordination, reporting, priorities and cross-channel alignment so strategy and execution stay connected.',
     },
 
   ];
@@ -373,55 +373,55 @@ export function AboutPage() {
     {
       icon: Target,
 
-      label: 'Business-First Thinking',
+      label: 'Integrated Agency Model',
 
       description:
-        'We focus on what the business needs to achieve before deciding what marketing activity should happen.',
+        'One team can connect strategy, creative, media, search and technology instead of treating them as separate vendors.',
     },
 
     {
       icon: Sparkles,
 
-      label: 'Integrated Capabilities',
+      label: 'Founder-Led Involvement',
 
       description:
-        'Strategy, creative, performance marketing, SEO and technology can work together as one connected system.',
+        'The agency stays close to business context, key decisions and the quality of execution.',
     },
 
     {
       icon: Trophy,
 
-      label: 'Hands-On Execution',
+      label: 'Channel-Agnostic Thinking',
 
       description:
-        'Our thinking has been shaped by practical work across websites, campaigns, search, advertising and brand development.',
+        'We recommend what fits the objective, not what happens to be easiest for us to sell.',
     },
 
     {
       icon: Zap,
 
-      label: 'Adaptive Approach',
+      label: 'Built Around Execution',
 
       description:
-        'Markets change. Platforms change. Customer behavior changes. Our strategies evolve with real performance and opportunity.',
+        'Plans are shaped by what can actually be implemented well across creative, media and technology.',
     },
 
     {
       icon: BarChart3,
 
-      label: 'Measurable Progress',
+      label: 'Measurement With Context',
 
       description:
-        'We prioritize meaningful business indicators rather than treating marketing activity itself as the final outcome.',
+        'We use data to make better decisions without reducing business performance to vanity metrics.',
     },
 
     {
       icon: Heart,
 
-      label: 'Partnership Mindset',
+      label: 'Long-Term Partnership',
 
       description:
-        'We aim to become an extension of the businesses we support instead of operating as another disconnected vendor.',
+        'We prefer relationships where the work can compound, improve and become more valuable over time.',
     },
 
   ];
@@ -441,7 +441,7 @@ export function AboutPage() {
       label: 'Discover',
 
       description:
-        'We understand your business, objectives, audience, competition and current digital presence.',
+        'We understand the business, offer, audience, competition, current marketing and the outcome you need.',
     },
 
     {
@@ -450,7 +450,7 @@ export function AboutPage() {
       label: 'Strategize',
 
       description:
-        'We define priorities, channels, positioning, creative direction, deliverables and measurable objectives.',
+        'We define the positioning, priorities, channel mix, creative direction, deliverables and measurement plan.',
     },
 
     {
@@ -459,7 +459,7 @@ export function AboutPage() {
       label: 'Create',
 
       description:
-        'Strategy becomes campaigns, content, designs, websites, landing pages and communication assets.',
+        'We turn the strategy into campaigns, content, design systems, websites, landing pages and communication assets.',
     },
 
     {
@@ -468,7 +468,7 @@ export function AboutPage() {
       label: 'Execute',
 
       description:
-        'Campaigns and digital initiatives are implemented systematically with testing, coordination and quality control.',
+        'We launch with coordinated media, technology, tracking and quality control across the agreed touchpoints.',
     },
 
     {
@@ -477,7 +477,7 @@ export function AboutPage() {
       label: 'Optimize & Scale',
 
       description:
-        'We study performance, improve what works, solve what does not and scale successful initiatives intelligently.',
+        'We learn from performance, improve the system and scale the parts that are creating meaningful business value.',
     },
 
   ];
@@ -495,42 +495,42 @@ export function AboutPage() {
       label: 'Healthcare',
 
       sublabel:
-        'Doctors, clinics, hospitals, healthcare services and wellness brands',
+        'Doctors, clinics, hospitals, healthcare services, wellness and patient-acquisition programs',
     },
 
     {
       label: 'Real Estate',
 
       sublabel:
-        'Developers, projects, commercial properties and property marketing',
+        'Developers, residential and commercial projects, property brands and lead-generation campaigns',
     },
 
     {
       label: 'Education',
 
       sublabel:
-        'Institutions, education brands, programs and learning businesses',
+        'Institutions, courses, learning brands, admissions marketing and education businesses',
     },
 
     {
       label: 'E-Commerce & Retail',
 
       sublabel:
-        'Online stores, product brands, marketplaces and direct-to-consumer businesses',
+        'D2C brands, online stores, retail businesses, marketplaces and product-led growth',
     },
 
     {
       label: 'Automotive',
 
       sublabel:
-        'Automotive businesses, products, services and customer acquisition campaigns',
+        'Dealerships, automotive services, accessories, products and customer-acquisition campaigns',
     },
 
     {
       label: 'Professional Services',
 
       sublabel:
-        'Consulting, B2B organizations, service businesses and growing enterprises',
+        'Consulting firms, B2B companies, service businesses and growth-stage enterprises',
     },
 
   ];
@@ -693,8 +693,8 @@ export function AboutPage() {
               }}
             >
 
-              An independent digital marketing and advertising agency built in
-              Indore — now expanding our presence into Pune.
+              An independent, founder-led digital marketing and advertising agency built in
+              Indore — expanding to Pune in September 2026.
 
             </p>
 
@@ -713,9 +713,9 @@ export function AboutPage() {
               }}
             >
 
-              We bring strategy, creative thinking, performance marketing,
-              search and technology together to help businesses build stronger
-              brands and better digital growth systems.
+              We connect strategy, creative, paid media, search and technology
+              so brands can build visibility, generate demand and create stronger
+              digital growth systems.
 
             </p>
 
@@ -734,7 +734,7 @@ export function AboutPage() {
               }}
             >
 
-              Strategy. Creativity. Performance. Technology.
+              Strategy. Creative. Media. Search. Technology.
 
             </p>
 
@@ -815,7 +815,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              More Than a Marketing Agency
+              An Integrated Agency Built Around Business Growth
 
             </h2>
 
@@ -831,9 +831,9 @@ export function AboutPage() {
               <span className="text-yellow-500 font-semibold">
                 {' '}founder-led digital marketing and advertising agency
               </span>
-              {' '}working across strategy, advertising, branding, SEO,
-              performance marketing, creative communication, website
-              development and digital technology.
+              {' '}connecting strategy, advertising, branding, creative, search,
+              performance marketing and technology under one integrated
+              agency model.
 
             </p>
 
@@ -889,7 +889,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Four Disciplines. One Connected Direction.
+              Four Disciplines. One Connected Growth System.
 
             </h2>
 
@@ -901,12 +901,13 @@ export function AboutPage() {
               }}
             >
 
-              Strong digital growth rarely comes from one platform alone.
-              We connect
+              Strong digital growth is rarely created by one channel alone.
+              We align
               <span className="text-yellow-500 font-semibold">
                 {' '}strategy, creative, performance and technology
               </span>
-              {' '}so every part of the brand works towards the same objective.
+              {' '}so each discipline strengthens the next and supports the same
+              business objective.
 
             </p>
 
@@ -962,7 +963,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Understand First. Execute Better.
+              Clarity Before Activity. Execution With Purpose.
 
             </h2>
 
@@ -974,10 +975,10 @@ export function AboutPage() {
               }}
             >
 
-              Better marketing begins with better understanding.
-              Our work is guided by
+              We do not begin with a platform recommendation. We begin by
+              understanding the business, then turn that understanding into
               <span className="text-yellow-500 font-semibold">
-                {' '}clarity, disciplined execution and continuous improvement.
+                {' '}focused execution and continuous improvement.
               </span>
 
             </p>
@@ -1074,8 +1075,8 @@ export function AboutPage() {
                 <span className="text-yellow-500 font-semibold">
                   {' '}Aman Panwar
                 </span>
-                {' '}in Indore with a hands-on foundation in digital marketing,
-                search, websites and business growth.
+                {' '}in Indore after years of hands-on work across websites,
+                SEO, digital marketing and business growth.
 
               </p>
 
@@ -1137,8 +1138,8 @@ export function AboutPage() {
 
                         <p className="text-[0.8125rem] text-gray-400 leading-relaxed">
 
-                          Hands-on background across website development,
-                          digital marketing and search.
+                          Hands-on foundation in website development, SEO and
+                          digital marketing.
 
                         </p>
 
@@ -1154,8 +1155,8 @@ export function AboutPage() {
 
                         <p className="text-[0.8125rem] text-gray-400 leading-relaxed">
 
-                          Experience working across strategy, branding,
-                          performance and digital growth.
+                          Built the agency around practical strategy, strong execution
+                          and direct client communication.
 
                         </p>
 
@@ -1171,8 +1172,8 @@ export function AboutPage() {
 
                         <p className="text-[0.8125rem] text-gray-400 leading-relaxed">
 
-                          Built Inchtomilez in Indore and is now leading its
-                          expansion into Pune.
+                          Leading Inchtomilez from its Indore base into its
+                          September 2026 Pune expansion.
 
                         </p>
 
@@ -1198,9 +1199,10 @@ export function AboutPage() {
                       }}
                     >
 
-                      Inchtomilez began with one founder and a simple belief:
-                      marketing should make sense for the business before it
-                      makes sense on a presentation.
+                      Inchtomilez did not begin as a large agency. It began with one
+                      founder doing the work — building websites, improving search
+                      visibility and helping businesses understand what digital
+                      marketing could actually do for them.
 
                     </p>
 
@@ -1212,9 +1214,10 @@ export function AboutPage() {
                       }}
                     >
 
-                      What started with hands-on digital work evolved into an
-                      integrated agency working across marketing, advertising,
-                      creative, branding, websites, SEO and technology.
+                      As client needs became broader, the agency evolved beyond
+                      individual services into a connected model spanning strategy,
+                      advertising, branding, creative, SEO, performance marketing
+                      and technology.
 
                     </p>
 
@@ -1226,9 +1229,9 @@ export function AboutPage() {
                       }}
                     >
 
-                      The philosophy remains practical — understand the
-                      business, create the right strategy, execute properly and
-                      keep improving.
+                      The principle is still the same — understand the business
+                      first, make the strategy clear, execute with discipline and
+                      improve from real market response.
 
                     </p>
 
@@ -1330,9 +1333,9 @@ export function AboutPage() {
                 }}
               >
 
-                September 2026 marks an important step for Inchtomilez as we
-                expand our presence into Pune while continuing to strengthen
-                the agency built in Indore.
+                In September 2026, Inchtomilez expands into Pune — extending
+                the same connected agency approach beyond Indore while keeping
+                strategy and execution under one team.
 
               </p>
 
@@ -1384,9 +1387,9 @@ export function AboutPage() {
                     }}
                   >
 
-                    Indore is where Inchtomilez was founded, developed and
-                    shaped. It remains the foundation of our agency,
-                    relationships and operating philosophy.
+                    Indore is where Inchtomilez was built. It remains the
+                    foundation of our working culture, client relationships and
+                    hands-on approach to strategy and execution.
 
                   </p>
 
@@ -1456,10 +1459,9 @@ export function AboutPage() {
                     }}
                   >
 
-                    Our Pune expansion brings Inchtomilez closer to businesses
-                    across one of India&apos;s strongest ecosystems for
-                    technology, healthcare, real estate, education,
-                    manufacturing and growing enterprises.
+                    Our Pune presence brings Inchtomilez closer to businesses
+                    across technology, healthcare, real estate, education,
+                    manufacturing and the wider western India market.
 
                   </p>
 
@@ -1502,7 +1504,7 @@ export function AboutPage() {
 
                 <p className="text-[0.9375rem] text-gray-400 mb-6">
 
-                  Two cities. One agency. One connected approach.
+                  Two cities. One agency. One standard of thinking and execution.
 
                 </p>
 
@@ -1567,7 +1569,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              What Makes Our Approach Different
+              Built Differently for Connected Growth
 
             </h2>
 
@@ -1579,10 +1581,10 @@ export function AboutPage() {
               }}
             >
 
-              We do not believe every business needs the same campaign,
-              platform or formula. Our approach starts with
+              There is no fixed formula for growth. The right mix depends on
+              the business, market, audience and objective — so we start with
               <span className="text-yellow-500 font-semibold">
-                {' '}understanding the business first.
+                {' '}context before channels.
               </span>
 
             </p>
@@ -1639,7 +1641,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Specialists Across the Digital Ecosystem
+              Capabilities That Work Better Together
 
             </h2>
 
@@ -1651,10 +1653,10 @@ export function AboutPage() {
               }}
             >
 
-              Different business challenges require different disciplines.
-              Our capabilities can work independently or come together as
+              Different growth problems need different capabilities. Our
+              services can work independently when needed or combine as
               <span className="text-yellow-500 font-semibold">
-                {' '}one integrated digital engagement.
+                {' '}one connected agency engagement.
               </span>
 
             </p>
@@ -1711,7 +1713,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              Different Markets Need Different Strategies
+              Different Markets. Different Buying Journeys.
 
             </h2>
 
@@ -1723,9 +1725,9 @@ export function AboutPage() {
               }}
             >
 
-              Customer behavior, sales cycles, competition and digital
-              opportunities differ by industry. Our strategy adapts to the
-              market rather than forcing every business into the same formula.
+              Customer behaviour, sales cycles, trust signals and competition
+              change from one industry to another. We adapt the strategy to the
+              market instead of forcing every business into the same playbook.
 
             </p>
 
@@ -1788,7 +1790,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              More Than Marketing Execution
+              A Partner That Connects the Work
 
             </h2>
 
@@ -1800,9 +1802,9 @@ export function AboutPage() {
               }}
             >
 
-              Our role is not simply to complete marketing tasks.
-              We aim to understand the wider business and contribute where
-              strategy, execution and digital growth meet.
+              Our role is not to add more disconnected marketing activity.
+              It is to connect the right capabilities around the business and
+              keep strategy, execution and learning moving in the same direction.
 
             </p>
 
@@ -1858,7 +1860,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4 text-center">
 
-              From Understanding to Scale
+              From Business Context to Scalable Execution
 
             </h2>
 
@@ -1872,10 +1874,10 @@ export function AboutPage() {
 
               A
               <span className="text-yellow-500 font-semibold">
-                {' '}structured process
+                {' '}structured working process
               </span>
-              {' '}keeps strategy, creative, implementation and optimization
-              connected from the first conversation onwards.
+              {' '}keeps decisions, creative, media, technology and optimization
+              connected from the first conversation onward.
 
             </p>
 
@@ -1929,7 +1931,7 @@ export function AboutPage() {
 
                 <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-6">
 
-                  Marketing Should Create Understanding — Not Confusion.
+                  Good Marketing Should Make the Business Clearer.
 
                 </h2>
 
@@ -1941,18 +1943,17 @@ export function AboutPage() {
                   }}
                 >
 
-                  We believe clients should understand the strategy,
-                  opportunity, challenge and reason behind the work.
-                  Strong partnerships are built when both agency and client
-                  understand where the business is going and what needs to
-                  happen next.
+                  We believe strong marketing becomes easier to improve when the
+                  objective, reasoning and priorities are clear. Clients should
+                  understand what we are doing, why it matters and what the next
+                  decision depends on.
 
                 </p>
 
 
                 <p className="text-yellow-500 font-medium text-[0.9375rem]">
 
-                  Clear thinking. Better execution. Continuous progress.
+                  Clear thinking. Connected execution. Continuous improvement.
 
                 </p>
 
@@ -1990,7 +1991,7 @@ export function AboutPage() {
 
               <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-4">
 
-                Get Marketing Insights
+                Get Practical Marketing Insights
 
               </h2>
 
@@ -2006,8 +2007,8 @@ export function AboutPage() {
                 <span className="text-yellow-500 font-semibold">
                   {' '}monthly newsletter
                 </span>
-                {' '}for practical perspectives on marketing, branding,
-                advertising, SEO, technology and digital growth.
+                {' '}for practical thinking on strategy, advertising, creative,
+                search, technology and business growth.
 
               </p>
 
@@ -2087,7 +2088,7 @@ export function AboutPage() {
 
             <h2 className="text-[20px] md:text-[22px] font-bold leading-[1.3] text-white mb-6">
 
-              Your Next Mile Starts Here.
+              Build the Next Stage of Growth.
 
             </h2>
 
@@ -2099,10 +2100,10 @@ export function AboutPage() {
               }}
             >
 
-              Whether you&apos;re building a new brand, generating demand,
-              improving an existing digital presence or looking for a
-              long-term marketing partner, we&apos;d like to understand
-              where you want the business to go next.
+              Whether you are building a brand, generating demand, improving
+              your digital presence or looking for a long-term agency partner,
+              the next step is the same: understand where the business needs to
+              go and build the right system to help it get there.
 
             </p>
 
