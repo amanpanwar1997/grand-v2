@@ -576,205 +576,539 @@ export function AboutPage() {
       />
 
 
+
+
       {/* ================================================================
-          HERO
+          1. HERO — ABOUT INCHTOMILEZ
+          PREMIUM TWO-COLUMN / ADVANTEDGE-INSPIRED LAYOUT
       ================================================================ */}
 
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 md:min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
+      <section className="relative overflow-hidden py-20 sm:py-24 md:py-28 lg:py-32 md:min-h-[100vh] flex items-center">
 
 
-        {/* Background outlined text */}
+        {/* ================================================================
+            BACKGROUND OUTLINED TEXT
+        ================================================================ */}
 
         <div
-          className="absolute top-[8%] left-1/2 -translate-x-1/2 text-[10rem] md:text-[14rem] pointer-events-none font-bold text-outlined-visible-full select-none whitespace-nowrap"
+          className="absolute top-[5%] left-1/2 -translate-x-1/2 text-[8rem] sm:text-[10rem] md:text-[13rem] lg:text-[15rem] pointer-events-none font-bold text-outlined-visible-full select-none whitespace-nowrap opacity-70"
           aria-hidden="true"
         >
-
           OUR STORY
-
         </div>
 
 
-        {/* Globe */}
+        {/* ================================================================
+            AMBIENT BACKGROUND DETAILS
+        ================================================================ */}
 
-        <div className="absolute top-[15%] md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[3%] pointer-events-none z-0 opacity-50 md:opacity-100">
+        <div
+          className="absolute -left-48 top-[18%] h-[420px] w-[420px] rounded-full bg-yellow-500/[0.035] blur-[130px] pointer-events-none"
+          aria-hidden="true"
+        />
+
+        <div
+          className="absolute -right-48 bottom-[5%] h-[500px] w-[500px] rounded-full bg-yellow-500/[0.045] blur-[150px] pointer-events-none"
+          aria-hidden="true"
+        />
+
+        <div
+          className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
+          aria-hidden="true"
+        />
 
 
-          <AnimatedSection
-            animation="fadeIn"
-            delay={0.6}
-          >
+        {/* ================================================================
+            CONTAINER
+        ================================================================ */}
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+
+          <div className="max-w-7xl mx-auto">
+
+            <div className="grid grid-cols-1 lg:grid-cols-[0.93fr_1.07fr] gap-10 lg:gap-14 xl:gap-20 items-center">
 
 
-            {/* Mobile */}
+              {/* ================================================================
+                  LEFT COLUMN — ABOUT CONTENT
+              ================================================================ */}
 
-            <div className="block md:hidden">
+              <div className="relative z-20 max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
 
-              <EarthGlobe
-                size={350}
-                particleCount={500}
-                rotationSpeed={0.0008}
-                glowIntensity={0.4}
-                className="animate-float"
-              />
+
+                {/* About Badge */}
+
+                <AnimatedSection
+                  animation="fadeInUp"
+                  delay={0.1}
+                >
+
+                  <div className="inline-flex items-center gap-2.5 rounded-full border border-yellow-500/25 bg-yellow-500/[0.07] px-4 py-2 backdrop-blur-md mb-6">
+
+                    <Sparkles className="w-3.5 h-3.5 text-yellow-500" />
+
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-yellow-500">
+                      About Inchtomilez
+                    </span>
+
+                  </div>
+
+                </AnimatedSection>
+
+
+
+                {/* ================================================================
+                    MAIN H1
+                ================================================================ */}
+
+                <AnimatedSection
+                  animation="fadeInUp"
+                  delay={0.2}
+                >
+
+                  <h1 className="text-[34px] sm:text-[42px] md:text-[48px] lg:text-[52px] xl:text-[56px] font-medium tracking-[-0.035em] leading-[1.08] text-white mb-6">
+
+                    {seo.h1}
+
+                  </h1>
+
+                </AnimatedSection>
+
+
+
+                {/* ================================================================
+                    CORE POSITIONING
+                ================================================================ */}
+
+                <AnimatedSection
+                  animation="fadeInUp"
+                  delay={0.3}
+                >
+
+                  <p className="text-[17px] sm:text-[18px] md:text-[20px] font-semibold leading-[1.55] text-white mb-5">
+
+                    An independent agency built to connect
+
+                    <span className="text-yellow-500">
+                      {' '}strategy, creative, media, search and technology
+                    </span>
+
+                    {' '}around one business direction.
+
+                  </p>
+
+                </AnimatedSection>
+
+
+
+                {/* ================================================================
+                    ABOUT COPY
+                ================================================================ */}
+
+                <AnimatedSection
+                  animation="fadeInUp"
+                  delay={0.4}
+                >
+
+                  <p
+                    className="text-[0.9375rem] md:text-[1rem] text-gray-400 max-w-xl mx-auto lg:mx-0 mb-6"
+                    style={{
+                      lineHeight: 1.8
+                    }}
+                  >
+
+                    Inchtomilez is a founder-led digital marketing and advertising
+                    agency built in Indore. We work across brand strategy,
+                    advertising, creative, performance marketing, SEO, websites
+                    and digital technology — bringing the work together instead
+                    of treating every channel as a separate activity.
+
+                  </p>
+
+                </AnimatedSection>
+
+
+
+                {/* ================================================================
+                    PRESENCE
+                ================================================================ */}
+
+                <AnimatedSection
+                  animation="fadeInUp"
+                  delay={0.45}
+                >
+
+                  <div className="flex items-start justify-center lg:justify-start gap-3 mb-7">
+
+                    <div className="w-8 h-8 rounded-lg border border-yellow-500/15 bg-yellow-500/[0.06] flex items-center justify-center flex-shrink-0">
+
+                      <MapPin className="w-4 h-4 text-yellow-500" />
+
+                    </div>
+
+                    <p
+                      className="text-[0.8125rem] md:text-[0.875rem] text-gray-500 text-left max-w-lg"
+                      style={{
+                        lineHeight: 1.7
+                      }}
+                    >
+
+                      Built in Indore. Expanding our presence into Pune in
+                      September 2026 — operating with one connected approach
+                      across both cities.
+
+                    </p>
+
+                  </div>
+
+                </AnimatedSection>
+
+
+
+                {/* ================================================================
+                    CONNECTED AGENCY FRAMEWORK
+                ================================================================ */}
+
+                <AnimatedSection
+                  animation="fadeInUp"
+                  delay={0.5}
+                >
+
+                  <div className="border-t border-white/10 pt-6 mb-8">
+
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500 mb-4">
+                      One Connected Agency Model
+                    </p>
+
+
+                    <div className="flex flex-wrap justify-center lg:justify-start items-center gap-2">
+
+                      {[
+                        {
+                          label: 'Strategy',
+                          icon: Target
+                        },
+                        {
+                          label: 'Creative',
+                          icon: Palette
+                        },
+                        {
+                          label: 'Media',
+                          icon: Megaphone
+                        },
+                        {
+                          label: 'Search',
+                          icon: Search
+                        },
+                        {
+                          label: 'Technology',
+                          icon: Code
+                        }
+                      ].map((item) => {
+
+                        const Icon = item.icon;
+
+                        return (
+
+                          <div
+                            key={item.label}
+                            className="group inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.035] px-3 py-2 transition-all duration-300 hover:border-yellow-500/25 hover:bg-yellow-500/[0.05]"
+                          >
+
+                            <Icon className="w-3.5 h-3.5 text-yellow-500" />
+
+                            <span className="text-[11px] font-medium text-gray-300">
+                              {item.label}
+                            </span>
+
+                          </div>
+
+                        );
+
+                      })}
+
+                    </div>
+
+                  </div>
+
+                </AnimatedSection>
+
+
+
+                {/* ================================================================
+                    CTA
+                ================================================================ */}
+
+                <AnimatedSection
+                  animation="fadeInUp"
+                  delay={0.6}
+                >
+
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+
+
+                    <Link
+                      to="/contact"
+                      className="bg-yellow-500 hover:bg-yellow-400 text-black px-7 py-3.5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.875rem] font-semibold shadow-lg hover:shadow-yellow-500/30 hover:-translate-y-0.5"
+                    >
+
+                      Discuss Your Growth
+
+                      <ArrowRight className="w-4 h-4" />
+
+                    </Link>
+
+
+                    <Link
+                      to="/services"
+                      className="glass-card border border-white/10 hover:border-yellow-500/25 px-7 py-3.5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.875rem] font-semibold hover:-translate-y-0.5"
+                    >
+
+                      Explore Our Services
+
+                    </Link>
+
+
+                  </div>
+
+                </AnimatedSection>
+
+
+              </div>
+
+
+
+              {/* ================================================================
+                  RIGHT COLUMN — GLOBE / ABOUT VISUAL
+              ================================================================ */}
+
+              <div className="relative min-h-[420px] sm:min-h-[500px] lg:min-h-[610px] flex items-center justify-center">
+
+
+                {/* ================================================================
+                    DECORATIVE ORBIT RINGS
+                ================================================================ */}
+
+                <div
+                  className="absolute w-[310px] h-[310px] sm:w-[410px] sm:h-[410px] lg:w-[560px] lg:h-[560px] rounded-full border border-white/[0.05]"
+                  aria-hidden="true"
+                />
+
+                <div
+                  className="absolute w-[250px] h-[250px] sm:w-[335px] sm:h-[335px] lg:w-[470px] lg:h-[470px] rounded-full border border-yellow-500/[0.07]"
+                  aria-hidden="true"
+                />
+
+                <div
+                  className="absolute w-[190px] h-[190px] sm:w-[265px] sm:h-[265px] lg:w-[380px] lg:h-[380px] rounded-full border border-white/[0.035]"
+                  aria-hidden="true"
+                />
+
+
+                {/* ================================================================
+                    GLOBE
+                    ORIGINAL CONFIGURATION PRESERVED
+                ================================================================ */}
+
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+
+                  <AnimatedSection
+                    animation="fadeIn"
+                    delay={0.6}
+                  >
+
+
+                    {/* Mobile */}
+
+                    <div className="block md:hidden">
+
+                      <EarthGlobe
+                        size={350}
+                        particleCount={500}
+                        rotationSpeed={0.0008}
+                        glowIntensity={0.4}
+                        className="animate-float"
+                      />
+
+                    </div>
+
+
+                    {/* Desktop */}
+
+                    <div className="hidden md:block">
+
+                      <EarthGlobe
+                        size={550}
+                        particleCount={500}
+                        rotationSpeed={0.0008}
+                        glowIntensity={0.4}
+                        className="animate-float"
+                      />
+
+                    </div>
+
+
+                  </AnimatedSection>
+
+                </div>
+
+
+
+                {/* ================================================================
+                    TOP FLOATING CARD — FOUNDER LED
+                ================================================================ */}
+
+                <div className="absolute top-[5%] right-0 sm:right-[5%] lg:right-0 z-20">
+
+                  <AnimatedSection
+                    animation="fadeInUp"
+                    delay={0.75}
+                  >
+
+                    <div className="glass-strong border border-white/10 rounded-2xl px-5 py-4 backdrop-blur-xl shadow-2xl max-w-[220px]">
+
+                      <div className="flex items-center gap-2 mb-2">
+
+                        <div className="w-2 h-2 rounded-full bg-yellow-500" />
+
+                        <p className="text-[9px] uppercase tracking-[0.17em] font-semibold text-yellow-500">
+                          Founder-Led
+                        </p>
+
+                      </div>
+
+                      <p className="text-[0.8125rem] font-medium leading-[1.6] text-white">
+                        Built by Aman Panwar with a hands-on foundation in digital growth.
+                      </p>
+
+                    </div>
+
+                  </AnimatedSection>
+
+                </div>
+
+
+
+                {/* ================================================================
+                    BOTTOM FLOATING CARD — AGENCY SYSTEM
+                ================================================================ */}
+
+                <div className="absolute bottom-[6%] left-0 sm:left-[4%] lg:left-0 z-20">
+
+                  <AnimatedSection
+                    animation="fadeInUp"
+                    delay={0.85}
+                  >
+
+                    <div className="glass-strong border border-yellow-500/15 rounded-2xl overflow-hidden backdrop-blur-xl shadow-2xl w-[270px] sm:w-[300px]">
+
+
+                      {/* Card copy */}
+
+                      <div className="p-5">
+
+                        <div className="flex items-center gap-3">
+
+                          <div className="w-10 h-10 rounded-xl bg-yellow-500 flex items-center justify-center flex-shrink-0">
+
+                            <Rocket className="w-5 h-5 text-black" />
+
+                          </div>
+
+
+                          <div>
+
+                            <p className="text-[9px] uppercase tracking-[0.16em] font-semibold text-yellow-500 mb-1">
+                              Connected by Design
+                            </p>
+
+                            <p className="text-[0.8125rem] font-semibold text-white leading-[1.55]">
+                              One direction. Multiple disciplines.
+                            </p>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      {/* Micro system */}
+
+                      <div className="border-t border-white/10">
+
+                        <div className="grid grid-cols-5 divide-x divide-white/10">
+
+                          {[
+                            'Think',
+                            'Create',
+                            'Reach',
+                            'Convert',
+                            'Grow'
+                          ].map((item, index) => (
+
+                            <div
+                              key={item}
+                              className="px-1.5 py-3 text-center transition-colors duration-300 hover:bg-white/[0.04]"
+                            >
+
+                              <span className="block text-[8px] font-semibold text-yellow-500 mb-1">
+                                0{index + 1}
+                              </span>
+
+                              <span className="block text-[8px] text-gray-400">
+                                {item}
+                              </span>
+
+                            </div>
+
+                          ))}
+
+                        </div>
+
+                      </div>
+
+
+                    </div>
+
+                  </AnimatedSection>
+
+                </div>
+
+
+
+                {/* ================================================================
+                    SMALL POSITIONING LINE
+                ================================================================ */}
+
+                <div className="absolute bottom-0 right-[2%] hidden lg:block z-20">
+
+                  <AnimatedSection
+                    animation="fadeIn"
+                    delay={1}
+                  >
+
+                    <div className="flex items-center gap-3">
+
+                      <span className="w-7 h-[2px] bg-yellow-500 rounded-full" />
+
+                      <p className="text-[10px] font-medium text-gray-600">
+                        From inches of progress to miles of growth.
+                      </p>
+
+                    </div>
+
+                  </AnimatedSection>
+
+                </div>
+
+
+              </div>
+
 
             </div>
 
-
-            {/* Desktop */}
-
-            <div className="hidden md:block">
-
-              <EarthGlobe
-                size={550}
-                particleCount={500}
-                rotationSpeed={0.0008}
-                glowIntensity={0.4}
-                className="animate-float"
-              />
-
-            </div>
-
-
-          </AnimatedSection>
-
-
-        </div>
-
-
-        {/* Hero content */}
-
-        <div className="max-w-5xl mx-auto text-center md:text-left md:mr-auto md:ml-0 relative z-10">
-
-
-          <AnimatedSection
-            animation="fadeInUp"
-            delay={0.1}
-          >
-
-            <p
-              className="leading-relaxed mb-6 text-gray-300"
-              style={{
-                fontSize: 50,
-                lineHeight: 1.6
-              }}
-            >
-
-              Hello
-
-            </p>
-
-          </AnimatedSection>
-
-
-          <AnimatedSection
-            animation="fadeInUp"
-            delay={0.2}
-          >
-
-            <h1 className="text-[30px] md:text-[36px] font-medium tracking-tight mb-8 leading-[1.3]">
-
-              {seo.h1}
-
-            </h1>
-
-          </AnimatedSection>
-
-
-          <AnimatedSection
-            animation="fadeInUp"
-            delay={0.3}
-          >
-
-            <p
-              className="text-[0.9375rem] leading-relaxed text-gray-300 mb-4 max-w-3xl md:max-w-2xl mx-auto md:mx-0"
-              style={{
-                lineHeight: 1.6
-              }}
-            >
-
-              An independent, founder-led digital marketing and advertising agency built in
-              Indore — expanding to Pune in September 2026.
-
-            </p>
-
-          </AnimatedSection>
-
-
-          <AnimatedSection
-            animation="fadeInUp"
-            delay={0.4}
-          >
-
-            <p
-              className="text-[0.9375rem] leading-relaxed text-gray-400 mb-8 max-w-3xl md:max-w-2xl mx-auto md:mx-0"
-              style={{
-                lineHeight: 1.6
-              }}
-            >
-
-              We connect strategy, creative, paid media, search and technology
-              so brands can build visibility, generate demand and create stronger
-              digital growth systems.
-
-            </p>
-
-          </AnimatedSection>
-
-
-          <AnimatedSection
-            animation="fadeInUp"
-            delay={0.5}
-          >
-
-            <p
-              className="text-[0.9375rem] leading-relaxed text-yellow-500 font-medium mb-8"
-              style={{
-                lineHeight: 1.6
-              }}
-            >
-
-              Strategy. Creative. Media. Search. Technology.
-
-            </p>
-
-          </AnimatedSection>
-
-
-          <AnimatedSection
-            animation="fadeInUp"
-            delay={0.6}
-          >
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-
-
-              <Link
-                to="/services"
-                className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.9375rem] font-semibold shadow-lg hover:shadow-yellow-500/40 hover:scale-105"
-              >
-
-                Explore Our Services
-
-                <ArrowRight className="w-5 h-5" />
-
-              </Link>
-
-
-              <Link
-                to="/contact"
-                className="glass-card px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.9375rem] font-semibold hover:scale-105"
-              >
-
-                Start a Conversation
-
-              </Link>
-
-
-            </div>
-
-          </AnimatedSection>
-
+          </div>
 
         </div>
 
@@ -782,6 +1116,10 @@ export function AboutPage() {
       </section>
 
 
+
+
+
+      
       {/* ================================================================
           WHO WE ARE
       ================================================================ */}
