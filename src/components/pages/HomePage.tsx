@@ -24,83 +24,83 @@ export function HomePage() {
 
   // Quick Facts for Hero
   const quickFacts = [
-    { label: 'Strategy Before Media' },
-    { label: 'Creative With Purpose' },
-    { label: 'Digital + Physical' },
-    { label: 'Built Around The Brand' },
+    { label: '96+ Clients Served' },
+    { label: '100+ Brands Managed' },
+    { label: '7+ Years of Expertise' },
+    { label: '74+ Campaigns Delivered' },
   ];
 
   // Core Services - 14 services with proper icons
   const coreServices = [
     {
       title: 'Digital Marketing',
-      description: 'Search, social, content and performance working as one connected digital ecosystem.',
+      description: 'SEO, SEM, SMM, Email & Content Marketing. Complete digital ecosystems powered by data.',
       icon: Rocket,
       link: '/services/digital-marketing',
     },
     {
       title: 'Advertising',
-      description: 'Ideas and media built to travel across search, social, video and high-intent moments.',
+      description: 'Google, Meta, YouTube, LinkedIn Ads. Multi-channel campaigns with full transparency.',
       icon: Megaphone,
       link: '/services/advertising',
     },
     {
       title: 'Branding & Strategy',
-      description: 'Positioning, identity and communication systems that make the brand unmistakably itself.',
+      description: 'Brand positioning, design, identity systems, and messaging frameworks that resonate.',
       icon: Sparkles,
       link: '/services/branding',
     },
     {
       title: 'BTL Activations',
-      description: 'Real-world brand experiences built for participation, interaction and lasting recall.',
+      description: 'Events, exhibitions, retail promotions, and experiential marketing that creates impact.',
       icon: Users2,
       link: '/services/btl-activations',
     },
     {
       title: 'OOH Advertising',
-      description: 'Hoardings, transit, retail and premium placements that take the brand beyond the screen.',
+      description: 'Billboards, transit, airport, mall media - visibility where your audience lives.',
       icon: MapPinned,
       link: '/services/ooh-advertising',
     },
     {
-      title: 'Websites & Digital Experiences',
-      description: 'Websites, commerce and digital products designed around clarity, speed and action.',
+      title: 'Website & App Development',
+      description: 'UI/UX, E-commerce, Mobile Apps - fast, responsive, conversion-optimized platforms.',
       icon: Monitor,
       link: '/services/website-development',
     },
     {
       title: 'Software Development',
-      description: 'Business software, dashboards and automation designed to remove friction and scale smarter.',
+      description: 'CRM, ERP, SaaS, Automation - custom solutions that scale with your business.',
       icon: Code,
       link: '/services/software-development',
     },
     {
       title: 'Public Relations',
-      description: 'Media communication, digital PR and influence that give the brand credibility beyond advertising.',
+      description: 'Media outreach, press coverage, influencer collaborations that build credibility.',
       icon: MessageSquare,
       link: '/services/public-relations',
     },
     {
       title: 'Political Campaigns',
-      description: 'Integrated public communication built around audience insight, media and on-ground reach.',
+      description: 'Targeted digital advocacy, sentiment mapping, voter analysis with real-time dashboards.',
       icon: Vote,
       link: '/services/political-campaigns',
     },
     {
       title: 'Product Marketing',
-      description: 'Positioning, go-to-market thinking and launch systems that build desire around the product.',
+      description: 'Launch planning, go-to-market strategy, omnichannel execution for product success.',
       icon: Package,
       link: '/services/product-marketing',
     },
     {
       title: 'Graphic Design',
-      description: 'Campaign, social, print and brand design created to communicate before it decorates.',
+      description: 'Social media, campaigns, print - professional designs aligned with brand guidelines.',
       icon: Palette,
       link: '/services/graphic-design',
     },
     {
       title: 'Media Production',
-      description: 'Films, photography and short-form content built around the idea, not just the equipment.',
+      description: 'Video production, photography, drone shoots - cinematic brand storytelling.',
       icon: Camera,
       link: '/services/media-production',
     },
@@ -110,33 +110,33 @@ export function HomePage() {
   const differentiators = [
     {
       icon: FileCheck,
-      title: 'Strategy Before Spending',
-      description: 'We decide what the brand actually needs before deciding where the budget should go.',
+      title: 'Transparent Pricing & Reports',
+      description: 'Clear scope, fixed pricing, detailed monthly reports. You know exactly where every rupee goes.',
     },
     {
       icon: Shield,
-      title: 'Ideas Before Noise',
-      description: 'A stronger idea beats a louder media plan. We build the message before we amplify it.',
+      title: 'No Exaggerated Claims',
+      description: 'We set realistic expectations. SEO takes 3-6 months. Paid ads need testing. No overnight miracles.',
     },
     {
       icon: Clock,
-      title: 'One Brand. One Direction.',
-      description: 'Strategy, creative, media and technology work toward the same brand objective.',
+      title: 'Honest Timelines & Measurable KPIs',
+      description: 'Proper project timelines with clear milestones. Data-driven KPIs that matter to your business.',
     },
     {
       icon: Award,
-      title: 'Digital + Physical Thinking',
-      description: 'The customer does not live in one channel. Neither should the brand experience.',
+      title: '98% Client Retention',
+      description: 'Most clients stay for years because we deliver consistent value and honest communication.',
     },
     {
       icon: Users,
-      title: 'Clear Conversations',
-      description: 'No unnecessary jargon between you and your own marketing. Clear thinking, clearly communicated.',
+      title: 'Weekly Communication & Full Accountability',
+      description: 'Regular video calls, live dashboards, open dialogue about what is working and what needs work.',
     },
     {
       icon: Target,
-      title: "Improve, Don't Autopilot",
-      description: 'Launch, learn, improve and scale. Good marketing should become smarter as it moves.',
+      title: 'Results-First Mindset',
+      description: 'We focus on metrics that drive business growth - leads, conversions, revenue, not vanity stats.',
     },
   ];
 
@@ -144,33 +144,33 @@ export function HomePage() {
   const digitalMarketingServices = [
     {
       icon: Search,
-      title: 'Search Visibility',
-      description: 'Build the technical, content and authority signals that help the right audience discover you.',
+      title: 'SEO (On-page, Off-page, Technical)',
+      description: '3-6 months to show results. Content optimization, link building, technical audits.',
     },
     {
       icon: MapPin,
-      title: 'Local Discovery',
-      description: 'Own the moments when nearby customers search, compare and decide where to go next.',
+      title: 'Google My Business Optimization',
+      description: 'Local visibility on Google Maps. Real photos, reviews, regular updates for store visits.',
     },
     {
       icon: Target,
-      title: 'High-Intent Search',
-      description: 'Meet demand at the moment people are actively searching for what you offer.',
+      title: 'Google Ads & Display Network',
+      description: 'Keyword planning, A/B testing, tracked clicks. Every rupee accounted for.',
     },
     {
       icon: Share2,
-      title: 'Paid Social & Discovery',
-      description: 'Turn scrolling into discovery through sharper audiences, stronger creative and smarter iteration.',
+      title: 'Meta & LinkedIn Campaigns',
+      description: 'Targeted social media advertising with continuous optimization for better performance.',
     },
     {
       icon: Mail,
-      title: 'Lifecycle & Automation',
-      description: 'Keep the conversation moving after the first click with useful, timely communication.',
+      title: 'Email Marketing Automation',
+      description: 'Nurture campaigns, drip sequences, segmented lists for higher engagement.',
     },
     {
       icon: BarChart3,
-      title: 'Measurement & Learning',
-      description: 'Understand what moved, what stalled and what the next decision should be.',
+      title: 'Analytics & Performance Reports',
+      description: 'Monthly dashboards showing traffic, conversions, ROI with actionable insights.',
     },
   ];
 
@@ -179,22 +179,22 @@ export function HomePage() {
     {
       icon: Building2,
       title: 'Billboards & Hoardings',
-      description: 'High-visibility placements selected around audience movement, context and brand impact.',
+      description: 'Strategic placements in high-traffic areas with geo-mapping visibility reports.',
     },
     {
       icon: Tv,
       title: 'Transit Media',
-      description: 'Take the message through the city with media that moves where the audience moves.',
+      description: 'Bus wraps, metro ads, cab branding - mobile impressions across the city.',
     },
     {
       icon: Globe,
       title: 'Airport Branding',
-      description: 'Premium environments for brands that need scale, stature and high-value attention.',
+      description: 'Premium visibility at airports targeting travelers and business audiences.',
     },
     {
       icon: Boxes,
       title: 'Mall & Retail Media',
-      description: 'Turn high-footfall retail spaces into memorable brand moments close to purchase.',
+      description: 'Shopping center displays, kiosks, in-store branding for retail traffic.',
     },
   ];
 
@@ -203,22 +203,22 @@ export function HomePage() {
     {
       icon: Users2,
       title: 'Mall & Retail Activations',
-      description: "Put the product in people's hands and turn passive audiences into participants.",
+      description: 'Product sampling, demos, pop-up stores with measurable lead capture.',
     },
     {
       icon: Trophy,
       title: 'Campus & Roadshows',
-      description: 'Take the idea to communities, campuses and streets through live brand experiences.',
+      description: 'College tours, city roadshows, mobile brand experiences.',
     },
     {
       icon: Building2,
       title: 'Trade Exhibitions',
-      description: 'Build exhibition experiences that attract, explain and create meaningful conversations.',
+      description: 'Booth design, staffing, lead collection with post-event analytics.',
     },
     {
       icon: Boxes,
       title: 'Society-Level Branding',
-      description: 'Bring the brand into neighbourhoods through relevant, high-contact community experiences.',
+      description: 'Residential complex activations, community engagement programs.',
     },
   ];
 
@@ -267,91 +267,91 @@ export function HomePage() {
       step: '01',
       icon: Search,
       title: 'Discovery & Research',
-      description: 'Understand the business, audience, market and real problem to solve.',
-      duration: 'UNDERSTAND',
+      description: 'Understanding goals, audience, and competition.',
+      duration: '5-7 Days',
     },
     {
       step: '02',
       icon: FileCheck,
       title: 'Strategy & Planning',
-      description: 'Define the opportunity, objective, message and channel role before execution begins.',
-      duration: 'DEFINE',
+      description: 'Roadmap, timelines, and KPIs with transparent pricing.',
+      duration: '7-10 Days',
     },
     {
       step: '03',
       icon: Lightbulb,
       title: 'Creative Production',
-      description: 'Turn the strategy into an idea, visual language, message and experience.',
-      duration: 'CREATE',
+      description: 'Design, copy, and content. Quality takes time.',
+      duration: '10-15 Days',
     },
     {
       step: '04',
       icon: Rocket,
       title: 'Campaign Execution',
-      description: 'Launch the work across the right touchpoints with one connected direction.',
-      duration: 'LAUNCH',
+      description: 'Testing, optimization, and gradual scaling.',
+      duration: '3-5 Days',
     },
     {
       step: '05',
       icon: TrendingUp,
       title: 'Analysis & Improvement',
-      description: 'Read the response, learn what changed, improve the work and scale what earns it.',
-      duration: 'LEARN + SCALE',
+      description: 'Weekly analysis and continuous optimization.',
+      duration: 'Ongoing',
     },
   ];
 
   // Real Success Metrics
   const successMetrics = [
     {
-      metric: 'ATTENTION',
-      industry: 'Get Seen',
-      description: 'Creative and media should earn the first look — not assume it.',
+      metric: '300% Inquiry Growth',
+      industry: 'Healthcare',
+      description: 'GMB optimization + content marketing over 8 months',
     },
     {
-      metric: 'MEMORY',
-      industry: 'Get Remembered',
-      description: 'Recognition is built when every brand touchpoint feels connected.',
+      metric: '250% Organic Traffic',
+      industry: 'Fashion',
+      description: 'SEO campaign with consistent monthly growth',
     },
     {
-      metric: 'ACTION',
-      industry: 'Get Chosen',
-      description: 'Attention matters more when the experience gives people a reason to move.',
+      metric: '180% ROAS Improvement',
+      industry: 'Real Estate',
+      description: 'Google Ads testing and refinement over 3 months',
     },
     {
-      metric: 'Digital + Physical Thinking',
-      industry: 'Go Further',
-      description: 'Learn from the response, improve the system and take what works further.',
+      metric: '98% Client Retention',
+      industry: 'All Industries',
+      description: 'Long-term partnerships built on trust and results',
     },
   ];
 
-  // What Great Work Should Leave Behind
+  // Client Testimonials
   const testimonials = [
     {
-      quote: 'Attention gets the first look. Consistency is what turns that look into memory.',
-      name: 'ATTENTION → MEMORY',
-      title: 'Brand Principle 01',
-      result: 'GET REMEMBERED',
+      quote: 'Their GMB optimization alone increased our clinic footfall by 200%. Worth every rupee.',
+      name: 'Dr. Sneha Jain',
+      title: 'Prime Healthcare',
+      result: '200% Footfall Increase',
       rating: 5,
     },
     {
-      quote: 'A campaign gets stronger when the idea survives every format, platform and location.',
-      name: 'IDEA → SYSTEM',
-      title: 'Brand Principle 02',
-      result: 'ONE DIRECTION',
+      quote: 'OOH + Digital combo worked wonders for our retail brand. Strategic visibility everywhere.',
+      name: 'Priya Sharma',
+      title: 'Fashion Hub',
+      result: 'Strong Brand Recall',
       rating: 5,
     },
     {
-      quote: 'The customer never experiences your departments. They experience one brand.',
-      name: 'CHANNELS → BRAND',
-      title: 'Brand Principle 03',
-      result: 'STAY CONNECTED',
+      quote: 'Honest, data-driven, and dependable. Best agency we have worked with.',
+      name: 'Amit Patel',
+      title: 'Real Estate Pro',
+      result: '180% ROAS',
       rating: 5,
     },
     {
-      quote: 'Good marketing does not run on autopilot. It learns, adapts and gets sharper.',
-      name: 'LAUNCH → LEARN',
-      title: 'Brand Principle 04',
-      result: 'KEEP IMPROVING',
+      quote: 'Transparent pricing and weekly updates. We always know what is happening with our campaigns.',
+      name: 'Vikram Singh',
+      title: 'TechStart Solutions',
+      result: 'Complete Transparency',
       rating: 5,
     },
   ];
@@ -366,338 +366,97 @@ export function HomePage() {
       <StructuredData data={[organizationSchema, localBusinessSchema, websiteSchema]} />
       
 
-
-
-
-
-
-
-
-      {/* ============================================================
-          1. HOME HERO SECTION — OPTIMIZED CINEMATIC HERO
-          Only Section 1 has been rebuilt. All following sections remain
-          exactly as they were in the supplied HomePage code.
-      ============================================================ */}
-      <section
-        className="relative isolate min-h-[100svh] w-full overflow-hidden bg-black flex items-center"
-        aria-labelledby="home-hero-heading"
-      >
-        {/* ==========================================================
-            BACKGROUND VIDEO
-            - Uses the existing VideoBackground component.
-            - startTime={0} starts the supplied campaign film normally.
-            - The component already belongs to this HomePage architecture,
-              so no second video system or additional playback state is added.
-        ========================================================== */}
-        <VideoBackground
-          src="https://orange-woodcock-416561.hostingersite.com/wp-content/uploads/2024/09/Sequence-01_2.mp4"
-          overlayOpacity={0.16}
-          startTime={0}
+      
+      {/* 1. Hero Section */}
+      <section className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        
+        {/* Video Background - Professional & Safe
+            Note: Place your video file in /public/videos/hero-video.mp4
+            If video fails to load, component gracefully falls back to solid black background. */}
+        <VideoBackground 
+          src="/videos/hero-video.mp4"
+          overlayOpacity={0.7}
+          startTime={9}
         />
-
-        {/* ==========================================================
-            CINEMATIC READABILITY LAYERS
-            These are intentionally lightweight CSS overlays. They make the
-            moving footage readable without flattening it into a dark image.
-        ========================================================== */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none bg-black/20"
-          aria-hidden="true"
-        />
-
-        {/* Stronger content-side gradient on desktop; more even on mobile. */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none"
-          style={{
-            background:
-              'linear-gradient(90deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.76) 32%, rgba(0,0,0,0.48) 56%, rgba(0,0,0,0.18) 82%, rgba(0,0,0,0.10) 100%)',
-          }}
-          aria-hidden="true"
-        />
-
-        {/* Bottom fade connects the cinematic hero to the site's black grid. */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none"
-          style={{
-            background:
-              'linear-gradient(0deg, rgba(0,0,0,0.96) 0%, rgba(0,0,0,0.46) 18%, rgba(0,0,0,0.08) 50%, rgba(0,0,0,0.16) 100%)',
-          }}
-          aria-hidden="true"
-        />
-
-        {/* Inchtomilez yellow ambient light — deliberately very subtle. */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none"
-          style={{
-            background:
-              'radial-gradient(circle at 17% 74%, rgba(234,179,8,0.10) 0%, rgba(234,179,8,0.025) 26%, transparent 48%)',
-          }}
-          aria-hidden="true"
-        />
-
-        {/* Faint grid texture visually connects the hero to the page below. */}
-        <div
-          className="absolute inset-0 z-[1] pointer-events-none opacity-[0.10]"
-          style={{
-            backgroundImage:
-              'linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)',
-            backgroundSize: '56px 56px',
-            maskImage:
-              'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.15) 48%, rgba(0,0,0,0.85) 100%)',
-            WebkitMaskImage:
-              'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.15) 48%, rgba(0,0,0,0.85) 100%)',
-          }}
-          aria-hidden="true"
-        />
-
-        {/* ==========================================================
-            CONTENT SHELL
-            Uses the same container geometry as Sections 2–23:
-            container → max-w-6xl → controlled content width.
-        ========================================================== */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-          <div className="max-w-6xl mx-auto w-full">
-            <div
-              className="
-                w-full max-w-[980px]
-                pt-28 pb-16
-                sm:pt-32 sm:pb-20
-                md:pt-32 md:pb-20
-                lg:pt-36 lg:pb-24
-              "
-            >
-              {/* ======================================================
-                  POSITIONING BADGE
-              ====================================================== */}
-              <AnimatedSection animation="fadeInUp" delay={0.08}>
-                <div className="mb-5 md:mb-6">
-                  <div
-                    className="
-                      inline-flex max-w-full items-center gap-2
-                      rounded-full border border-yellow-500/30
-                      bg-black/35 px-3.5 py-2
-                      backdrop-blur-md
-                      shadow-[0_8px_28px_rgba(0,0,0,0.18)]
-                    "
-                  >
-                    <Star
-                      className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-yellow-500 flex-shrink-0"
-                      fill="currentColor"
-                    />
-                    <span
-                      className="
-                        truncate text-[9px] min-[380px]:text-[10px]
-                        sm:text-[11px] md:text-[12px]
-                        font-semibold uppercase tracking-[0.08em]
-                        sm:tracking-[0.11em] text-white/90
-                      "
-                    >
-                      DIGITAL • CREATIVE • ADVERTISING • TECHNOLOGY
-                    </span>
-                  </div>
-                </div>
-              </AnimatedSection>
-
-              {/* ======================================================
-                  PRIMARY BRAND STATEMENT
-                  Strong enough for a hero, but capped so it still belongs
-                  to the typography system used throughout the HomePage.
-              ====================================================== */}
-              <AnimatedSection animation="fadeInUp" delay={0.14}>
-                <h1
-                  id="home-hero-heading"
-                  className="
-                    max-w-[980px]
-                    text-[32px] min-[390px]:text-[35px]
-                    sm:text-[40px] md:text-[46px]
-                    lg:text-[52px] xl:text-[56px]
-                    font-medium tracking-[-0.035em]
-                    leading-[1.09] sm:leading-[1.07]
-                    text-white mb-5 sm:mb-6
-                  "
-                >
-                  <span className="block">
-                    Duniya <span className="text-yellow-500">Brands</span> Ke Peeche,
-                  </span>
-                  <span className="block mt-1 sm:mt-1.5">
-                    Aur Brands Marketing Aur Advertising Ke!
-                  </span>
-                </h1>
-              </AnimatedSection>
-
-              {/* ======================================================
-                  SECONDARY BRAND STATEMENT
-                  Explicit fill settings protect this H2 from any global
-                  gradient-heading CSS present elsewhere in the project.
-              ====================================================== */}
-              <AnimatedSection animation="fadeInUp" delay={0.2}>
-                <h2
-                  className="
-                    max-w-[820px]
-                    text-[17px] sm:text-[18px] md:text-[20px] lg:text-[21px]
-                    font-semibold leading-[1.45] mb-3.5 sm:mb-4
-                  "
-                  style={{
-                    color: '#ffffff',
-                    background: 'none',
-                    backgroundImage: 'none',
-                    WebkitBackgroundClip: 'initial',
-                    WebkitTextFillColor: '#ffffff',
-                  }}
-                >
-                  We Create Brands People Notice. Campaigns People Remember. Experiences People Choose.
-                </h2>
-              </AnimatedSection>
-
-              {/* ======================================================
-                  SUPPORTING COPY
-              ====================================================== */}
-              <AnimatedSection animation="fadeInUp" delay={0.25}>
-                <p
-                  className="
-                    max-w-[720px]
-                    text-[14px] sm:text-[15px]
-                    font-normal leading-[1.7]
-                    text-white/65 mb-6 sm:mb-7
-                  "
-                >
-                  We build ideas, campaigns and digital experiences that make people look,
-                  remember and choose.
-                </p>
-              </AnimatedSection>
-
-              {/* ======================================================
-                  QUICK FACTS
-                  Uses the existing quickFacts data array unchanged.
-              ====================================================== */}
-              <AnimatedSection animation="fadeInUp" delay={0.3}>
-                <div
-                  className="
-                    flex flex-wrap items-center
-                    gap-x-2.5 sm:gap-x-3.5 lg:gap-x-4
-                    gap-y-2.5 mb-7 sm:mb-8
-                  "
-                >
-                  {quickFacts.map((fact, index) => (
-                    <div
-                      key={index}
-                      className="
-                        inline-flex min-h-[34px] items-center gap-2
-                        rounded-full border border-white/[0.08]
-                        bg-black/25 px-3 sm:px-3.5 backdrop-blur-sm
-                      "
-                    >
-                      <CheckCircle className="w-3.5 h-3.5 text-yellow-500 flex-shrink-0" />
-                      <span className="text-[11px] sm:text-[12px] md:text-[13px] font-medium text-white/75 whitespace-nowrap">
-                        {fact.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </AnimatedSection>
-
-              {/* ======================================================
-                  PRIMARY ACTIONS
-                  MagneticButton is already part of the HomePage system,
-                  so the hero now behaves like the rest of the site.
-              ====================================================== */}
-              <AnimatedSection animation="fadeInUp" delay={0.36}>
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-7 sm:mb-8">
-                  <MagneticButton href="/contact" strength={0.24}>
-                    <span
-                      className="
-                        group w-full sm:w-auto min-h-[50px]
-                        inline-flex items-center justify-center gap-2.5
-                        rounded-xl bg-yellow-500 hover:bg-yellow-400
-                        px-6 sm:px-7 py-3.5
-                        text-[14px] sm:text-[15px] font-semibold text-black
-                        shadow-[0_10px_30px_rgba(234,179,8,0.16)]
-                        hover:shadow-[0_14px_36px_rgba(234,179,8,0.24)]
-                        transition-all duration-300
-                      "
-                    >
-                      Start Something
-                      <ArrowRight className="w-4 h-4 sm:w-[18px] sm:h-[18px] transition-transform duration-300 group-hover:translate-x-1" />
-                    </span>
-                  </MagneticButton>
-
-                  <MagneticButton href="/services" strength={0.18}>
-                    <span
-                      className="
-                        group w-full sm:w-auto min-h-[50px]
-                        inline-flex items-center justify-center gap-2.5
-                        rounded-xl border border-white/15
-                        bg-white/[0.055] hover:bg-white/[0.09]
-                        hover:border-yellow-500/40 backdrop-blur-md
-                        px-6 sm:px-7 py-3.5
-                        text-[14px] sm:text-[15px] font-semibold text-white
-                        transition-all duration-300
-                      "
-                    >
-                      Explore Inchtomilez
-                      <ArrowRight className="w-4 h-4 sm:w-[18px] sm:h-[18px] transition-transform duration-300 group-hover:translate-x-1" />
-                    </span>
-                  </MagneticButton>
-                </div>
-              </AnimatedSection>
-
-              {/* ======================================================
-                  CONTACT STRIP
-                  Quiet visual hierarchy: useful but deliberately secondary.
-              ====================================================== */}
-              <AnimatedSection animation="fadeInUp" delay={0.42}>
-                <div
-                  className="
-                    max-w-[820px] border-t border-white/[0.10] pt-5
-                    flex flex-col min-[520px]:flex-row min-[520px]:flex-wrap
-                    items-start min-[520px]:items-center
-                    gap-y-3 gap-x-5 md:gap-x-6
-                  "
-                >
-                  <a
-                    href="tel:+919669988666"
-                    className="group inline-flex items-center gap-2 text-[12px] sm:text-[13px] text-white/55 hover:text-yellow-500 transition-colors duration-200"
-                  >
-                    <Phone className="w-4 h-4 flex-shrink-0 text-white/40 group-hover:text-yellow-500 transition-colors duration-200" />
-                    <span>+91 966-998-8666</span>
-                  </a>
-
-                  <a
-                    href="mailto:inchtomilez@gmail.com"
-                    className="group inline-flex items-center gap-2 text-[12px] sm:text-[13px] text-white/55 hover:text-yellow-500 transition-colors duration-200"
-                  >
-                    <Mail className="w-4 h-4 flex-shrink-0 text-white/40 group-hover:text-yellow-500 transition-colors duration-200" />
-                    <span>inchtomilez@gmail.com</span>
-                  </a>
-
-                  <div className="inline-flex items-center gap-2 text-[12px] sm:text-[13px] text-white/55">
-                    <MapPin className="w-4 h-4 flex-shrink-0 text-white/40" />
-                    <span>Indore • Pune • India</span>
-                  </div>
-                </div>
-              </AnimatedSection>
+        
+        <div className="max-w-6xl mx-auto text-center w-full relative z-10">
+          {/* Badge */}
+          <AnimatedSection animation="fadeInUp" delay={0.1}>
+            <div className="inline-flex items-center gap-2 bg-yellow-500/10 border border-yellow-500/30 px-4 py-2 rounded-full mb-6">
+              <Star className="w-4 h-4 text-white" fill="currentColor" />
+              <span className="text-[0.8125rem] font-medium uppercase tracking-wide text-yellow-500">Indore's Most Transparent Agency</span>
             </div>
-          </div>
-        </div>
+          </AnimatedSection>
 
-        {/* ==========================================================
-            DESKTOP SCROLL INDICATOR
-        ========================================================== */}
-        <div
-          className="hidden xl:flex absolute right-8 2xl:right-10 bottom-9 z-10 items-center gap-3 pointer-events-none"
-          aria-hidden="true"
-        >
-          <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-white/35">
-            Scroll
-          </span>
-          <span className="block w-10 h-px bg-yellow-500/45" />
-        </div>
+          {/* H1 - SEO Optimized (hidden, using seo.h1) */}
+          <AnimatedSection animation="fadeInUp" delay={0.2}>
+            <h1 className="text-[30px] md:text-[42px] font-medium tracking-tight mb-6 leading-[1.3]">
+              {seo.h1}
+            </h1>
+          </AnimatedSection>
 
-        {/* Clean visual ending before Section 2. */}
-        <div
-          className="absolute bottom-0 left-0 right-0 z-[2] h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent pointer-events-none"
-          aria-hidden="true"
-        />
+          {/* Hindi Tagline - H2 */}
+          <AnimatedSection animation="fadeInUp" delay={0.25}>
+            <h2 className="text-[20px] md:text-[22px] font-bold text-[var(--muted-foreground)] mb-6 leading-[1.3]">
+              Duniya Brands Ke Peeche, Aur Brands Marketing Aur Advertising Ke!
+            </h2>
+          </AnimatedSection>
+
+          {/* Subtext */}
+          <AnimatedSection animation="fadeInUp" delay={0.3}>
+            <p className="text-[0.9375rem] leading-relaxed text-[var(--muted-foreground)] max-w-4xl mx-auto mb-10" style={{ lineHeight: 1.6 }}>
+              The world chases brands - but the smartest brands chase strategy.
+            </p>
+          </AnimatedSection>
+          
+          {/* Quick Facts */}
+          <AnimatedSection animation="fadeInUp" delay={0.4}>
+            <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-10">
+              {quickFacts.map((fact, index) => (
+                <div key={index} className="flex items-center gap-2 bg-[var(--card)] border border-[var(--border)] px-4 py-2 rounded-full">
+                  <CheckCircle className="w-4 h-4 text-yellow-500" />
+                  <span className="text-[0.8125rem] text-[var(--muted-foreground)]">{fact.label}</span>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
+
+          {/* CTAs - Enhanced with Magnetic Buttons */}
+          <AnimatedSection animation="fadeInUp" delay={0.5}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+              <MagneticButton href="/contact" strength={0.3}>
+                <span className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold shadow-2xl">
+                  Get Free Consultation
+                  <ArrowRight className="w-5 h-5" />
+                </span>
+              </MagneticButton>
+              <MagneticButton href="/services" strength={0.2}>
+                <span className="glass-yellow px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold">
+                  Explore Our Services
+                  <ArrowRight className="w-5 h-5" />
+                </span>
+              </MagneticButton>
+            </div>
+          </AnimatedSection>
+
+          {/* Contact Info */}
+          <AnimatedSection animation="fadeInUp" delay={0.6}>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
+              <a href="tel:+919669988666" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
+                <Phone className="w-4 h-4" />
+                +91 966-998-8666
+              </a>
+              <a href="mailto:inchtomilez@gmail.com" className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)] hover:text-yellow-500 transition-colors">
+                <Mail className="w-4 h-4" />
+                inchtomilez@gmail.com
+              </a>
+              <div className="flex items-center gap-2 text-[0.8125rem] text-[var(--muted-foreground)]">
+                <MapPin className="w-4 h-4" />
+                Indore, Madhya Pradesh, India
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
       </section>
 
       {/* 2. Who We Are - V4.0 3D PARALLAX ENHANCED */}
@@ -706,7 +465,7 @@ export function HomePage() {
         
         {/* Background Layer: Far depth with blur */}
         <OutlinedText 
-          text="IDEAS" 
+          text="INNOVATION" 
           className="absolute top-[12%] left-0 text-[11rem] md:text-[15rem] pointer-events-none z-[1]"
           direction="left"
           stopPosition={25}
@@ -722,7 +481,7 @@ export function HomePage() {
         
         {/* Midground Layer: Moderate depth with rotation */}
         <OutlinedText 
-          text="BEHAVIOUR" 
+          text="EXPERTISE" 
           className="absolute top-[38%] right-0 text-[10rem] md:text-[14rem] pointer-events-none z-[1]"
           direction="right"
           stopPosition={25}
@@ -740,7 +499,7 @@ export function HomePage() {
         
         {/* Foreground Layer: Close depth with mouse tilt */}
         <OutlinedText 
-          text="BRAND" 
+          text="TRUST" 
           className="absolute top-[64%] left-0 text-[9rem] md:text-[13rem] pointer-events-none z-[1]"
           direction="left"
           stopPosition={25}
@@ -765,10 +524,10 @@ export function HomePage() {
               {/* Main Statement */}
               <div className="glass-strong p-8 md:p-12 rounded-2xl mb-10">
                 <p className="text-[1.125rem] md:text-[1.25rem] leading-relaxed text-[var(--foreground)] font-semibold mb-6" style={{ lineHeight: 1.6 }}>
-                  Part agency. Part creative lab. Part growth engine.
+                  We don't sell illusions — we deliver results with data, creativity, and integrity.
                 </p>
                 <p className="text-[0.9375rem] leading-relaxed text-[var(--muted-foreground)]" style={{ lineHeight: 1.7 }}>
-                  We bring strategy, creativity, media and technology into one connected system — one brand, one direction, many ways to move it forward.
+                  Inchtomilez is not another agency where you compare quotes and settle for mediocrity. We're a team of digital strategists, creative minds, and growth hackers who transform ambitious ideas into measurable success stories.
                 </p>
               </div>
 
@@ -778,9 +537,9 @@ export function HomePage() {
                   <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Target className="text-yellow-500 icon-md" />
                   </div>
-                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Think Before Spending</h3>
+                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Results-Driven</h3>
                   <p className="text-[0.875rem] text-[var(--muted-foreground)] leading-relaxed">
-                    We start with the problem, not the platform. The channel comes after the thinking.
+                    Every campaign is designed to hit your KPIs. No vanity metrics, just real business growth.
                   </p>
                 </div>
 
@@ -788,9 +547,9 @@ export function HomePage() {
                   <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Shield className="text-yellow-500 icon-md" />
                   </div>
-                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Create With Purpose</h3>
+                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">100% Transparent</h3>
                   <p className="text-[0.875rem] text-[var(--muted-foreground)] leading-relaxed">
-                    Creative should communicate before it decorates — and give people a reason to remember.
+                    Real-time dashboards, detailed reports, and honest conversations about what works.
                   </p>
                 </div>
 
@@ -798,43 +557,43 @@ export function HomePage() {
                   <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Sparkles className="text-yellow-500 icon-md" />
                   </div>
-                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Build For The Journey</h3>
+                  <h3 className="text-[1.125rem] font-medium mb-3 text-[var(--foreground)]">Premium Quality</h3>
                   <p className="text-[0.875rem] text-[var(--muted-foreground)] leading-relaxed">
-                    From first impression to digital experience, every touchpoint should feel like the same brand.
+                    Ask for samples. Review our portfolio. You'll see why clients choose us over competitors.
                   </p>
                 </div>
               </div>
 
-              {/* How We Think */}
+              {/* Our Approach */}
               <div className="glass p-8 rounded-xl mb-10">
-                <h3 className="text-[1.125rem] font-medium mb-6 text-[var(--foreground)]">How We Think</h3>
+                <h3 className="text-[1.125rem] font-medium mb-6 text-[var(--foreground)]">Our Approach</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Understand Before We Execute</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Business, audience, category and context come before tactics.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Data-Backed Strategies</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Every decision is supported by analytics, market research, and proven frameworks.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Ideas Before Formats</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">We build the central idea first, then let it travel across formats.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Creative Excellence</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Award-winning designs and campaigns that capture attention and convert.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Launch. Learn. Improve.</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">We read the response and keep sharpening what the audience actually experiences.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Agile Execution</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Fast iterations, continuous optimization, and rapid adaptation to market changes.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="text-yellow-500 icon-sm flex-shrink-0 mt-1" />
                     <div>
-                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">One Team Around The Brand</p>
-                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">Strategy, creative, media and technology move together instead of working in silos.</p>
+                      <p className="text-[0.9375rem] font-medium text-[var(--foreground)] mb-1">Long-Term Partnership</p>
+                      <p className="text-[0.8125rem] text-[var(--muted-foreground)]">We grow with you, scaling strategies as your business expands.</p>
                     </div>
                   </div>
                 </div>
@@ -843,12 +602,12 @@ export function HomePage() {
               {/* Bottom CTA */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/about" className="btn-primary inline-flex items-center gap-2">
-                  Know Inchtomilez
+                  Learn Our Story
                   <ArrowRight className="icon-xs" />
                 </Link>
                 <Link to="/contact" className="px-6 py-3 bg-[var(--card)] border border-[var(--border)] hover:border-[var(--border)] rounded-xl transition-colors inline-flex items-center gap-2 text-[0.9375rem] font-semibold">
                   <Mail className="icon-xs" />
-                  Explore Our Work
+                  Request Portfolio
                 </Link>
               </div>
             </div>
@@ -862,7 +621,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="THINK" 
+          text="STRATEGY" 
           className="absolute top-[10%] left-0 text-[11rem] md:text-[15rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -873,7 +632,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="MOVE" 
+          text="GROWTH" 
           className="absolute top-[36%] right-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -884,7 +643,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="BUILD" 
+          text="SUCCESS" 
           className="absolute top-[62%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -907,11 +666,11 @@ export function HomePage() {
               </h2>
               
               <p className="text-[0.9375rem] leading-relaxed text-[var(--muted-foreground)] max-w-3xl mx-auto mb-6" style={{ lineHeight: 1.6 }}>
-                Brands are not built by chance. They are built through <span className="text-yellow-500 font-semibold">strategy, creativity and consistency</span>.
+                We believe great brands are not built by chance - they are built by <span className="text-yellow-500 font-semibold">strategy, communication, and consistency</span>.
               </p>
               
               <p className="text-[0.9375rem] leading-relaxed text-[var(--foreground)] font-semibold text-lg max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-                Big never starts big. One stronger idea, one better decision, one move forward — inch by inch, until the distance starts looking like miles.
+                Our purpose is simple: help your business grow inch by inch until it becomes a mile of success.
               </p>
             </div>
           </div>
@@ -924,7 +683,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="STRATEGY" 
+          text="TRANSPARENT" 
           className="absolute top-[8%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -935,7 +694,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="CREATIVE" 
+          text="HONEST" 
           className="absolute top-[34%] right-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -946,7 +705,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="MEDIA" 
+          text="RELIABLE" 
           className="absolute top-[60%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -965,11 +724,11 @@ export function HomePage() {
               </div>
               
               <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">
-                We Don't Start With A Platform
+                Why We Are Different
               </h2>
               
               <p className="text-[0.9375rem] font-normal leading-relaxed text-[var(--muted-foreground)] max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-                We start with the problem, the audience and the opportunity — then build <span className="text-yellow-500 font-semibold">the right system around the brand</span>.
+                We are not another agency making promises. We are <span className="text-yellow-500 font-semibold">partners in your success</span>.
               </p>
             </div>
 
@@ -1002,7 +761,7 @@ export function HomePage() {
                       <div className="flex items-center gap-2 pt-3 border-t border-white/5">
                         <CheckCircle className="w-4 h-4 text-yellow-500" />
                         <span className="text-[13px] md:text-[13px] font-medium text-yellow-500">
-                          Built To Move
+                          Guaranteed
                         </span>
                       </div>
                     </div>
@@ -1017,19 +776,19 @@ export function HomePage() {
             {/* Trust Metrics Carousel - Faster Speed */}
             <div className="mb-12">
               <p className="text-[13px] md:text-[13px] font-medium uppercase tracking-wide text-yellow-500 mb-6 text-center">
-                ONE BRAND. ONE DIRECTION.
+                Built on Trust & Transparency
               </p>
               
               <AutoCarousel
                 items={[
-                  { icon: Award, metric: 'THINK', label: 'Strategy Before Media' },
-                  { icon: Star, metric: 'CREATE', label: 'Ideas Before Formats' },
-                  { icon: Users, metric: 'BUILD', label: 'One Brand Experience' },
-                  { icon: Trophy, metric: 'MOVE', label: 'Digital + Physical' },
-                  { icon: Clock, metric: 'LEARN', label: 'Improve Continuously' },
-                  { icon: Target, metric: 'FOCUS', label: 'Clear Objectives' },
-                  { icon: TrendingUp, metric: 'SCALE', label: 'Take What Works Further' },
-                  { icon: Zap, metric: 'ADAPT', label: 'Built For Change' },
+                  { icon: Award, metric: '98%', label: 'Client Retention Rate' },
+                  { icon: Star, metric: '4.9/5', label: 'Average Client Rating' },
+                  { icon: Users, metric: '96+', label: 'Clients Served' },
+                  { icon: Trophy, metric: '74+', label: 'Campaigns Delivered' },
+                  { icon: Clock, metric: '7+', label: 'Years of Excellence' },
+                  { icon: Target, metric: '100+', label: 'Brands Managed' },
+                  { icon: TrendingUp, metric: '300%', label: 'Avg. ROI Growth' },
+                  { icon: Zap, metric: '24/7', label: 'Support Available' },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
@@ -1063,19 +822,19 @@ export function HomePage() {
             {/* Core Values Carousel - Slowest for Reading */}
             <div>
               <p className="text-[13px] md:text-[13px] font-medium uppercase tracking-wide text-yellow-500 mb-6 text-center">
-                HOW THE WORK MOVES
+                Our Core Principles
               </p>
               
               <AutoCarousel
                 items={[
-                  { icon: Shield, title: 'Strategy First', text: 'Know what needs to change before choosing the channel' },
-                  { icon: HeartHandshake, title: 'One Connected Team', text: 'Brand, creative, media and technology moving together' },
-                  { icon: Target, title: 'Think Before Spending', text: 'Measure what changes behaviour, demand and action' },
-                  { icon: Lock, title: 'Data Security', text: 'Build responsibly around the systems your business depends on' },
-                  { icon: FileCheck, title: 'Clear Direction', text: 'Clear objectives, roles, decisions and next moves' },
-                  { icon: Timer, title: 'Real Work, Real Pace', text: 'Quality needs clarity, focus and proper execution' },
-                  { icon: ChartBar, title: 'Learn From The Response', text: 'Use performance to make the next decision smarter' },
-                  { icon: Lightbulb, title: 'Built To Adapt', text: 'Platforms change. Strong thinking travels with them' },
+                  { icon: Shield, title: 'Transparency First', text: 'Every strategy, every rupee, fully visible' },
+                  { icon: HeartHandshake, title: 'Partnership Mindset', text: 'Your success is our success' },
+                  { icon: Target, title: 'Results-Driven', text: 'Metrics that matter to your business' },
+                  { icon: Lock, title: 'Data Security', text: 'Bank-grade protection for your data' },
+                  { icon: FileCheck, title: 'Clear Contracts', text: 'No hidden clauses or surprises' },
+                  { icon: Timer, title: 'Realistic Timelines', text: 'Honest expectations, achievable goals' },
+                  { icon: ChartBar, title: 'Regular Reporting', text: 'Weekly updates, monthly deep dives' },
+                  { icon: Lightbulb, title: 'Innovation Ready', text: 'Latest tools and strategies' },
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
@@ -1113,7 +872,7 @@ export function HomePage() {
                   to="/about"
                   className="inline-flex items-center gap-2 bg-yellow-500 text-black px-8 py-4 rounded-full text-[15px] md:text-[15px] font-semibold hover:bg-yellow-400 transition-all shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/40"
                 >
-                  <span>Know Inchtomilez</span>
+                  <span>Learn More About Us</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </MagneticButton>
@@ -1128,7 +887,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="THINK" 
+          text="SOLUTIONS" 
           className="absolute top-[10%] left-0 text-[11rem] md:text-[15rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1139,7 +898,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="IDEAS" 
+          text="INNOVATION" 
           className="absolute top-[36%] right-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -1150,7 +909,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="AMPLIFY" 
+          text="EXCELLENCE" 
           className="absolute top-[62%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1161,17 +920,17 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">ONE BRAND. MANY WAYS TO MOVE IT.</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">COMPREHENSIVE SOLUTIONS</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
               <TextScramble 
-                text="Think. Create. Build. Amplify."
+                text="One Agency. Infinite Possibilities."
                 speed={1.5}
                 delay={200}
                 triggerOnView={true}
               />
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Strategy, creative, media and technology work together — from <span className="text-yellow-500 font-semibold">first idea to final experience</span>.
+              We unify every vertical of modern marketing under one roof — from <span className="text-yellow-500 font-semibold">digital to physical, strategy to execution</span>.
             </p>
 
             <BentoGrid2 
@@ -1192,7 +951,7 @@ export function HomePage() {
                 to="/services"
                 className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold shadow-lg hover:scale-105"
               >
-                Explore Capabilities
+                View All Services
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -1228,7 +987,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="DISCOVERY" 
+          text="PERFORMANCE" 
           className="absolute top-[60%] left-0 text-[8rem] md:text-[12rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1239,13 +998,13 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">SEARCH. SCROLL. WATCH. SHOP. DECIDE.</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">DIGITAL ECOSYSTEM</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              Your Audience Is Already Online
+              Digital Marketing That Builds Brands
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              We connect the moments where people discover, compare and choose — from <span className="text-yellow-500 font-semibold">search visibility to paid discovery</span>. 
-              Don't chase every platform. Own the right moments.
+              Our digital ecosystem covers everything from <span className="text-yellow-500 font-semibold">SEO optimization to paid performance marketing</span>. 
+              We do not just drive traffic - we drive trust.
             </p>
 
             <BentoGrid2 
@@ -1269,7 +1028,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="SEARCH" 
+          text="LOCAL" 
           className="absolute top-[10%] left-0 text-[11rem] md:text-[15rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1280,7 +1039,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="FOUND" 
+          text="VISIBILITY" 
           className="absolute top-[36%] right-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -1306,16 +1065,16 @@ export function HomePage() {
               <MapPin className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
               
               <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-                Consumers Search For The Best
+                Google My Business & Local Dominance
               </h2>
               
               <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                Someone nearby is searching right now. Our job is to make your brand <span className="text-yellow-500 font-semibold">part of that decision</span>.
+                For local visibility, we make your brand <span className="text-yellow-500 font-semibold">unmissable on Google Maps and search</span>.
               </p>
               
               <p className="text-[0.9375rem] leading-relaxed text-gray-300" style={{ lineHeight: 1.6 }}>
-                Search presence, maps, content and local signals work together — 
-                <span className="text-yellow-500 font-semibold"> helping people find you before they find someone else</span>.
+                We optimize your Google Business Profile with real photos, reviews, keywords, and regular updates - 
+                <span className="text-yellow-500 font-semibold"> turning searches into store visits</span>.
               </p>
             </div>
           </div>
@@ -1350,7 +1109,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="NEXT" 
+          text="RESULTS" 
           className="absolute top-[60%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1362,53 +1121,53 @@ export function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 text-center leading-[1.3]">
-              Media Puts You There. The Idea Makes People Care.
+              Google Ads & Paid Campaigns
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Paid media works when audience, message, medium and moment work together. 
-              <span className="text-yellow-500 font-semibold"> We test what earns attention and improve what earns action.</span>
+              We manage everything from keyword planning to A/B tested ad creatives. 
+              <span className="text-yellow-500 font-semibold"> Every click is tracked. Every rupee is accounted for.</span>
             </p>
             
             <p className="text-[0.9375rem] leading-relaxed text-white font-semibold text-center mb-12">
-              Every impression should have a reason to exist.
+              Your ROI is our primary metric.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="glass-card p-6">
                 <Target className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Search Ads</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Meet people at the exact moment they are actively searching for what you offer.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Intent-driven traffic from users actively searching for your solutions.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Eye className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Display & Discovery</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Build discovery through visual media across relevant audiences and contexts.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Visual reach across Google network with targeted audience segments.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Zap className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Performance Max</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Use automation where it improves reach, learning and campaign efficiency.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">AI-powered campaigns across all Google channels for maximum impact.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Play className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">YouTube Video Ads</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Use sight, sound and story to turn passive viewing into active interest.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Engaging video content that captures attention and drives action.</p>
               </div>
               
               <div className="glass-card p-6">
                 <Users className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Retargeting & Remarketing</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Stay relevant after the first interaction and bring interested audiences back.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Re-engage visitors who showed interest but did not convert yet.</p>
               </div>
               
               <div className="glass-card p-6">
                 <BarChart3 className="w-8 h-8 text-yellow-500 mb-4" />
                 <h3 className="text-[1.375rem] font-medium mb-2 leading-[1.4]">Analytics & Optimization</h3>
-                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Learn from behaviour, sharpen the campaign and scale what earns the next step.</p>
+                <p className="text-[0.8125rem] text-gray-400 leading-relaxed">Continuous testing and refinement based on performance data.</p>
               </div>
             </div>
           </div>
@@ -1421,7 +1180,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="DISCOVER" 
+          text="OPTIMIZATION" 
           className="absolute top-[10%] left-0 text-[8rem] md:text-[12rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1457,22 +1216,22 @@ export function HomePage() {
             <Search className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
             
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-              Be Found Before They Find Someone Else
+              SEO & Webmaster Tools Management
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8" style={{ lineHeight: 1.6 }}>
-              Search starts before the click. We build the technical and content foundation that makes your website <span className="text-yellow-500 font-semibold">easy to discover and understand</span> - fast, crawlable, and indexed correctly.
+              We ensure your website is <span className="text-yellow-500 font-semibold">technically perfect</span> - fast, crawlable, and indexed correctly.
             </p>
 
             <div className="glass-card p-8 text-left">
-              <h3 className="text-[1.375rem] font-medium mb-6 leading-[1.4]">The Search Foundation:</h3>
+              <h3 className="text-[1.375rem] font-medium mb-6 leading-[1.4]">Our Toolkit Includes:</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Google Search Console (Webmaster Tools)</p>
-                    <p className="text-[0.8125rem] text-gray-400">Understand how search engines discover, index and interpret your website</p>
+                    <p className="text-[0.8125rem] text-gray-400">Monitor indexing, fix crawl errors, optimize search performance</p>
                   </div>
                 </div>
                 
@@ -1480,7 +1239,7 @@ export function HomePage() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Bing Webmaster</p>
-                    <p className="text-[0.8125rem] text-gray-400">Extend discoverability beyond one search ecosystem</p>
+                    <p className="text-[0.8125rem] text-gray-400">Additional search visibility on Microsoft network</p>
                   </div>
                 </div>
                 
@@ -1488,7 +1247,7 @@ export function HomePage() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">SEMrush / Ahrefs</p>
-                    <p className="text-[0.8125rem] text-gray-400">Understand demand, competition, content gaps and authority signals</p>
+                    <p className="text-[0.8125rem] text-gray-400">Keyword research, competitor analysis, backlink audits</p>
                   </div>
                 </div>
                 
@@ -1496,14 +1255,14 @@ export function HomePage() {
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Site Speed & Schema Optimization</p>
-                    <p className="text-[0.8125rem] text-gray-400">Build speed, structure and machine-readable context into the experience</p>
+                    <p className="text-[0.8125rem] text-gray-400">Technical SEO for faster load times and better rankings</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Search Learning & Improvement</p>
+                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold">Monthly SEO Health Reports</p>
                     <p className="text-[0.8125rem] text-gray-400">Transparent reporting on rankings, traffic, and opportunities</p>
                   </div>
                 </div>
@@ -1541,7 +1300,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="CULTURE" 
+          text="ENGAGEMENT" 
           className="absolute top-[62%] left-0 text-[7rem] md:text-[11rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1555,16 +1314,16 @@ export function HomePage() {
             <Share2 className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
             
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-              The Feed Never Stops. Give People A Reason To.
+              Social Media Marketing
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              <span className="text-yellow-500 font-semibold">Social is culture happening in real time.</span> 
-              We combine ideas, behaviour, design, content and media to make the brand feel native to the platforms people actually use.
+              <span className="text-yellow-500 font-semibold">Creative storytelling meets analytics.</span> 
+              From reels and carousels to paid campaigns, we manage your entire social presence with clarity and consistency.
             </p>
 
             <div className="inline-block glass-card p-6 mb-12">
-              <h3 className="text-[1.375rem] font-medium mb-4 leading-[1.4]">Where The Conversation Happens:</h3>
+              <h3 className="text-[1.375rem] font-medium mb-4 leading-[1.4]">Platforms We Master:</h3>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="bg-yellow-500 text-black px-4 py-2 rounded-lg text-[0.8125rem] font-semibold">Instagram</span>
                 <span className="bg-yellow-500 text-black px-4 py-2 rounded-lg text-[0.8125rem] font-semibold">Facebook</span>
@@ -1583,7 +1342,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="STREETS" 
+          text="OUTDOOR" 
           className="absolute top-[8%] left-0 text-[11rem] md:text-[15rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1594,7 +1353,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="FOUND" 
+          text="VISIBILITY" 
           className="absolute top-[34%] right-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -1616,13 +1375,13 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">LOOK UP FROM THE SCREEN</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">OUT-OF-HOME ADVERTISING</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              From Screens To Streets
+              OOH Advertising - Visibility That Lasts
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Cities, stores, transport and public spaces are media too — 
-              <span className="text-yellow-500 font-semibold"> we take the idea into the physical world</span> with context, scale and presence.
+              Billboards, hoardings, transit media, airport screens, and mall branding - 
+              <span className="text-yellow-500 font-semibold"> we plan, place, and monitor every outdoor impression</span> using data-driven heatmaps.
             </p>
 
             <BentoGrid2 
@@ -1638,24 +1397,24 @@ export function HomePage() {
 
             <div className="mt-12">
               <div className="glass-strong p-8 rounded-2xl">
-                <h3 className="text-[1.375rem] font-medium mb-6 text-center leading-[1.4]">How We Think About Placement:</h3>
+                <h3 className="text-[1.375rem] font-medium mb-6 text-center leading-[1.4]">OOH Analytics We Provide:</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center">
                     <MapPin className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Location & Context</p>
-                    <p className="text-[0.8125rem] text-gray-400">Choose environments where audience movement and brand relevance intersect</p>
+                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Geo-mapping Visibility Reports</p>
+                    <p className="text-[0.8125rem] text-gray-400">See exactly where your ads are placed and their reach</p>
                   </div>
                   
                   <div className="text-center">
                     <BarChart3 className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Audience Opportunity</p>
-                    <p className="text-[0.8125rem] text-gray-400">Understand traffic, visibility and the role each placement should play</p>
+                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">ROI & Footfall Estimates</p>
+                    <p className="text-[0.8125rem] text-gray-400">Data-driven estimates of impressions and impact</p>
                   </div>
                   
                   <div className="text-center">
                     <Settings className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Connected Campaign Thinking</p>
-                    <p className="text-[0.8125rem] text-gray-400">Keep outdoor, digital and activation working as one campaign system</p>
+                    <p className="text-[0.9375rem] leading-relaxed text-white font-semibold mb-2">Dynamic Campaign Adjustments</p>
+                    <p className="text-[0.8125rem] text-gray-400">Optimize placements based on performance data</p>
                   </div>
                 </div>
               </div>
@@ -1666,7 +1425,7 @@ export function HomePage() {
                 to="/services/ooh-advertising"
                 className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold shadow-lg hover:scale-105"
               >
-                Explore OOH Advertising
+                Learn More About OOH
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -1680,7 +1439,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="EXPERIENCE" 
+          text="EXPERIENTIAL" 
           className="absolute top-[10%] left-0 text-[8rem] md:text-[12rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1702,7 +1461,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="PARTICIPATE" 
+          text="ACTIVATION" 
           className="absolute top-[62%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1713,12 +1472,12 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">BRANDS SHOULD BE EXPERIENCED</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">EXPERIENTIAL MARKETING</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              Turn Attention Into Participation
+              BTL Activations - Real-World Brand Engagement
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Take the idea off the screen through <span className="text-yellow-500 font-semibold">real-world brand experiences</span>. 
+              Bring your brand to life through <span className="text-yellow-500 font-semibold">experiential marketing</span>. 
               Each campaign is fully measurable with lead capture & post-event analytics.
             </p>
 
@@ -1738,7 +1497,7 @@ export function HomePage() {
                 to="/services/btl-activations"
                 className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold shadow-lg hover:scale-105"
               >
-                Explore Brand Experiences
+                Explore BTL Activations
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -1752,7 +1511,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="BUILD" 
+          text="DEVELOPMENT" 
           className="absolute top-[8%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1763,7 +1522,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="TOOLS" 
+          text="TECHNOLOGY" 
           className="absolute top-[34%] right-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -1786,15 +1545,15 @@ export function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Websites & Digital Experiences */}
+              {/* Website & App Development */}
               <div className="glass-card p-8">
                 <Monitor className="w-12 h-12 text-yellow-500 mb-6" />
-                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Websites & Digital Experiences</h2>
+                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Website & App Development</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  The campaign earns the click. The experience has to earn the next move. We build <span className="text-yellow-500 font-semibold">clear, fast and useful digital experiences</span>.
+                  Fast, functional, <span className="text-yellow-500 font-semibold">conversion-optimized web ecosystems</span>.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  From corporate platforms to commerce and applications, every screen is designed around the person using it.
+                  From corporate websites to e-commerce and app development - we build with design precision and SEO intelligence.
                 </p>
                 <Link
                   to="/services/website-development"
@@ -1804,15 +1563,15 @@ export function HomePage() {
                 </Link>
               </div>
 
-              {/* Technology Behind The Experience */}
+              {/* Software & Automation */}
               <div className="glass-card p-8">
                 <Code className="w-12 h-12 text-yellow-500 mb-6" />
-                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Technology Behind The Experience</h2>
+                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Software & Automation</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  Business systems should remove friction. We build software, dashboards and <span className="text-yellow-500 font-semibold">automation that makes work simpler</span>.
+                  Custom software, dashboards, and <span className="text-yellow-500 font-semibold">CRMs that simplify workflows</span>.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  Useful technology stays out of the way while making the business work better behind it.
+                  We automate routine tasks and deliver smarter scalability for growing businesses.
                 </p>
                 <Link
                   to="/services/software-development"
@@ -1854,7 +1613,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="STORY" 
+          text="PRODUCTION" 
           className="absolute top-[62%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1869,13 +1628,13 @@ export function HomePage() {
               {/* Media Production */}
               <div className="glass-card p-8">
                 <Camera className="w-12 h-12 text-yellow-500 mb-6" />
-                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Some Stories Need More Than Words</h2>
+                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Media Production & Creative Design</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  From six-second attention to full campaign films, we create <span className="text-yellow-500 font-semibold">visual stories built around the idea</span>, 
-                   from concept to production.
+                  From product shoots to <span className="text-yellow-500 font-semibold">cinematic brand films</span>, 
+                  we handle the full creative process.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  Shoot less content. Create more impact.
+                  Content that tells stories - not just fills space.
                 </p>
                 <Link
                   to="/services/media-production"
@@ -1888,12 +1647,12 @@ export function HomePage() {
               {/* Public Relations */}
               <div className="glass-card p-8">
                 <MessageSquare className="w-12 h-12 text-yellow-500 mb-6" />
-                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Reach Can Be Bought. Trust Has To Be Built.</h2>
+                <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Public Relations & Influence Management</h2>
                 <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-6" style={{ lineHeight: 1.6 }}>
-                  We shape the conversations around brands through communication designed to <span className="text-yellow-500 font-semibold">earn credibility</span> and maintain credibility.
+                  We help brands <span className="text-yellow-500 font-semibold">earn media coverage</span> and maintain credibility.
                 </p>
                 <p className="text-[0.8125rem] text-gray-400 mb-4">
-                  Across media, digital and influence, what others say about the brand carries weight.
+                  Across print, digital, and influencer ecosystems - building trust that lasts.
                 </p>
                 <Link
                   to="/services/public-relations"
@@ -1924,7 +1683,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="DEFINE" 
+          text="METHODOLOGY" 
           className="absolute top-[36%] right-0 text-[8rem] md:text-[12rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -1935,7 +1694,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="LAUNCH" 
+          text="EXECUTION" 
           className="absolute top-[62%] left-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -1946,13 +1705,13 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">FROM QUESTION TO IMPACT</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">OUR METHODOLOGY</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              Think First. Move Smart. Improve Always.
+              Our Process – How We Work
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              A <span className="text-yellow-500 font-semibold">connected process</span> built to keep strategy, creative and execution moving in one direction. 
-              Understand. Define. Create. Launch. Learn. Scale.
+              A <span className="text-yellow-500 font-semibold">systematic approach</span> refined over 7 years and 74+ campaigns. 
+              Clear steps, realistic timelines.
             </p>
 
             <BentoGrid2 
@@ -1988,7 +1747,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Stops at 25% */}
         <OutlinedText 
-          text="BEHAVIOUR" 
+          text="EXPERTISE" 
           className="absolute top-[36%] right-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="right"
           stopPosition={25}
@@ -1999,7 +1758,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="MARKETS" 
+          text="SECTORS" 
           className="absolute top-[62%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -2010,19 +1769,19 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">DIFFERENT MARKETS. DIFFERENT REASONS TO CHOOSE.</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">INDUSTRY EXPERTISE</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              One Formula Doesn't Fit Every Brand
+              Industries We Serve
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              <span className="text-yellow-500 font-semibold">Healthcare needs trust. Technology needs clarity. Fashion needs desire. Real estate needs conviction. The category changes — the strategy should too.</span>
+              <span className="text-yellow-500 font-semibold">Healthcare • Tech • Real Estate • E-Commerce • Education • Finance • Hospitality • F&B • Legal • Manufacturing • Automotive</span>
             </p>
 
             <BentoGrid2 
               cards={industries.map(industry => ({
                 icon: industry.icon,
                 label: industry.name,
-                sublabel: 'Built around the category'
+                sublabel: 'Industry expertise'
               }))}
               mode="uniform"
               columns={4}
@@ -2034,7 +1793,7 @@ export function HomePage() {
                 to="/industries"
                 className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center gap-2 text-[0.9375rem] font-semibold shadow-lg hover:scale-105"
               >
-                Explore Industries
+                Explore All Industries
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -2048,7 +1807,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="TOOLS" 
+          text="TECHNOLOGY" 
           className="absolute top-[8%] left-0 text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -2070,7 +1829,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Stops at 25% */}
         <OutlinedText 
-          text="SYSTEM" 
+          text="STACK" 
           className="absolute top-[60%] left-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="left"
           stopPosition={25}
@@ -2081,12 +1840,12 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto mb-12 relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">THE STACK BEHIND THE WORK</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">TECHNOLOGY STACK</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              Tools Don't Make Strategy
+              Tools We Trust
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              <span className="text-yellow-500 font-semibold">The right platforms</span> help us research, create, build, measure and improve the work — but the thinking comes first.
+              <span className="text-yellow-500 font-semibold">Industry-standard platforms</span> and enterprise-grade tools for maximum performance.
             </p>
           </div>
 
@@ -2106,7 +1865,7 @@ export function HomePage() {
         
         {/* Layer 1: Far Background - Ultra-Slow, Massive */}
         <OutlinedText 
-          text="BUILD" 
+          text="SUCCESS" 
           className="absolute top-[4%] right-[3%] text-[18rem] md:text-[22rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2117,7 +1876,7 @@ export function HomePage() {
         
         {/* Layer 2: Mid Ground - Fast with Heavy Scale */}
         <OutlinedText 
-          text="MEMORY" 
+          text="METRICS" 
           className="absolute top-[40%] left-[8%] text-[9rem] md:text-[13rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -2129,7 +1888,7 @@ export function HomePage() {
         
         {/* Layer 3: Near Foreground - Ultra-Fast, Dynamic */}
         <OutlinedText 
-          text="NEXT" 
+          text="RESULTS" 
           className="absolute bottom-[10%] right-[18%] text-[7rem] md:text-[10rem] pointer-events-none"
           direction="top"
           parallax={true}
@@ -2141,12 +1900,13 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">{'WORK > WORDS'}</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">PROVEN RESULTS</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              What Strong Work Should Do
+              Real Numbers, Real Success
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-12 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              We would rather show <span className="text-yellow-500 font-semibold">the challenge, the thinking and what changed</span> than fill this page with unsupported vanity numbers.
+              Results from <span className="text-yellow-500 font-semibold">96+ client partnerships</span> representing 
+              years of consistent effort and optimization.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -2170,7 +1930,7 @@ export function HomePage() {
         
         {/* Text 1: Slides from LEFT edge - Fully visible at left */}
         <OutlinedText 
-          text="PRINCIPLES" 
+          text="TESTIMONIALS" 
           className="absolute top-[10%] left-0 text-[8rem] md:text-[12rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2180,7 +1940,7 @@ export function HomePage() {
         
         {/* Text 2: Slides from RIGHT edge - Fully visible at right */}
         <OutlinedText 
-          text="BRAND" 
+          text="TRUST" 
           className="absolute top-[36%] right-0 text-[11rem] md:text-[15rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -2190,7 +1950,7 @@ export function HomePage() {
         
         {/* Text 3: Slides from LEFT edge - Fully visible at left */}
         <OutlinedText 
-          text="STANDARDS" 
+          text="REVIEWS" 
           className="absolute top-[62%] left-0 text-[10rem] md:text-[14rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2200,12 +1960,12 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-6xl mx-auto mb-12 relative z-10">
-            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">BRAND PRINCIPLES</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-yellow-500 mb-4 text-center">CLIENT FEEDBACK</p>
             <h2 className="text-[20px] md:text-[22px] font-bold mb-4 text-center leading-[1.3]">
-              What Great Work Should Leave Behind
+              Client Testimonials
             </h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 text-center max-w-3xl mx-auto" style={{ lineHeight: 1.6 }}>
-              Not manufactured testimonials. These are <span className="text-yellow-500 font-semibold">the standards we build the work around</span> — attention, memory, consistency and improvement.
+              Honest feedback from <span className="text-yellow-500 font-semibold">real clients</span> about their experience working with us.
             </p>
           </div>
 
@@ -2238,13 +1998,13 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* 20. The Standard We Hold Ourselves To - Pattern: Cross Convergence */}
+      {/* 20. Our Promise - Pattern: Cross Convergence */}
       <section className="md:min-h-[100vh] py-16 md:py-24 flex items-center relative overflow-hidden">
         {/* TRIPLE-LAYER PARALLAX SYSTEM */}
         
         {/* Layer 1: Far Background - Medium Diagonal with Fade */}
         <OutlinedText 
-          text="STANDARD" 
+          text="PROMISE" 
           className="absolute top-[9%] left-[5%] text-[15rem] md:text-[18rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -2256,7 +2016,7 @@ export function HomePage() {
         
         {/* Layer 2: Mid Ground - Medium Counter Diagonal with Fade */}
         <OutlinedText 
-          text="FOCUS" 
+          text="COMMITMENT" 
           className="absolute top-[42%] right-[7%] text-[9rem] md:text-[12rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2268,7 +2028,7 @@ export function HomePage() {
         
         {/* Layer 3: Near Foreground - Fast Cross with Scale */}
         <OutlinedText 
-          text="CRAFT" 
+          text="INTEGRITY" 
           className="absolute bottom-[13%] left-[19%] text-[6rem] md:text-[9rem] pointer-events-none"
           direction="bottom"
           parallax={true}
@@ -2284,15 +2044,15 @@ export function HomePage() {
               <Shield className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
               
               <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-                The Standard We Hold Ourselves To
+                Our Promise
               </h2>
               
               <p className="text-[0.9375rem] leading-relaxed text-white font-semibold text-lg mb-4" style={{ lineHeight: 1.6 }}>
-                No inflated pitch. No copy-paste plan. No platform-first thinking.
+                We will not promise miracles - only measurable progress.
               </p>
               
               <p className="text-[0.9375rem] leading-relaxed text-gray-300" style={{ lineHeight: 1.6 }}>
-                We value <span className="text-yellow-500 font-semibold">work that gets sharper over time</span> and ideas strong enough to travel beyond one campaign.
+                We value <span className="text-yellow-500 font-semibold">long-term success</span> over short-term noise.
               </p>
             </div>
           </div>
@@ -2305,7 +2065,7 @@ export function HomePage() {
         
         {/* Layer 1: Far Background - Medium Left Pulse */}
         <OutlinedText 
-          text="IDEAS" 
+          text="INSIGHTS" 
           className="absolute top-[10%] left-[8%] text-[14rem] md:text-[17rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -2317,7 +2077,7 @@ export function HomePage() {
         
         {/* Layer 2: Mid Ground - Medium Right Pulse */}
         <OutlinedText 
-          text="THINKING" 
+          text="TRENDS" 
           className="absolute top-[44%] right-[10%] text-[9rem] md:text-[12rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2329,7 +2089,7 @@ export function HomePage() {
         
         {/* Layer 3: Near Foreground - Fast Center Rhythm */}
         <OutlinedText 
-          text="NOTES" 
+          text="KNOWLEDGE" 
           className="absolute bottom-[15%] left-[16%] text-[6rem] md:text-[9rem] pointer-events-none"
           direction="bottom"
           parallax={true}
@@ -2344,10 +2104,10 @@ export function HomePage() {
             <div className="glass-strong p-8 md:p-12 rounded-2xl text-center relative z-10">
               <Mail className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
               
-              <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Ideas Worth Opening</h2>
+              <h2 className="text-[20px] md:text-[22px] font-bold mb-4 leading-[1.3]">Newsletter - Stay Ahead of the Curve</h2>
               <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-8 max-w-2xl mx-auto" style={{ lineHeight: 1.6 }}>
-                Occasional thinking on brands, advertising, digital behaviour, technology and the ideas shaping attention. 
-                <span className="text-yellow-500 font-semibold"> No recycled hacks. No inbox noise. Only something worth reading.</span>
+                Get monthly insights, trends, and marketing hacks from the InchToMilez team. 
+                <span className="text-yellow-500 font-semibold"> No fluff. No spam. Just growth.</span>
               </p>
               
               <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
@@ -2363,11 +2123,11 @@ export function HomePage() {
                   type="submit"
                   className="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-4 rounded-xl transition-all duration-300 text-[0.9375rem] font-semibold whitespace-nowrap shadow-lg hover:scale-105"
                 >
-                  Send Me The Good Stuff
+                  Subscribe Now
                 </button>
               </form>
               
-              <p className="text-[0.8125rem] text-gray-500 mt-4" style={{ lineHeight: 1.6 }}>Leave whenever you want. No hard feelings.</p>
+              <p className="text-[0.8125rem] text-gray-500 mt-4" style={{ lineHeight: 1.6 }}>Unsubscribe anytime. We respect your inbox.</p>
             </div>
           </div>
         </div>
@@ -2379,7 +2139,7 @@ export function HomePage() {
         
         {/* Layer 1: Far Background - Slow Wide Panorama */}
         <OutlinedText 
-          text="INDORE" 
+          text="GLOBAL" 
           className="absolute top-[8%] right-[5%] text-[16rem] md:text-[20rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2390,7 +2150,7 @@ export function HomePage() {
         
         {/* Layer 2: Mid Ground - Medium Counter Sweep */}
         <OutlinedText 
-          text="PUNE" 
+          text="VISION" 
           className="absolute top-[40%] left-[10%] text-[10rem] md:text-[14rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -2402,7 +2162,7 @@ export function HomePage() {
         
         {/* Layer 3: Near Foreground - Fast Panoramic */}
         <OutlinedText 
-          text="BEYOND" 
+          text="WORLDWIDE" 
           className="absolute bottom-[12%] right-[14%] text-[7rem] md:text-[10rem] pointer-events-none"
           direction="top"
           parallax={true}
@@ -2417,15 +2177,15 @@ export function HomePage() {
             <Globe className="w-12 h-12 text-yellow-500 mx-auto mb-6" />
             
             <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">
-              Built Here. Designed To Travel.
+              Global Vision - Local Expertise
             </h2>
             
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-4" style={{ lineHeight: 1.6 }}>
-              Built in Indore. Expanding through Pune. Thinking beyond both.
+              Born in Indore, growing worldwide.
             </p>
             
             <p className="text-[0.9375rem] leading-relaxed text-white font-semibold text-lg" style={{ lineHeight: 1.6 }}>
-              A strong idea should survive a new market, a new medium and a new audience without losing what made it powerful.
+              Our goal: make transparent, ethical marketing India's biggest export.
             </p>
           </div>
         </div>
@@ -2437,7 +2197,7 @@ export function HomePage() {
         
         {/* Layer 1: Far Background - Medium Left Dramatic */}
         <OutlinedText 
-          text="NEXT" 
+          text="ACTION" 
           className="absolute top-[10%] left-[5%] text-[15rem] md:text-[19rem] pointer-events-none"
           direction="right"
           parallax={true}
@@ -2449,7 +2209,7 @@ export function HomePage() {
         
         {/* Layer 2: Mid Ground - Medium Right Converging */}
         <OutlinedText 
-          text="MOVE" 
+          text="GROWTH" 
           className="absolute top-[42%] right-[8%] text-[9rem] md:text-[13rem] pointer-events-none"
           direction="left"
           parallax={true}
@@ -2461,7 +2221,7 @@ export function HomePage() {
         
         {/* Layer 3: Near Foreground - Fast Final Push */}
         <OutlinedText 
-          text="START" 
+          text="BEGIN" 
           className="absolute bottom-[14%] left-[20%] text-[7rem] md:text-[10rem] pointer-events-none"
           direction="bottom"
           parallax={true}
@@ -2473,10 +2233,10 @@ export function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">What Do You Want People To Remember?</h2>
+            <h2 className="text-[20px] md:text-[22px] font-bold mb-6 leading-[1.3]">Ready to Go from Inch to Mile?</h2>
             <p className="text-[0.9375rem] leading-relaxed text-gray-300 mb-10 max-w-2xl mx-auto" style={{ lineHeight: 1.6 }}>
-              A new brand. A launch. A campaign. A digital experience. Or an idea that deserves to become much bigger. 
-              <span className="text-yellow-500 font-semibold"> Bring us the ambition. We'll bring the thinking.</span>
+              Let us build your next success story together. 
+              <span className="text-yellow-500 font-semibold"> Free consultation. No obligations. Just honest insights.</span>
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -2484,14 +2244,14 @@ export function HomePage() {
                 to="/contact"
                 className="bg-yellow-500 hover:bg-yellow-400 text-black px-10 py-5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.9375rem] font-semibold shadow-xl hover:shadow-yellow-500/50 hover:scale-105"
               >
-                Start Something
+                Get Free Consultation
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
                 to="/services"
                 className="glass-card px-10 py-5 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-[0.9375rem] font-semibold hover:scale-105"
               >
-                Explore Capabilities
+                Explore Services
               </Link>
             </div>
 
