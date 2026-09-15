@@ -369,357 +369,955 @@ export function HomePage() {
 
 
 
-
-
-
-
 {/* ============================================================
     1. HOME HERO SECTION
-    Full Video Background + Inchtomilez Content
+    INCHTOMILEZ — CINEMATIC VIDEO HERO
+    IMPORTANT:
+    Replace ONLY the existing Hero section with this block.
+    Do not modify Section 2 or anything below this section.
 ============================================================ */}
-<section className="relative min-h-screen w-full overflow-hidden bg-black flex items-center">
 
-  {/* ============================================================
+<section
+  className="
+    relative
+    isolate
+    w-full
+    min-h-[100svh]
+    overflow-hidden
+    bg-black
+    flex
+    items-center
+  "
+  aria-labelledby="home-hero-heading"
+>
+
+  {/* ==========================================================
       BACKGROUND VIDEO
-  ============================================================ */}
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    preload="metadata"
-    disablePictureInPicture
-    className="absolute inset-0 w-full h-full object-cover"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-      objectPosition: 'center center',
-    }}
-    aria-hidden="true"
-  >
-    <source
-      src="https://orange-woodcock-416561.hostingersite.com/wp-content/uploads/2024/09/Sequence-01_2.mp4"
-      type="video/mp4"
-    />
-  </video>
+
+      Uses the existing VideoBackground component already
+      included in the HomePage architecture.
+
+      Keeping video handling inside the existing component avoids:
+      - duplicated video logic
+      - additional React state
+      - unnecessary event listeners
+      - inconsistent fallback behaviour
+  ========================================================== */}
+
+  <VideoBackground
+    src="https://orange-woodcock-416561.hostingersite.com/wp-content/uploads/2024/09/Sequence-01_2.mp4"
+    overlayOpacity={0.2}
+    startTime={0}
+  />
 
 
-  {/* ============================================================
-      VIDEO DARK OVERLAY
-  ============================================================ */}
+  {/* ==========================================================
+      CINEMATIC OVERLAY SYSTEM
 
-  {/* General dark overlay */}
+      Layer 1:
+      Improves overall contrast without killing the video.
+
+      Layer 2:
+      Stronger darkness on the left where content sits.
+
+      Layer 3:
+      Darkens lower portion and blends hero naturally into
+      the black/grid-based website background.
+  ========================================================== */}
+
   <div
-    className="absolute inset-0 bg-black/40"
+    className="
+      absolute
+      inset-0
+      z-[1]
+      pointer-events-none
+      bg-black/25
+    "
     aria-hidden="true"
   />
 
-  {/* Stronger left overlay for readable content */}
+
   <div
-    className="absolute inset-0"
+    className="
+      absolute
+      inset-0
+      z-[1]
+      pointer-events-none
+    "
     style={{
       background:
-        'linear-gradient(90deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.68) 38%, rgba(0,0,0,0.28) 68%, rgba(0,0,0,0.10) 100%)',
+        'linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.78) 30%, rgba(0,0,0,0.48) 54%, rgba(0,0,0,0.18) 78%, rgba(0,0,0,0.10) 100%)',
     }}
     aria-hidden="true"
   />
 
-  {/* Bottom cinematic fade */}
+
   <div
-    className="absolute inset-0"
+    className="
+      absolute
+      inset-0
+      z-[1]
+      pointer-events-none
+    "
     style={{
       background:
-        'linear-gradient(0deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0) 75%)',
+        'linear-gradient(0deg, rgba(0,0,0,0.96) 0%, rgba(0,0,0,0.55) 18%, rgba(0,0,0,0.08) 52%, rgba(0,0,0,0.18) 100%)',
     }}
     aria-hidden="true"
   />
 
 
-  {/* ============================================================
+  {/* ==========================================================
+      VERY SUBTLE INCHTOMILEZ YELLOW ATMOSPHERE
+
+      Gives the video hero a connection to the yellow ambience
+      used throughout the remaining homepage.
+  ========================================================== */}
+
+  <div
+    className="
+      absolute
+      inset-0
+      z-[1]
+      pointer-events-none
+      opacity-60
+    "
+    style={{
+      background:
+        'radial-gradient(circle at 17% 78%, rgba(234,179,8,0.08) 0%, rgba(234,179,8,0.025) 25%, transparent 48%)',
+    }}
+    aria-hidden="true"
+  />
+
+
+  {/* ==========================================================
       HERO CONTENT
-  ============================================================ */}
-  <div className="relative z-10 w-full px-5 sm:px-8 md:px-10 lg:px-16 xl:px-20 py-24 md:py-28 lg:py-32">
+      Uses exactly the same horizontal architecture as the
+      remainder of your HomePage:
+      
+      container
+        → max-w-6xl
+          → controlled content width
+  ========================================================== */}
 
-    <div className="w-full max-w-7xl mx-auto">
+  <div
+    className="
+      container
+      mx-auto
+      px-4
+      sm:px-6
+      lg:px-8
+      w-full
+      relative
+      z-10
+    "
+  >
 
-      {/* Left content */}
-      <div className="max-w-5xl">
-
-        {/* Small Brand Badge */}
-        <div className="mb-5 md:mb-6">
-          <div
-            className="
-              inline-flex
-              items-center
-              gap-2
-              px-4
-              py-2
-              rounded-full
-              border
-              border-yellow-500/40
-              bg-black/40
-            "
-          >
-            <Star
-              className="w-4 h-4 text-yellow-500"
-              fill="currentColor"
-            />
-
-            <span className="text-[10px] sm:text-[11px] md:text-xs font-semibold tracking-[0.15em] uppercase text-white">
-              Digital • Creative • Advertising • Technology
-            </span>
-          </div>
-        </div>
+    <div className="max-w-6xl mx-auto w-full">
 
 
-        {/* ========================================================
-            MAIN HEADING
-        ======================================================== */}
-        <h1
-          className="
-            text-white
-            font-bold
-            uppercase
-            tracking-[-0.03em]
-            leading-[1.05]
-            mb-5
-            max-w-5xl
-          "
-          style={{
-            fontSize: 'clamp(32px, 4.3vw, 68px)',
-          }}
+      {/* ========================================================
+          MAIN CONTENT WRAPPER
+
+          Width deliberately controlled so the hero feels related
+          to the rest of the website instead of becoming a separate
+          oversized landing page.
+      ======================================================== */}
+
+      <div
+        className="
+          w-full
+          max-w-[1040px]
+
+          pt-24
+          pb-14
+
+          sm:pt-28
+          sm:pb-16
+
+          md:pt-28
+          md:pb-20
+
+          lg:pt-32
+          lg:pb-24
+
+          xl:pt-32
+          xl:pb-24
+        "
+      >
+
+
+        {/* ======================================================
+            BRAND POSITIONING BADGE
+        ====================================================== */}
+
+        <AnimatedSection
+          animation="fadeInUp"
+          delay={0.08}
         >
-          Duniya{' '}
-          <span className="text-yellow-500">
-            Brands
-          </span>{' '}
-          Ke Peeche,
-          <br className="hidden md:block" />
-          Aur Brands Marketing Aur Advertising Ke!
-        </h1>
 
+          <div className="mb-5 sm:mb-6">
 
-        {/* ========================================================
-            SECONDARY HEADING
-        ======================================================== */}
-        <h2
-          className="
-            text-white
-            font-semibold
-            leading-[1.4]
-            max-w-4xl
-            mb-4
-          "
-          style={{
-            fontSize: 'clamp(17px, 1.55vw, 23px)',
-            color: '#ffffff',
-          }}
-        >
-          We Create Brands People Notice. Campaigns People Remember.
-          Experiences People Choose.
-        </h2>
-
-
-        {/* Description */}
-        <p
-          className="
-            max-w-3xl
-            text-white/75
-            text-sm
-            sm:text-[15px]
-            md:text-base
-            leading-7
-            mb-7
-          "
-        >
-          We build ideas, campaigns and digital experiences that make
-          people look, remember and choose.
-        </p>
-
-
-        {/* ========================================================
-            QUICK FACTS
-        ======================================================== */}
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-3 mb-8">
-
-          {quickFacts.map((fact, index) => (
             <div
-              key={index}
-              className="flex items-center gap-2"
+              className="
+                inline-flex
+                items-center
+                gap-2.5
+
+                max-w-full
+
+                px-3.5
+                sm:px-4
+
+                py-2
+
+                rounded-full
+
+                border
+                border-yellow-500/30
+
+                bg-black/35
+                backdrop-blur-md
+
+                shadow-[0_8px_30px_rgba(0,0,0,0.16)]
+              "
             >
-              <CheckCircle className="w-4 h-4 text-yellow-500 flex-shrink-0" />
 
-              <span className="text-xs sm:text-sm font-medium text-white/80">
-                {fact.label}
+              <Star
+                className="
+                  w-3.5
+                  h-3.5
+                  sm:w-4
+                  sm:h-4
+                  text-yellow-500
+                  flex-shrink-0
+                "
+                fill="currentColor"
+              />
+
+              <span
+                className="
+                  text-[9px]
+                  min-[380px]:text-[10px]
+                  sm:text-[11px]
+                  md:text-[12px]
+
+                  leading-none
+
+                  font-semibold
+
+                  uppercase
+
+                  tracking-[0.08em]
+                  sm:tracking-[0.11em]
+
+                  text-white/90
+
+                  whitespace-nowrap
+                "
+              >
+                Digital • Creative • Advertising • Technology
               </span>
+
             </div>
-          ))}
 
-        </div>
+          </div>
 
-
-        {/* ========================================================
-            CTA BUTTONS
-        ======================================================== */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-9">
-
-          {/* Primary CTA */}
-          <Link
-            to="/contact"
-            className="
-              inline-flex
-              items-center
-              justify-center
-              gap-2
-              bg-yellow-500
-              hover:bg-yellow-400
-              text-black
-              font-bold
-              text-sm
-              sm:text-[15px]
-              px-7
-              py-4
-              rounded-lg
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              shadow-lg
-            "
-          >
-            Start Something
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+        </AnimatedSection>
 
 
-          {/* Secondary CTA */}
-          <Link
-            to="/services"
-            className="
-              inline-flex
-              items-center
-              justify-center
-              gap-2
-              border
-              border-white/30
-              bg-black/30
-              hover:bg-white/10
-              hover:border-yellow-500
-              text-white
-              font-semibold
-              text-sm
-              sm:text-[15px]
-              px-7
-              py-4
-              rounded-lg
-              transition-all
-              duration-300
-            "
-          >
-            Explore Inchtomilez
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+        {/* ======================================================
+            PRIMARY HERO HEADLINE
 
-        </div>
+            IMPORTANT:
+            - No forced uppercase.
+            - No enormous 70–90px text.
+            - Responsive type scale.
+            - Same weight philosophy as original HomePage.
+            - Controlled line length.
+        ====================================================== */}
 
-
-        {/* ========================================================
-            CONTACT DETAILS
-        ======================================================== */}
-        <div
-          className="
-            flex
-            flex-col
-            sm:flex-row
-            sm:flex-wrap
-            items-start
-            sm:items-center
-            gap-3
-            sm:gap-6
-            border-t
-            border-white/15
-            pt-5
-            max-w-4xl
-          "
+        <AnimatedSection
+          animation="fadeInUp"
+          delay={0.14}
         >
 
-          {/* Phone */}
-          <a
-            href="tel:+919669988666"
+          <h1
+            id="home-hero-heading"
             className="
-              flex
-              items-center
-              gap-2
-              text-xs
-              sm:text-sm
-              text-white/60
-              hover:text-yellow-500
-              transition-colors
+              max-w-[1020px]
+
+              text-[34px]
+              sm:text-[40px]
+              md:text-[46px]
+              lg:text-[52px]
+              xl:text-[56px]
+
+              font-medium
+
+              tracking-[-0.035em]
+
+              leading-[1.08]
+              sm:leading-[1.07]
+              lg:leading-[1.06]
+
+              text-white
+
+              mb-5
+              sm:mb-6
             "
           >
-            <Phone className="w-4 h-4" />
-            +91 966-998-8666
-          </a>
+
+            <span className="block">
+
+              Duniya{' '}
+
+              <span className="text-yellow-500">
+                Brands
+              </span>{' '}
+
+              Ke Peeche,
+
+            </span>
 
 
-          {/* Email */}
-          <a
-            href="mailto:inchtomilez@gmail.com"
+            <span
+              className="
+                block
+                mt-1
+                sm:mt-1.5
+              "
+            >
+              Aur Brands Marketing Aur Advertising Ke!
+            </span>
+
+          </h1>
+
+        </AnimatedSection>
+
+
+        {/* ======================================================
+            SUPPORTING BRAND STATEMENT
+
+            Explicit text-fill styling prevents global heading
+            gradient styles from affecting this H2.
+        ====================================================== */}
+
+        <AnimatedSection
+          animation="fadeInUp"
+          delay={0.2}
+        >
+
+          <h2
             className="
-              flex
-              items-center
-              gap-2
-              text-xs
-              sm:text-sm
-              text-white/60
-              hover:text-yellow-500
-              transition-colors
+              max-w-[850px]
+
+              text-[17px]
+              sm:text-[18px]
+              md:text-[20px]
+              lg:text-[21px]
+
+              font-semibold
+
+              leading-[1.45]
+
+              mb-3.5
+              sm:mb-4
+            "
+            style={{
+              color: '#ffffff',
+              background: 'none',
+              backgroundImage: 'none',
+              WebkitBackgroundClip: 'initial',
+              WebkitTextFillColor: '#ffffff',
+            }}
+          >
+            We Create Brands People Notice. Campaigns People Remember.
+            Experiences People Choose.
+          </h2>
+
+        </AnimatedSection>
+
+
+        {/* ======================================================
+            SUPPORTING DESCRIPTION
+        ====================================================== */}
+
+        <AnimatedSection
+          animation="fadeInUp"
+          delay={0.25}
+        >
+
+          <p
+            className="
+              max-w-[760px]
+
+              text-[14px]
+              sm:text-[15px]
+
+              font-normal
+
+              leading-[1.7]
+
+              text-white/65
+
+              mb-6
+              sm:mb-7
             "
           >
-            <Mail className="w-4 h-4" />
-            inchtomilez@gmail.com
-          </a>
+            We build ideas, campaigns and digital experiences that make
+            people look, remember and choose.
+          </p>
+
+        </AnimatedSection>
 
 
-          {/* Location */}
+        {/* ======================================================
+            QUICK FACTS
+
+            Desktop:
+            single clean horizontal row when space permits.
+
+            Tablet / Mobile:
+            naturally wraps instead of forcing cramped columns.
+        ====================================================== */}
+
+        <AnimatedSection
+          animation="fadeInUp"
+          delay={0.3}
+        >
+
           <div
             className="
               flex
+              flex-wrap
               items-center
-              gap-2
-              text-xs
-              sm:text-sm
-              text-white/60
+
+              gap-x-3
+              sm:gap-x-4
+              lg:gap-x-5
+
+              gap-y-2.5
+
+              mb-7
+              sm:mb-8
             "
           >
-            <MapPin className="w-4 h-4" />
-            Indore • Pune • India
+
+            {quickFacts.map((fact, index) => (
+
+              <div
+                key={index}
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+
+                  min-h-[34px]
+
+                  px-3
+                  sm:px-3.5
+
+                  rounded-full
+
+                  border
+                  border-white/[0.08]
+
+                  bg-black/25
+                  backdrop-blur-sm
+                "
+              >
+
+                <CheckCircle
+                  className="
+                    w-3.5
+                    h-3.5
+
+                    text-yellow-500
+
+                    flex-shrink-0
+                  "
+                />
+
+                <span
+                  className="
+                    text-[11px]
+                    sm:text-[12px]
+                    md:text-[13px]
+
+                    font-medium
+
+                    text-white/75
+
+                    whitespace-nowrap
+                  "
+                >
+                  {fact.label}
+                </span>
+
+              </div>
+
+            ))}
+
           </div>
 
-        </div>
+        </AnimatedSection>
+
+
+        {/* ======================================================
+            CTA ROW
+
+            Mobile:
+            full width, easy tap targets.
+
+            Desktop:
+            compact horizontal buttons matching existing site
+            button geometry.
+        ====================================================== */}
+
+        <AnimatedSection
+          animation="fadeInUp"
+          delay={0.36}
+        >
+
+          <div
+            className="
+              flex
+              flex-col
+              sm:flex-row
+
+              items-stretch
+              sm:items-center
+
+              gap-3
+              sm:gap-4
+
+              mb-7
+              sm:mb-8
+            "
+          >
+
+
+            {/* PRIMARY CTA */}
+
+            <Link
+              to="/contact"
+              className="
+                group
+
+                w-full
+                sm:w-auto
+
+                min-h-[50px]
+
+                inline-flex
+                items-center
+                justify-center
+
+                gap-2.5
+
+                px-6
+                sm:px-7
+
+                py-3.5
+
+                rounded-xl
+
+                bg-yellow-500
+                hover:bg-yellow-400
+
+                text-black
+
+                text-[14px]
+                sm:text-[15px]
+
+                font-semibold
+
+                transition-all
+                duration-300
+
+                shadow-[0_10px_30px_rgba(234,179,8,0.16)]
+
+                hover:shadow-[0_14px_36px_rgba(234,179,8,0.24)]
+
+                hover:-translate-y-0.5
+
+                focus:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-yellow-500
+                focus-visible:ring-offset-2
+                focus-visible:ring-offset-black
+              "
+            >
+
+              <span>
+                Start Something
+              </span>
+
+              <ArrowRight
+                className="
+                  w-4
+                  h-4
+
+                  sm:w-[18px]
+                  sm:h-[18px]
+
+                  transition-transform
+                  duration-300
+
+                  group-hover:translate-x-1
+                "
+              />
+
+            </Link>
+
+
+            {/* SECONDARY CTA */}
+
+            <Link
+              to="/services"
+              className="
+                group
+
+                w-full
+                sm:w-auto
+
+                min-h-[50px]
+
+                inline-flex
+                items-center
+                justify-center
+
+                gap-2.5
+
+                px-6
+                sm:px-7
+
+                py-3.5
+
+                rounded-xl
+
+                border
+                border-white/15
+
+                bg-white/[0.055]
+
+                backdrop-blur-md
+
+                text-white
+
+                text-[14px]
+                sm:text-[15px]
+
+                font-semibold
+
+                transition-all
+                duration-300
+
+                hover:bg-white/[0.09]
+                hover:border-yellow-500/40
+
+                hover:-translate-y-0.5
+
+                focus:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-yellow-500
+                focus-visible:ring-offset-2
+                focus-visible:ring-offset-black
+              "
+            >
+
+              <span>
+                Explore Inchtomilez
+              </span>
+
+              <ArrowRight
+                className="
+                  w-4
+                  h-4
+
+                  sm:w-[18px]
+                  sm:h-[18px]
+
+                  transition-transform
+                  duration-300
+
+                  group-hover:translate-x-1
+                "
+              />
+
+            </Link>
+
+          </div>
+
+        </AnimatedSection>
+
+
+        {/* ======================================================
+            CONTACT / LOCATION STRIP
+
+            Visually quieter than the CTAs.
+            Keeps exactly the existing contact information.
+        ====================================================== */}
+
+        <AnimatedSection
+          animation="fadeInUp"
+          delay={0.42}
+        >
+
+          <div
+            className="
+              max-w-[850px]
+
+              pt-5
+
+              border-t
+              border-white/[0.10]
+
+              flex
+              flex-col
+
+              min-[520px]:flex-row
+              min-[520px]:flex-wrap
+
+              items-start
+              min-[520px]:items-center
+
+              gap-y-3
+
+              gap-x-5
+              md:gap-x-6
+            "
+          >
+
+
+            {/* PHONE */}
+
+            <a
+              href="tel:+919669988666"
+              className="
+                group
+
+                inline-flex
+                items-center
+
+                gap-2
+
+                text-[12px]
+                sm:text-[13px]
+
+                font-normal
+
+                text-white/55
+
+                transition-colors
+                duration-200
+
+                hover:text-yellow-500
+              "
+            >
+
+              <Phone
+                className="
+                  w-4
+                  h-4
+                  flex-shrink-0
+
+                  text-white/40
+
+                  transition-colors
+                  duration-200
+
+                  group-hover:text-yellow-500
+                "
+              />
+
+              <span>
+                +91 966-998-8666
+              </span>
+
+            </a>
+
+
+            {/* EMAIL */}
+
+            <a
+              href="mailto:inchtomilez@gmail.com"
+              className="
+                group
+
+                inline-flex
+                items-center
+
+                gap-2
+
+                text-[12px]
+                sm:text-[13px]
+
+                font-normal
+
+                text-white/55
+
+                transition-colors
+                duration-200
+
+                hover:text-yellow-500
+              "
+            >
+
+              <Mail
+                className="
+                  w-4
+                  h-4
+                  flex-shrink-0
+
+                  text-white/40
+
+                  transition-colors
+                  duration-200
+
+                  group-hover:text-yellow-500
+                "
+              />
+
+              <span>
+                inchtomilez@gmail.com
+              </span>
+
+            </a>
+
+
+            {/* LOCATION */}
+
+            <div
+              className="
+                inline-flex
+                items-center
+
+                gap-2
+
+                text-[12px]
+                sm:text-[13px]
+
+                font-normal
+
+                text-white/55
+              "
+            >
+
+              <MapPin
+                className="
+                  w-4
+                  h-4
+                  flex-shrink-0
+
+                  text-white/40
+                "
+              />
+
+              <span>
+                Indore • Pune • India
+              </span>
+
+            </div>
+
+          </div>
+
+        </AnimatedSection>
+
 
       </div>
     </div>
+
   </div>
 
 
-  {/* ============================================================
-      SMALL BOTTOM SCROLL MARKER
-      Desktop only
-  ============================================================ */}
-  <div className="hidden lg:flex absolute right-10 bottom-8 z-10 items-center gap-3 text-white/50">
-    <span className="text-[10px] tracking-[0.25em] uppercase">
+  {/* ==========================================================
+      RIGHT-SIDE SCROLL INDICATOR
+
+      Intentionally removed on tablets/mobile.
+      Subtle enough not to compete with the content.
+  ========================================================== */}
+
+  <div
+    className="
+      hidden
+      xl:flex
+
+      absolute
+      right-8
+      2xl:right-10
+      bottom-9
+
+      z-10
+
+      items-center
+      gap-3
+
+      pointer-events-none
+    "
+    aria-hidden="true"
+  >
+
+    <span
+      className="
+        text-[10px]
+
+        font-medium
+
+        uppercase
+
+        tracking-[0.22em]
+
+        text-white/35
+      "
+    >
       Scroll
     </span>
 
-    <div className="w-12 h-px bg-yellow-500/60" />
+    <span
+      className="
+        block
+
+        w-10
+        h-px
+
+        bg-yellow-500/45
+      "
+    />
+
   </div>
 
+
+  {/* ==========================================================
+      BOTTOM SEPARATOR
+
+      Gives Section 1 a clean ending and prevents the transition
+      into Who We Are from looking accidental.
+  ========================================================== */}
+
+  <div
+    className="
+      absolute
+      bottom-0
+      left-0
+      right-0
+
+      z-[2]
+
+      h-px
+
+      bg-gradient-to-r
+      from-transparent
+      via-yellow-500/20
+      to-transparent
+
+      pointer-events-none
+    "
+    aria-hidden="true"
+  />
+
 </section>
-
-      
-
-
 
       
 
